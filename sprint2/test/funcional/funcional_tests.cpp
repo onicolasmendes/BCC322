@@ -1,14 +1,9 @@
+#include "funcional_tests.h"
 #include <cassert>
 #include <cmath>
-#include "../../src/Model.h"
-#include "Flows/FlowExponencial.h"
-#include "Flows/FlowLogistica.h"
-#include "Flows/FlowMaior.h"
 
-int main(int argc, char const *argv[])
+bool exponentialFuncionalTest()
 {
-    //Exponencial 
-
     System pop1("pop1", 100);
     System pop2("pop2", 0);
     Model m1("m1");
@@ -21,8 +16,11 @@ int main(int argc, char const *argv[])
     assert(abs(pop1.getValue() - 36.6032) < 0.0001);
     assert(abs(pop2.getValue() - 63.3968) < 0.0001);
 
-    //Logistica
+    return true;
+}
 
+bool logisticalFuncionalTest()
+{
     System p1("p1", 100);
     System p2("p2", 10);
     Model m2("m2");
@@ -35,8 +33,11 @@ int main(int argc, char const *argv[])
     assert(abs(p1.getValue() - 88.2167) < 0.0001);
     assert(abs(p2.getValue() - 21.7833) < 0.0001);
 
+    return true;
+}
 
-    //Modelo Maior
+bool complexFuncionalTest()
+{
     System q1("q1", 100);
     System q2("q2", 0);
     System q3("q3", 100);
@@ -67,6 +68,6 @@ int main(int argc, char const *argv[])
     assert(abs(q3.getValue() - 77.1143) < 0.0001);
     assert(abs(q4.getValue() - 56.1728) < 0.0001);
     assert(abs(q5.getValue() - 16.4612) < 0.0001);
-    return 0;
 
+    return true;
 }
