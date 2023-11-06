@@ -61,10 +61,3 @@ bool Flow::operator==(const Flow &f) const
     else
         return false;
 }
-
-double Flow::equation() const
-{
-    return 4;
-}
-
-
