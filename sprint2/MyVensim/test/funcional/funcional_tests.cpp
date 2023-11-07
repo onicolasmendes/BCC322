@@ -11,10 +11,10 @@ bool exponentialFuncionalTest()
     m1.add(&expo);
     m1.add(&pop1);
     m1.add(&pop2);
-    m1.run(1, 100);
+    m1.run(0, 100);
 
-    assert(abs(pop1.getValue() - 36.6032) < 0.0001);
-    assert(abs(pop2.getValue() - 63.3968) < 0.0001);
+    assert(trunc(abs(pop1.getValue() - 36.6032)*10000) < 1);
+    assert(trunc(abs(pop2.getValue() - 63.3968)*10000) < 1);
 
     return true;
 }
@@ -28,10 +28,10 @@ bool logisticalFuncionalTest()
     m2.add(&log);
     m2.add(&p1);
     m2.add(&p2);
-    m2.run(1, 100);
+    m2.run(0, 100);
 
-    assert(abs(p1.getValue() - 88.2167) < 0.0001);
-    assert(abs(p2.getValue() - 21.7833) < 0.0001);
+    assert(trunc(abs(p1.getValue() - 88.2167)*10000) < 1);
+    assert(trunc(abs(p2.getValue() - 21.7833)*10000) < 1);
 
     return true;
 }
@@ -61,13 +61,13 @@ bool complexFuncionalTest()
     m3.add(&v);
     m3.add(&t);
     m3.add(&r);
-    m3.run(1, 100);
+    m3.run(0, 100);
     
-    assert(abs(q1.getValue() - 31.8513) < 0.0001);
-    assert(abs(q2.getValue() - 18.4003) < 0.0001);
-    assert(abs(q3.getValue() - 77.1143) < 0.0001);
-    assert(abs(q4.getValue() - 56.1728) < 0.0001);
-    assert(abs(q5.getValue() - 16.4612) < 0.0001);
+    assert(trunc(abs(q1.getValue() - 31.8513)*10000) < 1);
+    assert(trunc(abs(q2.getValue() - 18.4003)*10000) < 1);
+    assert(trunc(abs(q3.getValue() - 77.1143)*10000) < 1);
+    assert(trunc(abs(q4.getValue() - 56.1728)*10000) < 1);
+    assert(trunc(abs(q5.getValue() - 16.4612)*10000) < 1);
 
     return true;
 }

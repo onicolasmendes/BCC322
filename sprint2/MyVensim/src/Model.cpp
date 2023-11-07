@@ -25,10 +25,18 @@ Model::Model(const string &n, const vector<System*> &s, const vector<Flow*> &f)
 
 Model::Model(const Model &m)
 {
-    if(this == &m) return;
-    
-    systems = m.systems;
-    flows = m.flows;
+    this->flows.clear();
+    this->systems.clear();
+
+    for(Flow* flow : m.flows)
+    {
+        add(flow);
+    }
+
+    for(System* system : m.systems)
+    {
+        add(system);
+    }
 }
 
 bool Model::add(System *s)
@@ -116,10 +124,6 @@ bool Model::setSystems(const vector<System*> &s)
     return true;
 }
 
-vector<System *> Model::getSystems() const
-{
-    return systems;
-}
 
 bool Model::setFlows(const vector<Flow *> &f)
 {
@@ -127,17 +131,25 @@ bool Model::setFlows(const vector<Flow *> &f)
     return true;
 }
 
-vector<Flow *> Model::getFlows() const
-{
-    return flows;
-}
+
 
 Model& Model::operator=(const Model &m)
-{
-    if(this == &m) return *this;
+{   
     
-    systems = m.systems;
-    flows = m.flows;
+    if(this == &m) return *this;
+
+    this->flows.clear();
+    this->systems.clear();
+
+    for(Flow* flow : m.flows)
+    {
+        add(flow);
+    }
+
+    for(System* system : m.systems)
+    {
+        add(system);
+    }
     
     return *this;
 }
@@ -172,7 +184,7 @@ Model :: SystemsIterator Model::endSystems()
 
 bool Model::run(const double &t_inicial, const double &t_final)
 {
-    for (double i = t_inicial; i <= t_final ; i++)
+    for (double i = t_inicial; i < t_final ; i++)
     {
         vector<double> values;
 
@@ -195,3 +207,12 @@ bool Model::run(const double &t_inicial, const double &t_final)
     
 }
 
+FlowsIterator Model::getFlows()
+{
+    return beginFlows();
+}
+
+SystemsIterator Model::getSystems()
+{
+    return beginSystems();
+}

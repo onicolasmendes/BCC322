@@ -15,8 +15,6 @@ Flow::Flow(System *s, System *t)
 
 Flow::Flow(const Flow &f)
 {
-    if(this == &f) return;
-
     source = f.getSource();
     target = f.getTarget();
 }

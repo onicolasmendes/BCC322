@@ -17,7 +17,6 @@ System::System(const string &n, const double &v)
 
 System::System(System &s)
 {
-    if(this == &s) return;
 
     name = s.getName();
     value = s.getValue();

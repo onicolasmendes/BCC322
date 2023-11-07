@@ -2,6 +2,10 @@
 #include "Flow.h"
 #include "vector"
 
+typedef vector<System*>::iterator SystemsIterator;
+typedef vector<Flow*>::iterator FlowsIterator;
+
+
 using namespace std;
 
 class Model
@@ -14,8 +18,11 @@ class Model
         Model();
         Model(const string &);
         Model(const string &, const vector<System*> &, const vector<Flow*> &);
+    private:
         Model(const Model &);
-
+        Model& operator=(const Model &);
+        
+    public:
         virtual ~Model();
 
         bool add(System *);
@@ -26,19 +33,20 @@ class Model
         bool remove(const Flow *);
         bool run(const double &, const double &);
 
-        bool setName(const string &);
-        string getName() const;
-        bool setSystems(const vector<System*> &);
-        vector<System*> getSystems() const;
-        bool setFlows(const vector<Flow*> &);
-        vector<Flow*> getFlows() const;
-
-        Model& operator=(const Model &);
-        bool operator==(const Model &) const;
-
         typedef vector<System*>::iterator SystemsIterator;
         typedef vector<Flow*>::iterator FlowsIterator;
 
+        bool setName(const string &);
+        string getName() const;
+        bool setSystems(const vector<System*> &);
+        SystemsIterator getSystems();
+        bool setFlows(const vector<Flow*> &);
+        FlowsIterator getFlows();
+
+        
+        bool operator==(const Model &) const;
+
+       
         FlowsIterator beginFlows();
         FlowsIterator endFlows();
         SystemsIterator beginSystems();
