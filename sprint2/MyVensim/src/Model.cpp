@@ -118,20 +118,6 @@ string Model::getName() const
     return name;
 }
 
-bool Model::setSystems(const vector<System*> &s)
-{
-    systems = s;
-    return true;
-}
-
-
-bool Model::setFlows(const vector<Flow *> &f)
-{
-    flows = f;
-    return true;
-}
-
-
 
 Model& Model::operator=(const Model &m)
 {   

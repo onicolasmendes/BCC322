@@ -38,9 +38,7 @@ class Model
 
         bool setName(const string &);
         string getName() const;
-        bool setSystems(const vector<System*> &);
         SystemsIterator getSystems();
-        bool setFlows(const vector<Flow*> &);
         FlowsIterator getFlows();
 
         
