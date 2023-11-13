@@ -1,4 +1,0 @@
-<map id="FlowExponencial" name="FlowExponencial">
-<area shape="rect" id="node1" title="Class intended for testing that inherits from Flow and implements equation()" alt="" coords="5,292,173,413"/>
-<area shape="rect" id="node2" href="$classFlow.html" title="Abstract class that represents a Flow in the simulator of systems theory." alt="" coords="27,5,151,244"/>
-</map>

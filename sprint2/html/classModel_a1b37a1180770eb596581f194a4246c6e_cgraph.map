@@ -1,5 +1,0 @@
-<map id="Model::run" name="Model::run">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,96,57"/>
-<area shape="rect" id="node2" href="$classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="a getter that returns the double value of the system associated" alt="" coords="144,5,280,32"/>
-<area shape="rect" id="node3" href="$classSystem.html#ae0718db83d469a9cc8ddeabbe21240d8" title="a setter that receives a reference to a double value and sets as the value of the system associated" alt="" coords="145,56,279,83"/>
-</map>

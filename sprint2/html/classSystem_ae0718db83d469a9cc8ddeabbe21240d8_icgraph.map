@@ -1,4 +1,0 @@
-<map id="System::setValue" name="System::setValue">
-<area shape="rect" id="node1" title="a setter that receives a reference to a double value and sets as the value of the system associated" alt="" coords="144,5,279,32"/>
-<area shape="rect" id="node2" href="$classModel.html#afc51736560e3b03ed87d44d5b5dde8cb" title="run the Model simulation from a specified initial time to a final time" alt="" coords="5,5,96,32"/>
-</map>
