@@ -1,0 +1,6 @@
+<map id="System::getName" name="System::getName">
+<area shape="rect" id="node1" title="a getter that returns the string name of the system associated" alt="" coords="209,56,348,83"/>
+<area shape="rect" id="node2" href="$classSystem.html#a174161ba4d070f6b11e6cb47c4e549c3" title="overloading the &quot;=&quot; operator that copies the attributes of one system to another" alt="" coords="11,5,156,32"/>
+<area shape="rect" id="node3" href="$classSystem.html#a2d96c33058438bea3c3d8a11fc76dda0" title="overloading the &quot;==&quot; operator which compares the equality between two systems" alt="" coords="5,56,161,83"/>
+<area shape="rect" id="node4" href="$classSystem.html#a3d165c3209aaefccbf180b3e4b286792" title="constructor that copies the name and the double value of an existing system to a newly created one" alt="" coords="19,107,147,133"/>
+</map>

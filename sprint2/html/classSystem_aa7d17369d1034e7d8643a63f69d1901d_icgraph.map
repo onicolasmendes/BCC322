@@ -1,0 +1,10 @@
+<map id="System::getValue" name="System::getValue">
+<area shape="rect" id="node1" title="a getter that returns the double value of the system associated" alt="" coords="251,157,387,184"/>
+<area shape="rect" id="node2" href="$classFlowExponencial.html#ab732e5e28813673afb439669cfa644f5" title="virtual method to compute the equation governing the FlowExponencial (0.01 * source System value)" alt="" coords="5,5,203,32"/>
+<area shape="rect" id="node3" href="$classFlowLogistica.html#a02f08d28916a69b199b6758bb8bcbef8" title="virtual method to compute the equation governing the FlowLogistica (0.01 * target System value * (1 &#45;..." alt="" coords="16,56,192,83"/>
+<area shape="rect" id="node4" href="$classFlowMaior.html#ab696f0362508a4b03bdab4acee688d3c" title="virtual method to compute the equation governing the FlowMaior (0.01 * source System value)" alt="" coords="27,107,181,133"/>
+<area shape="rect" id="node5" href="$classSystem.html#a174161ba4d070f6b11e6cb47c4e549c3" title="overloading the &quot;=&quot; operator that copies the attributes of one system to another" alt="" coords="31,157,177,184"/>
+<area shape="rect" id="node6" href="$classSystem.html#a2d96c33058438bea3c3d8a11fc76dda0" title="overloading the &quot;==&quot; operator which compares the equality between two systems" alt="" coords="26,208,182,235"/>
+<area shape="rect" id="node7" href="$classModel.html#afc51736560e3b03ed87d44d5b5dde8cb" title="run the Model simulation from a specified initial time to a final time" alt="" coords="59,259,149,285"/>
+<area shape="rect" id="node8" href="$classSystem.html#a3d165c3209aaefccbf180b3e4b286792" title="constructor that copies the name and the double value of an existing system to a newly created one" alt="" coords="40,309,168,336"/>
+</map>

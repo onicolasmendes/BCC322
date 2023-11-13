@@ -1,0 +1,5 @@
+<map id="FlowMaior::equation" name="FlowMaior::equation">
+<area shape="rect" id="node1" title="virtual method to compute the equation governing the FlowMaior (0.01 * source System value)" alt="" coords="5,31,160,57"/>
+<area shape="rect" id="node2" href="$classFlow.html#a1f3858f90d141807377c2640fb5dd0fc" title="a getter that returns a pointer to the system defined as source" alt="" coords="213,5,339,32"/>
+<area shape="rect" id="node3" href="$classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="a getter that returns the double value of the system associated" alt="" coords="208,56,344,83"/>
+</map>

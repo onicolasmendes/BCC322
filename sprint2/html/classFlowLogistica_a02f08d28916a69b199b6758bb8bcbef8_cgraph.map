@@ -1,0 +1,5 @@
+<map id="FlowLogistica::equation" name="FlowLogistica::equation">
+<area shape="rect" id="node1" title="virtual method to compute the equation governing the FlowLogistica (0.01 * target System value * (1 &#45;..." alt="" coords="5,31,181,57"/>
+<area shape="rect" id="node2" href="$classFlow.html#aff8a0f8ca8dc50d37c92ab7556e172b5" title="a getter that returns a pointer to the system defined as target" alt="" coords="237,5,358,32"/>
+<area shape="rect" id="node3" href="$classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="a getter that returns the double value of the system associated" alt="" coords="229,56,365,83"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classFlow.html" title="Abstract class that represents a Flow in the simulator of systems theory." alt="" coords="5,56,59,83"/>
+<area shape="rect" id="node2" href="$classFlowExponencial.html" title="Class intended for testing that inherits from Flow and implements equation()" alt="" coords="107,5,239,32"/>
+<area shape="rect" id="node3" href="$classFlowLogistica.html" title="Class intended for testing that inherits from Flow and implements equation()" alt="" coords="117,56,228,83"/>
+<area shape="rect" id="node4" href="$classFlowMaior.html" title="Class intended for testing that inherits from Flow and implements equation()" alt="" coords="127,107,218,133"/>
+</map>

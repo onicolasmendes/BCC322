@@ -1,0 +1,8 @@
+<map id="Flow::getSource" name="Flow::getSource">
+<area shape="rect" id="node1" title="a getter that returns a pointer to the system defined as source" alt="" coords="251,107,376,133"/>
+<area shape="rect" id="node2" href="$classFlowExponencial.html#ab732e5e28813673afb439669cfa644f5" title="virtual method to compute the equation governing the FlowExponencial (0.01 * source System value)" alt="" coords="5,5,203,32"/>
+<area shape="rect" id="node3" href="$classFlowMaior.html#ab696f0362508a4b03bdab4acee688d3c" title="virtual method to compute the equation governing the FlowMaior (0.01 * source System value)" alt="" coords="27,56,181,83"/>
+<area shape="rect" id="node4" href="$classFlow.html#af559e47422fbdeeff9b65a0756632cf9" title="constructor that copies the references of source and target systems of an existing flow to a newly cr..." alt="" coords="59,107,149,133"/>
+<area shape="rect" id="node5" href="$classFlow.html#ac5fae2ad1c3bf3c518240fe85bc2d4b2" title="overloading the &quot;=&quot; operator that copies the attributes of one flow to another" alt="" coords="41,157,167,184"/>
+<area shape="rect" id="node6" href="$classFlow.html#af088eb6463aca8a5385853d7a2209aa9" title="overloading the &quot;==&quot; operator which compares the equality between two flows" alt="" coords="35,208,173,235"/>
+</map>
