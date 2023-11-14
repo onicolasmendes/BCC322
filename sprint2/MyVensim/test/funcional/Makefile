@@ -17,4 +17,4 @@ FlowLogistica.o: Flows/FlowLogistica.cpp
 funcional_tests.o: funcional_tests.cpp
 	@g++ -c funcional_tests.cpp  -o ../../bin/funcional_tests.o -Wall
 run:
-	@./exe
+	@../../bin/exeFun
