@@ -1,0 +1,8 @@
+<map id="unit_Model_parameter_constructor" name="unit_Model_parameter_constructor">
+<area shape="rect" id="node1" title="Unit test for the parameterized constructor of ModelImpl." alt="" coords="5,99,175,141"/>
+<area shape="rect" id="node2" href="$classModel.html#a7e228e43346415de0d7226608ee1be4d" title="get an iterator to the beginning of the Flows vector (pure virtual)" alt="" coords="232,5,376,32"/>
+<area shape="rect" id="node3" href="$classModel.html#a17850a63542dd4c4994ae12ebf788969" title="get an iterator to the beginning of the Systems vector (pure virtual)" alt="" coords="223,56,385,83"/>
+<area shape="rect" id="node4" href="$classModel.html#ad2a8514c9ba8d4deb0f51ed9e22c694a" title="get an iterator to the end of the Flows vector (pure virtual)" alt="" coords="238,107,370,133"/>
+<area shape="rect" id="node5" href="$classModel.html#a60d5c46852dff7dffdc185f76eab28b1" title="get an iterator to the end of the Systems vector (pure virtual)" alt="" coords="229,157,379,184"/>
+<area shape="rect" id="node6" href="$classModel.html#aa5365ab557ae47efffdf14ba7a46dac8" title="Retrieve the name of the Model (pure virtual)." alt="" coords="239,208,369,235"/>
+</map>

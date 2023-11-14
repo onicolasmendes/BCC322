@@ -1,8 +1,8 @@
-<map id="/mnt/c/Users/Nicolas/Documents/codes/codes/BCC322/sprint2/MyVensim/src/Model.h" name="/mnt/c/Users/Nicolas/Documents/codes/codes/BCC322/sprint2/MyVensim/src/Model.h">
-<area shape="rect" id="node1" title="Model class header file." alt="" coords="37,5,235,76"/>
-<area shape="rect" id="node2" href="$Flow_8h.html" title="Flow class header file." alt="" coords="60,124,124,151"/>
+<map id="/mnt/c/Users/Nicolas Mendes/Documents/Códigos/BCC322/sprint2/MyVensim/src/Model.h" name="/mnt/c/Users/Nicolas Mendes/Documents/Códigos/BCC322/sprint2/MyVensim/src/Model.h">
+<area shape="rect" id="node1" title="Model Interface class header file." alt="" coords="31,5,241,76"/>
+<area shape="rect" id="node2" href="$Flow_8h.html" title="Flow Interface class header file." alt="" coords="60,124,124,151"/>
 <area shape="rect" id="node6" title=" " alt="" coords="149,124,211,151"/>
-<area shape="rect" id="node3" href="$System_8h.html" title="System class header file." alt="" coords="51,199,133,225"/>
+<area shape="rect" id="node3" href="$System_8h.html" title="System interface class header file." alt="" coords="51,199,133,225"/>
 <area shape="rect" id="node4" title=" " alt="" coords="5,273,85,300"/>
 <area shape="rect" id="node5" title=" " alt="" coords="109,273,168,300"/>
 </map>

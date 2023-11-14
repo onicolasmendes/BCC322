@@ -1,0 +1,5 @@
+<map id="unit_Flow_setSource" name="unit_Flow_setSource">
+<area shape="rect" id="node1" title="Unit test for the setSource function of FlowImpl." alt="" coords="5,31,161,57"/>
+<area shape="rect" id="node2" href="$classFlowImpl.html#a54940323059d2c4158f4146080841f32" title="a getter that returns a pointer to the system defined as source" alt="" coords="209,5,364,32"/>
+<area shape="rect" id="node3" href="$classFlowImpl.html#ac318088ce5a65ed70e89e983d4fb40c4" title="a setter that receives a pointer to the source system and defines it as an attribute" alt="" coords="209,56,364,83"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="unit_System_get_value" name="unit_System_get_value">
+<area shape="rect" id="node1" title="Unit test for the getValue function of the SystemImpl class." alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node2" href="$classSystemImpl.html#aa21b5abc7021e73715c06449fea9e08f" title="a getter that returns the double value of the system associated" alt="" coords="228,5,393,32"/>
+</map>

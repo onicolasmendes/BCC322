@@ -1,11 +1,11 @@
 all: FlowLogistica.o FlowExponencial.o FlowMaior.o mainFunc.o Flow.o Model.o System.o funcional_tests.o 
 	@g++ ../../bin/FlowLogistica.o ../../bin/Model.o ../../bin/System.o ../../bin/Flow.o ../../bin/FlowExponencial.o ../../bin/FlowMaior.o ../../bin/mainFunc.o ../../bin/funcional_tests.o -o ../../bin/exeFun -Wall
-System.o: ../../src/System.cpp
-	@g++ -c ../../src/System.cpp  -o ../../bin/System.o -Wall
-Model.o: ../../src/Model.cpp
-	@g++ -c ../../src/Model.cpp -o ../../bin/Model.o -Wall
-Flow.o: ../../src/Flow.cpp
-	@g++ -c ../../src/Flow.cpp  -o ../../bin/Flow.o -Wall
+System.o: ../../src/SystemImpl.cpp
+	@g++ -c ../../src/SystemImpl.cpp  -o ../../bin/System.o -Wall
+Model.o: ../../src/ModelImpl.cpp
+	@g++ -c ../../src/ModelImpl.cpp -o ../../bin/Model.o -Wall
+Flow.o: ../../src/FlowImpl.cpp
+	@g++ -c ../../src/FlowImpl.cpp  -o ../../bin/Flow.o -Wall
 mainFunc.o: main.cpp
 	@g++ -c main.cpp -o ../../bin/mainFunc.o -Wall
 FlowExponencial.o: Flows/FlowExponencial.cpp

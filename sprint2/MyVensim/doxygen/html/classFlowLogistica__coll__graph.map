@@ -1,7 +1,6 @@
 <map id="FlowLogistica" name="FlowLogistica">
-<area shape="rect" id="node1" title="Class intended for testing that inherits from Flow and implements equation()" alt="" coords="8,720,155,841"/>
-<area shape="rect" id="node2" href="$classFlow.html" title="Abstract class that represents a Flow in the simulator of systems theory." alt="" coords="19,447,143,671"/>
-<area shape="rect" id="node3" href="$classSystem.html" title="Class that represents a System in the simulator of systems theory." alt="" coords="19,145,143,369"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,5,72,83"/>
-<area shape="rect" id="node5" title=" " alt="" coords="96,5,155,83"/>
+<area shape="rect" id="node1" title="Class intended for testing that inherits from Flow and implements equation()" alt="" coords="55,507,201,628"/>
+<area shape="rect" id="node2" href="$classFlowImpl.html" title="Flow concrete class that implements the interface Flow and represents a Flow in systems theory." alt="" coords="66,233,190,457"/>
+<area shape="rect" id="node3" href="$classFlow.html" title="Interface that represents a Flow in the simulator of systems theory." alt="" coords="5,5,117,156"/>
+<area shape="rect" id="node4" href="$classSystem.html" title="Interface that represents a System in the simulator of systems theory." alt="" coords="141,13,248,149"/>
 </map>

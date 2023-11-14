@@ -4,7 +4,7 @@ FlowLogistica::FlowLogistica(){};
 
 FlowLogistica::~FlowLogistica(){};
 
-FlowLogistica::FlowLogistica(System *s, System *t) : Flow(s,t){};
+FlowLogistica::FlowLogistica(System *s, System *t) : FlowImpl(s,t){};
 
 double FlowLogistica::equation() const
 {

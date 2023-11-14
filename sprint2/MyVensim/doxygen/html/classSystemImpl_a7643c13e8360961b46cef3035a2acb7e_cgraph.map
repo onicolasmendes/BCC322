@@ -1,0 +1,5 @@
+<map id="SystemImpl::operator=" name="SystemImpl::operator=">
+<area shape="rect" id="node1" title="overloading the &quot;=&quot; operator that copies the attributes of one system to another" alt="" coords="5,31,180,57"/>
+<area shape="rect" id="node2" href="$classSystemImpl.html#a4407f82b905d49335f76c4a18fbfef8d" title="a getter that returns the string name of the system associated" alt="" coords="228,5,396,32"/>
+<area shape="rect" id="node3" href="$classSystemImpl.html#aa21b5abc7021e73715c06449fea9e08f" title="a getter that returns the double value of the system associated" alt="" coords="229,56,395,83"/>
+</map>

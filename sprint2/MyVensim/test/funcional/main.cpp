@@ -9,7 +9,6 @@ int main(int argc, char const *argv[])
     exponentialFuncionalTest();
     logisticalFuncionalTest();
     complexFuncionalTest();
-
     printf("Functional tests completed successfully\n");
 
     return 0;

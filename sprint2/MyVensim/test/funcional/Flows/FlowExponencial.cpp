@@ -4,7 +4,7 @@ FlowExponencial::FlowExponencial(){};
 
 FlowExponencial::~FlowExponencial(){};
 
-FlowExponencial::FlowExponencial(System *s, System *t) : Flow(s,t){};
+FlowExponencial::FlowExponencial(System *s, System *t) : FlowImpl(s,t){};
 
 
 double FlowExponencial::equation() const

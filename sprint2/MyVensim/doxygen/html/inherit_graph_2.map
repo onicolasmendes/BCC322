@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classSystem.html" title="Class that represents a System in the simulator of systems theory." alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node1" href="$classSystem.html" title="Interface that represents a System in the simulator of systems theory." alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node2" href="$classSystemImpl.html" title="System concrete class that implements the interface System and represents a System in systems theory." alt="" coords="124,5,224,32"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="unit_Flow_operator_equ" name="unit_Flow_operator_equ">
+<area shape="rect" id="node1" title="Unit test for the assignment operator of FlowImpl." alt="" coords="5,31,184,57"/>
+<area shape="rect" id="node2" href="$classFlowImpl.html#a54940323059d2c4158f4146080841f32" title="a getter that returns a pointer to the system defined as source" alt="" coords="232,5,387,32"/>
+<area shape="rect" id="node3" href="$classFlowImpl.html#ab07923bc230308cd949f627a92901bca" title="a getter that returns a pointer to the system defined as target" alt="" coords="234,56,385,83"/>
+</map>

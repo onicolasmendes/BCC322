@@ -1,0 +1,13 @@
+<map id="SystemImpl::getValue" name="SystemImpl::getValue">
+<area shape="rect" id="node1" title="a getter that returns the double value of the system associated" alt="" coords="588,183,753,209"/>
+<area shape="rect" id="node2" href="$classSystemImpl.html#a7643c13e8360961b46cef3035a2acb7e" title="overloading the &quot;=&quot; operator that copies the attributes of one system to another" alt="" coords="342,5,517,32"/>
+<area shape="rect" id="node3" href="$classSystemImpl.html#a79a43a3c9ec902e3205909edfcbf896c" title="overloading the &quot;==&quot; operator which compares the equality between two systems" alt="" coords="337,56,522,83"/>
+<area shape="rect" id="node4" href="$classSystemImpl.html#a6003ff0a862390cb3aeb1f21f9938d73" title="constructor that copies the name and the double value of an existing system to a newly created one" alt="" coords="336,107,523,133"/>
+<area shape="rect" id="node5" href="$unit__System_8cpp.html#ae5971bd60dcb6cbaaa158aea16987c07" title="Unit test for the copy constructor of the SystemImpl class." alt="" coords="319,157,540,184"/>
+<area shape="rect" id="node8" href="$unit__System_8cpp.html#a25b1a20bb246b16be2efa6c504916060" title="Unit test for the getValue function of the SystemImpl class." alt="" coords="342,208,517,235"/>
+<area shape="rect" id="node9" href="$unit__System_8cpp.html#a22010df892ed86d65368a86c31ed63cc" title="Unit test for the assignment operator of the SystemImpl class." alt="" coords="329,259,529,285"/>
+<area shape="rect" id="node10" href="$unit__System_8cpp.html#a1fe42d12cd9104001eb8882d476085f0" title="Unit test for the parameterized constructor of SystemImpl." alt="" coords="340,310,519,351"/>
+<area shape="rect" id="node11" href="$unit__System_8cpp.html#aef396415336b24be5fe5670f74828d88" title="Unit test for the setValue function of the SystemImpl class." alt="" coords="343,376,516,403"/>
+<area shape="rect" id="node6" href="$unit__System_8cpp.html#a508d8501edd77719732fca2f7985d316" title="Run all unit tests." alt="" coords="108,259,271,285"/>
+<area shape="rect" id="node7" href="$test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,259,60,285"/>
+</map>

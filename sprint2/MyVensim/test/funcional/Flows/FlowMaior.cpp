@@ -4,7 +4,7 @@ FlowMaior::FlowMaior(){};
 
 FlowMaior::~FlowMaior(){};
 
-FlowMaior::FlowMaior(System *s, System *t) : Flow(s,t){};
+FlowMaior::FlowMaior(System *s, System *t) : FlowImpl(s,t){};
 
 
 double FlowMaior::equation() const

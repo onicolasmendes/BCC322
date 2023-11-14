@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MyVensim: /mnt/c/Users/Nicolas/Documents/codes/codes/BCC322/sprint2/MyVensim/test/funcional/Flows/FlowLogistica.h Source File</title>
+<title>MyVensim: /mnt/c/Users/Nicolas Mendes/Documents/Códigos/BCC322/sprint2/MyVensim/test/funcional/Flows/FlowLogistica.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,9 +71,9 @@ $(function() {
 <div class="contents">
 <a href="FlowLogistica_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../../../src/Flow.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../../../src/FlowImpl.h&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classFlowLogistica.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classFlowLogistica.html">FlowLogistica</a> : <span class="keyword">public</span> <a class="code" href="classFlow.html">Flow</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classFlowLogistica.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classFlowLogistica.html">FlowLogistica</a> : <span class="keyword">public</span> <a class="code" href="classFlowImpl.html">FlowImpl</a></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classFlowLogistica.html#a6a69ff32a23eef951d8c81f72338a40b">FlowLogistica</a>();</div>
@@ -81,12 +81,12 @@ $(function() {
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classFlowLogistica.html#abd77556e4413513d5ad42c10d55902ee">~FlowLogistica</a>();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classFlowLogistica.html#a02f08d28916a69b199b6758bb8bcbef8">equation</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="ttc" id="aclassFlowImpl_html"><div class="ttname"><a href="classFlowImpl.html">FlowImpl</a></div><div class="ttdoc">Flow concrete class that implements the interface Flow and represents a Flow in systems theory.</div><div class="ttdef"><b>Definition:</b> FlowImpl.h:18</div></div>
 <div class="ttc" id="aclassFlowLogistica_html"><div class="ttname"><a href="classFlowLogistica.html">FlowLogistica</a></div><div class="ttdoc">Class intended for testing that inherits from Flow and implements equation()</div><div class="ttdef"><b>Definition:</b> FlowLogistica.h:15</div></div>
 <div class="ttc" id="aclassFlowLogistica_html_a02f08d28916a69b199b6758bb8bcbef8"><div class="ttname"><a href="classFlowLogistica.html#a02f08d28916a69b199b6758bb8bcbef8">FlowLogistica::equation</a></div><div class="ttdeci">virtual double equation() const</div><div class="ttdoc">virtual method to compute the equation governing the FlowLogistica (0.01 * target System value * (1 -...</div><div class="ttdef"><b>Definition:</b> FlowLogistica.cpp:9</div></div>
 <div class="ttc" id="aclassFlowLogistica_html_a6a69ff32a23eef951d8c81f72338a40b"><div class="ttname"><a href="classFlowLogistica.html#a6a69ff32a23eef951d8c81f72338a40b">FlowLogistica::FlowLogistica</a></div><div class="ttdeci">FlowLogistica()</div><div class="ttdoc">default constructor</div><div class="ttdef"><b>Definition:</b> FlowLogistica.cpp:3</div></div>
 <div class="ttc" id="aclassFlowLogistica_html_abd77556e4413513d5ad42c10d55902ee"><div class="ttname"><a href="classFlowLogistica.html#abd77556e4413513d5ad42c10d55902ee">FlowLogistica::~FlowLogistica</a></div><div class="ttdeci">virtual ~FlowLogistica()</div><div class="ttdoc">virtual destructor</div><div class="ttdef"><b>Definition:</b> FlowLogistica.cpp:5</div></div>
-<div class="ttc" id="aclassFlow_html"><div class="ttname"><a href="classFlow.html">Flow</a></div><div class="ttdoc">Abstract class that represents a Flow in the simulator of systems theory.</div><div class="ttdef"><b>Definition:</b> Flow.h:16</div></div>
-<div class="ttc" id="aclassSystem_html"><div class="ttname"><a href="classSystem.html">System</a></div><div class="ttdoc">Class that represents a System in the simulator of systems theory.</div><div class="ttdef"><b>Definition:</b> System.h:17</div></div>
+<div class="ttc" id="aclassSystem_html"><div class="ttname"><a href="classSystem.html">System</a></div><div class="ttdoc">Interface that represents a System in the simulator of systems theory.</div><div class="ttdef"><b>Definition:</b> System.h:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

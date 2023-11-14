@@ -1,0 +1,5 @@
+<map id="FlowImpl::FlowImpl" name="FlowImpl::FlowImpl">
+<area shape="rect" id="node1" title="constructor that copies the references of source and target systems of an existing flow to a newly cr..." alt="" coords="5,31,156,57"/>
+<area shape="rect" id="node2" href="$classFlowImpl.html#a54940323059d2c4158f4146080841f32" title="a getter that returns a pointer to the system defined as source" alt="" coords="204,5,359,32"/>
+<area shape="rect" id="node3" href="$classFlowImpl.html#ab07923bc230308cd949f627a92901bca" title="a getter that returns a pointer to the system defined as target" alt="" coords="206,56,357,83"/>
+</map>

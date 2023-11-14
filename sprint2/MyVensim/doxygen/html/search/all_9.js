@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['operator_3d_38',['operator=',['../classFlow.html#ac5fae2ad1c3bf3c518240fe85bc2d4b2',1,'Flow::operator=()'],['../classSystem.html#a174161ba4d070f6b11e6cb47c4e549c3',1,'System::operator=()']]],
-  ['operator_3d_3d_39',['operator==',['../classFlow.html#af088eb6463aca8a5385853d7a2209aa9',1,'Flow::operator==()'],['../classModel.html#a41e01a9134278ef9624a957c8fac9108',1,'Model::operator==()'],['../classSystem.html#a2d96c33058438bea3c3d8a11fc76dda0',1,'System::operator==()']]]
+  ['operator_3d_42',['operator=',['../classFlowImpl.html#add223af4e52fbbdafa772cd7d5b78681',1,'FlowImpl::operator=()'],['../classSystemImpl.html#a7643c13e8360961b46cef3035a2acb7e',1,'SystemImpl::operator=()']]],
+  ['operator_3d_3d_43',['operator==',['../classFlowImpl.html#a0fe57115324517d8105c5ffb0db1182b',1,'FlowImpl::operator==()'],['../classModelImpl.html#a8a43f0424c14ccd3d7afb672b3b2a01b',1,'ModelImpl::operator==()'],['../classSystemImpl.html#a79a43a3c9ec902e3205909edfcbf896c',1,'SystemImpl::operator==()']]]
 ];

@@ -1,0 +1,5 @@
+<map id="unit_Model_run" name="unit_Model_run">
+<area shape="rect" id="node1" title="Unit test for the run function of ModelImpl." alt="" coords="5,31,128,57"/>
+<area shape="rect" id="node2" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="176,5,271,32"/>
+<area shape="rect" id="node3" href="$classModel.html#a279af13c7eb8e6e1a4783686a8c8e1fa" title="Run the Model simulation from t_initial to t_final (pure virtual)." alt="" coords="178,56,269,83"/>
+</map>

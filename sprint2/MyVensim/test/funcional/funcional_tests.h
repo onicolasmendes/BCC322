@@ -1,5 +1,6 @@
 #pragma once
-#include "../../src/Model.h"
+#include "../../src/ModelImpl.h"
+#include "../../src/SystemImpl.h"
 #include "Flows/FlowExponencial.h"
 #include "Flows/FlowLogistica.h"
 #include "Flows/FlowMaior.h"
@@ -32,3 +33,4 @@ bool logisticalFuncionalTest();
  * @return true on success, false on failure
  */
 bool complexFuncionalTest();
+

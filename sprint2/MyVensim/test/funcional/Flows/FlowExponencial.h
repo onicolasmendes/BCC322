@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../../../src/Flow.h"
+#include "../../../src/FlowImpl.h"
 
 /**
  * @file FlowExponencial.h
@@ -11,7 +11,7 @@
  * @class FlowExponencial
  * @brief Class intended for testing that inherits from Flow and implements equation()
  */
-class FlowExponencial : public Flow
+class FlowExponencial : public FlowImpl
 {
 public:
     /**

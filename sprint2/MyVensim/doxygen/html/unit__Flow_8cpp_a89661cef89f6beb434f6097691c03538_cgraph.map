@@ -1,0 +1,5 @@
+<map id="unit_Flow_getTarget" name="unit_Flow_getTarget">
+<area shape="rect" id="node1" title="Unit test for the getTarget function of FlowImpl." alt="" coords="5,31,159,57"/>
+<area shape="rect" id="node2" href="$classFlowImpl.html#ab07923bc230308cd949f627a92901bca" title="a getter that returns a pointer to the system defined as target" alt="" coords="207,5,357,32"/>
+<area shape="rect" id="node3" href="$classFlowImpl.html#aeed8724a62bf161be11703ebf9582fcc" title="a setter that receives a pointer to the target system and defines it as an attribute" alt="" coords="207,56,357,83"/>
+</map>

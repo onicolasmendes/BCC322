@@ -1,0 +1,5 @@
+<map id="unit_System_set_value" name="unit_System_set_value">
+<area shape="rect" id="node1" title="Unit test for the setValue function of the SystemImpl class." alt="" coords="5,31,179,57"/>
+<area shape="rect" id="node2" href="$classSystemImpl.html#aa21b5abc7021e73715c06449fea9e08f" title="a getter that returns the double value of the system associated" alt="" coords="227,5,392,32"/>
+<area shape="rect" id="node3" href="$classSystemImpl.html#ae3ce26b948277b94f30333ce01fd20c7" title="a setter that receives a reference to a double value and sets as the value of the system associated" alt="" coords="227,56,391,83"/>
+</map>

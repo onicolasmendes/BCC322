@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['setname_107',['setName',['../classModel.html#abb26f39e029ab5b0bf08ec48e1b741f6',1,'Model::setName()'],['../classSystem.html#abd2f66f7db93704e6d5ed7b1954dc2b4',1,'System::setName()']]],
-  ['setsource_108',['setSource',['../classFlow.html#adf0c62a2efb7f4733e4c289bfb3d1dc3',1,'Flow']]],
-  ['settarget_109',['setTarget',['../classFlow.html#a1b121cdd285711d4da60f28e20aa8c67',1,'Flow']]],
-  ['setvalue_110',['setValue',['../classSystem.html#ae0718db83d469a9cc8ddeabbe21240d8',1,'System']]],
-  ['system_111',['System',['../classSystem.html#ae317936c9bcf1374d61745572e0f2f8a',1,'System::System()'],['../classSystem.html#a1efa78f83c6bde4fea9c32371c5410e7',1,'System::System(const string &amp;n)'],['../classSystem.html#aab130f0ea848c9c8e9004f6c5f7af862',1,'System::System(const string &amp;n, const double &amp;v)'],['../classSystem.html#a3d165c3209aaefccbf180b3e4b286792',1,'System::System(System &amp;s)']]]
+  ['setname_181',['setName',['../classModel.html#aafe5591bcbf5dba1efe78367586f3688',1,'Model::setName()'],['../classModelImpl.html#a64b1277b63d6b3526dcf13ada1e1bef5',1,'ModelImpl::setName()'],['../classSystem.html#accd54eafed94612f1f747d881e9e0d5b',1,'System::setName()'],['../classSystemImpl.html#ae7be66f263f6749519bcd0cf42be7b8c',1,'SystemImpl::setName()']]],
+  ['setsource_182',['setSource',['../classFlow.html#a41811492f9e7b7677b62b2455a5210f7',1,'Flow::setSource()'],['../classFlowImpl.html#ac318088ce5a65ed70e89e983d4fb40c4',1,'FlowImpl::setSource()']]],
+  ['settarget_183',['setTarget',['../classFlow.html#a81d64dafbe956fda069011f6b3510b1b',1,'Flow::setTarget()'],['../classFlowImpl.html#aeed8724a62bf161be11703ebf9582fcc',1,'FlowImpl::setTarget()']]],
+  ['setvalue_184',['setValue',['../classSystem.html#ab891c78af402cf8ff4673274a4a718a7',1,'System::setValue()'],['../classSystemImpl.html#ae3ce26b948277b94f30333ce01fd20c7',1,'SystemImpl::setValue(const double &amp;v)']]],
+  ['systemimpl_185',['SystemImpl',['../classSystemImpl.html#a6e8460199ac54949b08ecb315fce168b',1,'SystemImpl::SystemImpl()'],['../classSystemImpl.html#a671edc56000bb0f67f74559c443719da',1,'SystemImpl::SystemImpl(const string &amp;n)'],['../classSystemImpl.html#a6bbe100275051936de98c524a3e9a624',1,'SystemImpl::SystemImpl(const string &amp;n, const double &amp;v)'],['../classSystemImpl.html#a6003ff0a862390cb3aeb1f21f9938d73',1,'SystemImpl::SystemImpl(SystemImpl &amp;s)']]]
 ];

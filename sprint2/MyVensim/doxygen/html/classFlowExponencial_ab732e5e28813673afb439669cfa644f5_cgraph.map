@@ -1,5 +1,5 @@
 <map id="FlowExponencial::equation" name="FlowExponencial::equation">
 <area shape="rect" id="node1" title="virtual method to compute the equation governing the FlowExponencial (0.01 * source System value)" alt="" coords="5,31,203,57"/>
-<area shape="rect" id="node2" href="$classFlow.html#a1f3858f90d141807377c2640fb5dd0fc" title="a getter that returns a pointer to the system defined as source" alt="" coords="256,5,381,32"/>
-<area shape="rect" id="node3" href="$classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="a getter that returns the double value of the system associated" alt="" coords="251,56,387,83"/>
+<area shape="rect" id="node2" href="$classFlowImpl.html#a54940323059d2c4158f4146080841f32" title="a getter that returns a pointer to the system defined as source" alt="" coords="251,5,405,32"/>
+<area shape="rect" id="node3" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Retrieve the value of the System (pure virtual)." alt="" coords="260,56,396,83"/>
 </map>
