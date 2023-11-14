@@ -1,0 +1,14 @@
+<map id="System::getValue" name="System::getValue">
+<area shape="rect" id="node1" title="a getter that returns the double value of the system associated" alt="" coords="588,228,724,255"/>
+<area shape="rect" id="node2" href="$funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="118,26,285,52"/>
+<area shape="rect" id="node4" href="$classFlowExponencial.html#ab732e5e28813673afb439669cfa644f5" title="virtual method to compute the equation governing the FlowExponencial (0.01 * source System value)" alt="" coords="343,203,540,230"/>
+<area shape="rect" id="node5" href="$classFlowLogistica.html#a02f08d28916a69b199b6758bb8bcbef8" title="virtual method to compute the equation governing the FlowLogistica (0.01 * target System value * (1 &#45;..." alt="" coords="353,254,529,280"/>
+<area shape="rect" id="node6" href="$classFlowMaior.html#ab696f0362508a4b03bdab4acee688d3c" title="virtual method to compute the equation governing the FlowMaior (0.01 * source System value)" alt="" coords="364,304,519,331"/>
+<area shape="rect" id="node7" href="$funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="108,76,295,103"/>
+<area shape="rect" id="node8" href="$funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="117,127,286,154"/>
+<area shape="rect" id="node9" href="$classSystem.html#a174161ba4d070f6b11e6cb47c4e549c3" title="overloading the &quot;=&quot; operator that copies the attributes of one system to another" alt="" coords="369,355,514,382"/>
+<area shape="rect" id="node10" href="$classSystem.html#a2d96c33058438bea3c3d8a11fc76dda0" title="overloading the &quot;==&quot; operator which compares the equality between two systems" alt="" coords="363,406,519,432"/>
+<area shape="rect" id="node11" href="$classModel.html#afc51736560e3b03ed87d44d5b5dde8cb" title="run the Model simulation from a specified initial time to a final time" alt="" coords="396,51,487,78"/>
+<area shape="rect" id="node12" href="$classSystem.html#a3d165c3209aaefccbf180b3e4b286792" title="constructor that copies the name and the double value of an existing system to a newly created one" alt="" coords="377,456,505,483"/>
+<area shape="rect" id="node3" href="$test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,76,60,103"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="logisticalFuncionalTest" name="logisticalFuncionalTest">
+<area shape="rect" id="node1" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="5,56,175,83"/>
+<area shape="rect" id="node2" href="$classModel.html#a2a340ed8a558aedcfbf7c1bdaff90c56" title="add a System to the Model" alt="" coords="223,5,317,32"/>
+<area shape="rect" id="node3" href="$classSystem.html#aa7d17369d1034e7d8643a63f69d1901d" title="a getter that returns the double value of the system associated" alt="" coords="365,56,501,83"/>
+<area shape="rect" id="node4" href="$classModel.html#afc51736560e3b03ed87d44d5b5dde8cb" title="run the Model simulation from a specified initial time to a final time" alt="" coords="225,107,315,133"/>
+<area shape="rect" id="node5" href="$classSystem.html#ae0718db83d469a9cc8ddeabbe21240d8" title="a setter that receives a reference to a double value and sets as the value of the system associated" alt="" coords="366,107,501,133"/>
+</map>
