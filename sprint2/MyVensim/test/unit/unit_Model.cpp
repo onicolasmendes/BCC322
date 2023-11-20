@@ -176,7 +176,6 @@ void unit_Model_getName()
 }
 
 
-
 void unit_Model_operator_equal()
 {
 
@@ -192,8 +191,14 @@ void unit_Model_operator_equal()
 
     assert(*static_cast<ModelImpl *>(model1) == *static_cast<ModelImpl *>(model2));
 
+    ModelImpl *model3 = new ModelImpl();
+    ModelImpl *model4 = model3;
+
+    assert(model3 == model4);
+
     delete model1;
     delete model2;
+    delete model3;
 }
 
 void unit_Model_beginFlows()
@@ -207,7 +212,7 @@ void unit_Model_beginFlows()
 
     ModelImpl::FlowsIterator beginIterator = model->beginFlows();
 
-    assert(beginIterator == model->beginFlows());
+    assert(distance(beginIterator, model->endFlows()) == 2);
 
     delete model;
 }
@@ -223,7 +228,7 @@ void unit_Model_endFlows()
 
     ModelImpl::FlowsIterator endIterator = model->endFlows();
 
-    assert(endIterator == model->endFlows());
+    assert(distance(model->beginFlows(), endIterator) == 2);
 
     delete model;
 }
@@ -239,7 +244,7 @@ void unit_Model_beginSystems()
 
     ModelImpl::SystemsIterator beginIterator = model->beginSystems();
 
-    assert(beginIterator == model->beginSystems());
+    assert(distance(beginIterator, model->endSystems()) == 2);
 
     delete model;
 }
@@ -255,7 +260,7 @@ void unit_Model_endSystems()
 
     ModelImpl::SystemsIterator endIterator = model->endSystems();
 
-    assert(endIterator == model->endSystems());
+    assert(distance(model->beginSystems(), endIterator) == 2);
 
     delete model;
 }

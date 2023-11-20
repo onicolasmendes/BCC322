@@ -11,7 +11,7 @@
 <area shape="rect" id="node13" href="$unit__Model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Unit test for the endSystems function of ModelImpl." alt="" coords="323,411,505,437"/>
 <area shape="rect" id="node14" href="$unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="334,461,494,488"/>
 <area shape="rect" id="node15" href="$unit__Model_8cpp.html#ad8771238ee4566fc080eb131d72a16c1" title="Unit test for the getSystems function of ModelImpl." alt="" coords="325,512,503,539"/>
-<area shape="rect" id="node16" href="$unit__Model_8cpp.html#a5fc81d7bb4d5cc5937fb70f06b59c58e" title="Unit test for the equality operator of ModelImpl." alt="" coords="336,563,492,605"/>
+<area shape="rect" id="node16" href="$unit__Model_8cpp.html#a5fc81d7bb4d5cc5937fb70f06b59c58e" title="Verifies the operator= function of ModelImpl." alt="" coords="336,563,492,605"/>
 <area shape="rect" id="node17" href="$unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="321,629,507,656"/>
 <area shape="rect" id="node18" href="$unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="311,680,517,707"/>
 <area shape="rect" id="node19" href="$unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title="Unit test for the run function of ModelImpl." alt="" coords="353,731,475,757"/>

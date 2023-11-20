@@ -60,17 +60,17 @@ void unit_System_set_value();
  */
 void unit_System_get_value();
 /**
- * @brief Unit test for the assignment operator of the SystemImpl class.
- *
- * This test creates two SystemImpl objects, assigns the values of the first object to the second
- * using the assignment operator, and verifies if the values are correctly updated.
- */
-void unit_System_operator_equi();
-/**
  * @brief Unit test for the equality operator of the SystemImpl class.
  *
  * This test creates two SystemImpl objects with equal values and checks if the equality operator
  * returns true for these objects.
+ */
+void unit_System_operator_equi();
+/**
+ * @brief Unit test for the assignment operator of the SystemImpl class.
+ *
+ * This test creates two SystemImpl objects, assigns the values of the first object to the second
+ * using the assignment operator, and verifies if the values are correctly updated.
  */
 void unit_System_operator_copy();
 /**

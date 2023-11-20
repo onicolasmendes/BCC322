@@ -68,7 +68,7 @@ void unit_Model_setName() ;
  */
 void unit_Model_getName() ;
 /**
- * @brief Unit test for the equality operator of ModelImpl.
+ * @brief Verifies the operator= function of ModelImpl.
  *
  * This test creates two ModelImpl objects with equal properties and checks if the equality operator returns true for these objects.
  */

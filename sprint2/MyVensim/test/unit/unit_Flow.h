@@ -57,7 +57,7 @@ void unit_Flow_setTarget();
  */
 void unit_Flow_getTarget();
 /**
- * @brief Unit test for the assignment operator of FlowImpl.
+ * @brief Verifies the operator= function of  FlowImpl.
  *
  * This test creates two FlowImpl objects and assigns the values of the first object to the second using the assignment operator.
  * It verifies if the values of the second object are correctly updated.

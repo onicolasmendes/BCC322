@@ -1,5 +1,5 @@
 <map id="FlowImpl::getTarget" name="FlowImpl::getTarget">
-<area shape="rect" id="node1" title="a getter that returns a pointer to the system defined as target" alt="" coords="568,233,719,260"/>
+<area shape="rect" id="node1" title="a getter that returns a pointer to the system defined as target" alt="" coords="568,208,719,235"/>
 <area shape="rect" id="node2" href="$classFlowLogistica.html#a02f08d28916a69b199b6758bb8bcbef8" title="virtual method to compute the equation governing the FlowLogistica (0.01 * target System value * (1 &#45;..." alt="" coords="323,5,499,32"/>
 <area shape="rect" id="node3" href="$classFlowImpl.html#aef142b4af715fb4f2f3460c7104804e8" title="constructor that copies the references of source and target systems of an existing flow to a newly cr..." alt="" coords="335,56,486,83"/>
 <area shape="rect" id="node4" href="$classFlowImpl.html#add223af4e52fbbdafa772cd7d5b78681" title="overloading the &quot;=&quot; operator that copies the attributes of one flow to another" alt="" coords="333,107,489,133"/>
@@ -7,9 +7,8 @@
 <area shape="rect" id="node6" href="$unit__Flow_8cpp.html#a552e52c045c91bbb5ce653952b7b2075" title="Unit test for the copy constructor of FlowImpl." alt="" coords="309,208,512,235"/>
 <area shape="rect" id="node9" href="$unit__Flow_8cpp.html#a83beb3591832793fa9ef96cb75c6a813" title="Unit test for the default constructor of FlowImpl." alt="" coords="301,259,520,285"/>
 <area shape="rect" id="node10" href="$unit__Flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title="Unit test for the getTarget function of FlowImpl." alt="" coords="334,309,487,336"/>
-<area shape="rect" id="node11" href="$unit__Flow_8cpp.html#a8c467f0fb2e8d58a64975e02d6339e0c" title="Unit test for the assignment operator of FlowImpl." alt="" coords="321,360,500,387"/>
-<area shape="rect" id="node12" href="$unit__Flow_8cpp.html#a61a6ad5465da153b714eab07abd055a9" title="Unit test for the parameterized constructor of FlowImpl." alt="" coords="331,411,491,453"/>
-<area shape="rect" id="node13" href="$unit__Flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Unit test for the setTarget function of FlowImpl." alt="" coords="335,477,487,504"/>
-<area shape="rect" id="node7" href="$unit__Flow_8cpp.html#a6683c1fa1a8445fa330116af20af24dc" title="Run all unit tests." alt="" coords="108,335,253,361"/>
-<area shape="rect" id="node8" href="$test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,335,60,361"/>
+<area shape="rect" id="node11" href="$unit__Flow_8cpp.html#a61a6ad5465da153b714eab07abd055a9" title="Unit test for the parameterized constructor of FlowImpl." alt="" coords="331,361,491,402"/>
+<area shape="rect" id="node12" href="$unit__Flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Unit test for the setTarget function of FlowImpl." alt="" coords="335,427,487,453"/>
+<area shape="rect" id="node7" href="$unit__Flow_8cpp.html#a6683c1fa1a8445fa330116af20af24dc" title="Run all unit tests." alt="" coords="108,309,253,336"/>
+<area shape="rect" id="node8" href="$test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,309,60,336"/>
 </map>

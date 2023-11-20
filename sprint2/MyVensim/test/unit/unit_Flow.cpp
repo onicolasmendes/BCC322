@@ -112,11 +112,16 @@ void unit_Flow_operator_equ()
 
     emptyFlow = originalFlow;
 
-    assert(emptyFlow.getSource() == sourceSystem1);
-    assert(emptyFlow.getTarget() == targetSystem1);
+    assert(emptyFlow == originalFlow);
+
+    FlowExponencial *flow1 = new FlowExponencial();
+    FlowExponencial *flow2 = flow1;
+
+    assert(flow1 == flow2);
 
     delete sourceSystem1;
     delete targetSystem1;
+    delete flow1;
 }
 
 void unit_Flow_operator_copy()

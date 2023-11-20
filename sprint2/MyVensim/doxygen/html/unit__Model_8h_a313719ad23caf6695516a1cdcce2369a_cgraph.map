@@ -1,5 +1,6 @@
 <map id="unit_Model_beginFlows" name="unit_Model_beginFlows">
-<area shape="rect" id="node1" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="5,31,180,57"/>
+<area shape="rect" id="node1" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="5,56,180,83"/>
 <area shape="rect" id="node2" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="253,5,347,32"/>
 <area shape="rect" id="node3" href="$classModel.html#a7e228e43346415de0d7226608ee1be4d" title="get an iterator to the beginning of the Flows vector (pure virtual)" alt="" coords="228,56,372,83"/>
+<area shape="rect" id="node4" href="$classModel.html#ad2a8514c9ba8d4deb0f51ed9e22c694a" title="get an iterator to the end of the Flows vector (pure virtual)" alt="" coords="234,107,366,133"/>
 </map>

@@ -56,20 +56,26 @@ void unit_System_get_value()
     assert(system.getValue() == 21);
 }
 
-void unit_System_operator_equi()
+void unit_System_operator_copy()
 {
     SystemImpl system1("Original", 10);
     SystemImpl system2;
     system2 = system1;
-    assert(system2.getName() == "Original");
-    assert(system2.getValue() == 10);
+    assert(system1 == system2);
 }
 
-void unit_System_operator_copy()
+void unit_System_operator_equi()
 {
     SystemImpl system1("EqualTest", 5);
     SystemImpl system2("EqualTest", 5);
     assert(system1 == system2);
+
+    SystemImpl *system3 = new SystemImpl();
+    SystemImpl *system4 = system3;
+
+    assert(system3 == system4);
+
+    delete system3; 
 }
 
 void run_unit_test_System()
