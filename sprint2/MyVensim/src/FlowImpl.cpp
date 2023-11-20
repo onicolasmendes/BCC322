@@ -2,7 +2,10 @@
 
 using namespace std;
 
-FlowImpl::FlowImpl(){};
+FlowImpl::FlowImpl(){
+    source = nullptr;
+    target = nullptr;
+}
 
 FlowImpl::~FlowImpl(){};
 

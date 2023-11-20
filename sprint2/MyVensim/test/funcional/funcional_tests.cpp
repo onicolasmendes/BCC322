@@ -17,10 +17,10 @@ bool exponentialFuncionalTest()
     assert(round(fabs(pop1->getValue() - 36.6032) * 10000) < 0.0001);
     assert(round(fabs(pop2->getValue() - 63.3968) * 10000) < 0.0001);
 
-    delete (pop1);
-    delete (pop2);
-    delete (m1);
-    delete (expo);
+    delete pop1;
+    delete pop2;
+    delete m1;
+    delete expo;
 
     return true;
 }
@@ -39,10 +39,10 @@ bool logisticalFuncionalTest()
     assert(round(fabs(p1->getValue() - 88.2167) * 10000) < 0.0001);
     assert(round(fabs(p2->getValue() - 21.7833) * 10000) < 0.0001);
 
-    delete (p1);
-    delete (p2);
-    delete (m2);
-    delete (log);
+    delete p1;
+    delete p2;
+    delete m2;
+    delete log;
 
     return true;
 }
@@ -80,18 +80,18 @@ bool complexFuncionalTest()
     assert(round(fabs(q4->getValue() - 56.1728) * 10000) < 0.0001);
     assert(round(fabs(q5->getValue() - 16.4612) * 10000) < 0.0001);
 
-    delete(q1);
-    delete(q2);
-    delete(q3);
-    delete(q4);
-    delete(q5);
-    delete(f);
-    delete(g);
-    delete(u);
-    delete(v);
-    delete(t);
-    delete(r);
-    delete(m3);
+    delete q1;
+    delete q2;
+    delete q3;
+    delete q4;
+    delete q5;
+    delete f;
+    delete g;
+    delete u;
+    delete v;
+    delete t;
+    delete r;
+    delete m3;
 
     return true;
 }
