@@ -269,14 +269,6 @@ void unit_Model_run()
 {
     Model *model = new ModelImpl();
 
-    System *sourceSystem = new SystemImpl("SourceSystem", 100.0);
-    System *targetSystem = new SystemImpl("TargetSystem", 50.0);
-    Flow *exponentialFlow = new FlowExponencial(sourceSystem, targetSystem);
-
-    model->add(sourceSystem);
-    model->add(targetSystem);
-    model->add(exponentialFlow);
-
     double t_inicial = 0.0;
     double t_final = 100.0;
 

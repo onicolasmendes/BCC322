@@ -1,5 +1,5 @@
 <map id="Model::add" name="Model::add">
-<area shape="rect" id="node1" title="Add a System to the Model (pure virtual)." alt="" coords="565,360,660,387"/>
+<area shape="rect" id="node1" title="Add a System to the Model (pure virtual)." alt="" coords="565,335,660,361"/>
 <area shape="rect" id="node2" href="$funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="331,5,497,32"/>
 <area shape="rect" id="node4" href="$funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="321,56,507,83"/>
 <area shape="rect" id="node5" href="$funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="329,107,499,133"/>
@@ -14,8 +14,7 @@
 <area shape="rect" id="node16" href="$unit__Model_8cpp.html#a5fc81d7bb4d5cc5937fb70f06b59c58e" title="Verifies the operator= function of ModelImpl." alt="" coords="336,563,492,605"/>
 <area shape="rect" id="node17" href="$unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="321,629,507,656"/>
 <area shape="rect" id="node18" href="$unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="311,680,517,707"/>
-<area shape="rect" id="node19" href="$unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title="Unit test for the run function of ModelImpl." alt="" coords="353,731,475,757"/>
 <area shape="rect" id="node3" href="$test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,56,213,83"/>
-<area shape="rect" id="node7" href="$unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,436,263,463"/>
-<area shape="rect" id="node8" href="$test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,436,60,463"/>
+<area shape="rect" id="node7" href="$unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,411,263,437"/>
+<area shape="rect" id="node8" href="$test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,411,60,437"/>
 </map>

@@ -1,52 +1,52 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,971,60,997"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,985,60,1012"/>
 <area shape="rect" id="node2" href="$unit__Flow_8cpp.html#a6683c1fa1a8445fa330116af20af24dc" title="Run all unit tests." alt="" coords="117,275,262,301"/>
-<area shape="rect" id="node17" href="$unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="112,971,267,997"/>
-<area shape="rect" id="node40" href="$unit__System_8cpp.html#a508d8501edd77719732fca2f7985d316" title="Run all unit tests." alt="" coords="108,1707,271,1733"/>
-<area shape="rect" id="node3" href="$unit__Flow_8cpp.html#a552e52c045c91bbb5ce653952b7b2075" title="Unit test for the copy constructor of FlowImpl." alt="" coords="328,275,531,301"/>
-<area shape="rect" id="node6" href="$unit__Flow_8cpp.html#a83beb3591832793fa9ef96cb75c6a813" title="Unit test for the default constructor of FlowImpl." alt="" coords="320,325,539,352"/>
-<area shape="rect" id="node7" href="$unit__Flow_8cpp.html#a5d5063d01336bb21034b1c46dbdb740a" title="Unit test for the destructor of FlowImpl." alt="" coords="350,427,509,453"/>
-<area shape="rect" id="node8" href="$unit__Flow_8cpp.html#a0dc76658e06597697628386d69327367" title="Unit test for the getSource function of FlowImpl." alt="" coords="351,376,508,403"/>
-<area shape="rect" id="node10" href="$unit__Flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title="Unit test for the getTarget function of FlowImpl." alt="" coords="353,157,506,184"/>
-<area shape="rect" id="node12" href="$unit__Flow_8cpp.html#a73a13a8018ae4f9231498b37ad354675" title="Unit test for the equality operator of FlowImpl." alt="" coords="337,56,522,83"/>
-<area shape="rect" id="node13" href="$unit__Flow_8cpp.html#a8c467f0fb2e8d58a64975e02d6339e0c" title="Verifies the operator= function of FlowImpl." alt="" coords="340,107,519,133"/>
-<area shape="rect" id="node14" href="$unit__Flow_8cpp.html#a61a6ad5465da153b714eab07abd055a9" title="Unit test for the parameterized constructor of FlowImpl." alt="" coords="349,209,509,250"/>
-<area shape="rect" id="node15" href="$unit__Flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="Unit test for the setSource function of FlowImpl." alt="" coords="351,477,507,504"/>
-<area shape="rect" id="node16" href="$unit__Flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Unit test for the setTarget function of FlowImpl." alt="" coords="353,5,505,32"/>
-<area shape="rect" id="node4" href="$classFlowImpl.html#a54940323059d2c4158f4146080841f32" title="a getter that returns a pointer to the system defined as source" alt="" coords="592,325,747,352"/>
-<area shape="rect" id="node5" href="$classFlowImpl.html#ab07923bc230308cd949f627a92901bca" title="a getter that returns a pointer to the system defined as target" alt="" coords="594,216,745,243"/>
-<area shape="rect" id="node9" href="$classFlowImpl.html#ac318088ce5a65ed70e89e983d4fb40c4" title="a setter that receives a pointer to the source system and defines it as an attribute" alt="" coords="592,427,747,453"/>
-<area shape="rect" id="node11" href="$classFlowImpl.html#aeed8724a62bf161be11703ebf9582fcc" title="a setter that receives a pointer to the target system and defines it as an attribute" alt="" coords="594,81,745,108"/>
-<area shape="rect" id="node18" href="$unit__Model_8cpp.html#aa4f8c7bb8b3cb64a0b1959bb0eb01b9a" title="Unit test for the add flow function of ModelImpl." alt="" coords="350,1387,509,1413"/>
-<area shape="rect" id="node22" href="$unit__Model_8cpp.html#ab3a10b6e696b6a91d6c33dcbb18aceb4" title="Unit test for the add system function of ModelImpl." alt="" coords="339,680,519,707"/>
-<area shape="rect" id="node24" href="$unit__Model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="342,1336,517,1363"/>
-<area shape="rect" id="node25" href="$unit__Model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Unit test for the beginSystems function of ModelImpl." alt="" coords="333,528,526,555"/>
-<area shape="rect" id="node26" href="$unit__Model_8cpp.html#a7760b8956819b3f28c08ca230a7e7aad" title="Unit test for the default constructor of ModelImpl." alt="" coords="356,1270,503,1311"/>
-<area shape="rect" id="node27" href="$unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="346,579,513,605"/>
-<area shape="rect" id="node28" href="$unit__Model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Unit test for the endFlows function of ModelImpl." alt="" coords="348,1437,511,1464"/>
-<area shape="rect" id="node29" href="$unit__Model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Unit test for the endSystems function of ModelImpl." alt="" coords="339,731,520,757"/>
-<area shape="rect" id="node30" href="$unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="328,1117,531,1144"/>
-<area shape="rect" id="node31" href="$unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="349,1000,509,1027"/>
-<area shape="rect" id="node32" href="$unit__Model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="Unit test for the getName function of ModelImpl." alt="" coords="349,832,510,859"/>
-<area shape="rect" id="node33" href="$unit__Model_8cpp.html#ad8771238ee4566fc080eb131d72a16c1" title="Unit test for the getSystems function of ModelImpl." alt="" coords="340,629,519,656"/>
-<area shape="rect" id="node34" href="$unit__Model_8cpp.html#a5fc81d7bb4d5cc5937fb70f06b59c58e" title="Verifies the operator= function of ModelImpl." alt="" coords="351,934,507,975"/>
-<area shape="rect" id="node35" href="$unit__Model_8cpp.html#a1524ea94351f1b22d8f7b78e29cd35e5" title="Unit test for the parameterized constructor of ModelImpl." alt="" coords="345,1051,514,1093"/>
-<area shape="rect" id="node36" href="$unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="337,1168,522,1195"/>
-<area shape="rect" id="node37" href="$unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="326,781,533,808"/>
-<area shape="rect" id="node38" href="$unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title="Unit test for the run function of ModelImpl." alt="" coords="368,883,491,909"/>
-<area shape="rect" id="node39" href="$unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="Unit test for the setName function of ModelImpl." alt="" coords="349,1219,509,1245"/>
-<area shape="rect" id="node19" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="622,912,717,939"/>
-<area shape="rect" id="node20" href="$classModel.html#a7e228e43346415de0d7226608ee1be4d" title="get an iterator to the beginning of the Flows vector (pure virtual)" alt="" coords="597,1197,741,1224"/>
-<area shape="rect" id="node21" href="$classModel.html#ad2a8514c9ba8d4deb0f51ed9e22c694a" title="get an iterator to the end of the Flows vector (pure virtual)" alt="" coords="603,1277,735,1304"/>
-<area shape="rect" id="node23" href="$classModel.html#a17850a63542dd4c4994ae12ebf788969" title="get an iterator to the beginning of the Systems vector (pure virtual)" alt="" coords="588,756,751,783"/>
-<area shape="rect" id="node41" href="$unit__System_8cpp.html#ae5971bd60dcb6cbaaa158aea16987c07" title="Unit test for the copy constructor of the SystemImpl class." alt="" coords="319,1808,540,1835"/>
-<area shape="rect" id="node42" href="$unit__System_8cpp.html#ae87349b7530c0b05a6a4d977645e7e11" title="Unit test for the default constructor of SystemImpl." alt="" coords="351,1859,507,1901"/>
-<area shape="rect" id="node43" href="$unit__System_8cpp.html#a021603784a12638ed34bc8690c832dfc" title="Unit test for the destructor of the SystemImpl class." alt="" coords="341,1925,517,1952"/>
-<area shape="rect" id="node44" href="$unit__System_8cpp.html#a45a95969c0acca92ef4595c4915639b2" title="Unit test for the getName function of the SystemImpl class." alt="" coords="342,1976,517,2003"/>
-<area shape="rect" id="node45" href="$unit__System_8cpp.html#a25b1a20bb246b16be2efa6c504916060" title="Unit test for the getValue function of the SystemImpl class." alt="" coords="342,1488,517,1515"/>
-<area shape="rect" id="node46" href="$unit__System_8cpp.html#a9a9321f47680d67a990706e0fab2fb85" title="Unit test for the assignment operator of the SystemImpl class." alt="" coords="328,1539,531,1565"/>
-<area shape="rect" id="node47" href="$unit__System_8cpp.html#a22010df892ed86d65368a86c31ed63cc" title="Unit test for the equality operator of the SystemImpl class." alt="" coords="329,1589,529,1616"/>
-<area shape="rect" id="node48" href="$unit__System_8cpp.html#a1fe42d12cd9104001eb8882d476085f0" title="Unit test for the parameterized constructor of SystemImpl." alt="" coords="340,1641,519,1682"/>
-<area shape="rect" id="node49" href="$unit__System_8cpp.html#a48ed2f2349e4788fe6a21b53f89dc710" title="Unit test for the setName function of the SystemImpl class." alt="" coords="342,1707,517,1733"/>
-<area shape="rect" id="node50" href="$unit__System_8cpp.html#aef396415336b24be5fe5670f74828d88" title="Unit test for the setValue function of the SystemImpl class." alt="" coords="343,1757,516,1784"/>
+<area shape="rect" id="node17" href="$unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="112,985,267,1012"/>
+<area shape="rect" id="node40" href="$unit__System_8cpp.html#a508d8501edd77719732fca2f7985d316" title="Run all unit tests." alt="" coords="108,1705,271,1732"/>
+<area shape="rect" id="node3" href="$unit__Flow_8cpp.html#a552e52c045c91bbb5ce653952b7b2075" title="Unit test for the copy constructor of FlowImpl." alt="" coords="328,224,531,251"/>
+<area shape="rect" id="node6" href="$unit__Flow_8cpp.html#a83beb3591832793fa9ef96cb75c6a813" title="Unit test for the default constructor of FlowImpl." alt="" coords="320,275,539,301"/>
+<area shape="rect" id="node7" href="$unit__Flow_8cpp.html#a5d5063d01336bb21034b1c46dbdb740a" title="Unit test for the destructor of FlowImpl." alt="" coords="350,325,509,352"/>
+<area shape="rect" id="node8" href="$unit__Flow_8cpp.html#a0dc76658e06597697628386d69327367" title="Unit test for the getSource function of FlowImpl." alt="" coords="351,107,508,133"/>
+<area shape="rect" id="node10" href="$unit__Flow_8cpp.html#a89661cef89f6beb434f6097691c03538" title="Unit test for the getTarget function of FlowImpl." alt="" coords="353,427,506,453"/>
+<area shape="rect" id="node12" href="$unit__Flow_8cpp.html#a73a13a8018ae4f9231498b37ad354675" title="Unit test for the equality operator of FlowImpl." alt="" coords="337,477,522,504"/>
+<area shape="rect" id="node13" href="$unit__Flow_8cpp.html#a8c467f0fb2e8d58a64975e02d6339e0c" title="Verifies the operator= function of FlowImpl." alt="" coords="340,5,519,32"/>
+<area shape="rect" id="node14" href="$unit__Flow_8cpp.html#a61a6ad5465da153b714eab07abd055a9" title="Unit test for the parameterized constructor of FlowImpl." alt="" coords="349,158,509,199"/>
+<area shape="rect" id="node15" href="$unit__Flow_8cpp.html#a213cf3a2bd094e466707a33416124ce4" title="Unit test for the setSource function of FlowImpl." alt="" coords="351,56,507,83"/>
+<area shape="rect" id="node16" href="$unit__Flow_8cpp.html#a0b2a81b6dbbc3c5b1b25874640705654" title="Unit test for the setTarget function of FlowImpl." alt="" coords="353,376,505,403"/>
+<area shape="rect" id="node4" href="$classFlowImpl.html#a54940323059d2c4158f4146080841f32" title="a getter that returns a pointer to the system defined as source" alt="" coords="592,165,747,192"/>
+<area shape="rect" id="node5" href="$classFlowImpl.html#ab07923bc230308cd949f627a92901bca" title="a getter that returns a pointer to the system defined as target" alt="" coords="594,275,745,301"/>
+<area shape="rect" id="node9" href="$classFlowImpl.html#ac318088ce5a65ed70e89e983d4fb40c4" title="a setter that receives a pointer to the source system and defines it as an attribute" alt="" coords="592,81,747,108"/>
+<area shape="rect" id="node11" href="$classFlowImpl.html#aeed8724a62bf161be11703ebf9582fcc" title="a setter that receives a pointer to the target system and defines it as an attribute" alt="" coords="594,401,745,428"/>
+<area shape="rect" id="node18" href="$unit__Model_8cpp.html#aa4f8c7bb8b3cb64a0b1959bb0eb01b9a" title="Unit test for the add flow function of ModelImpl." alt="" coords="350,579,509,605"/>
+<area shape="rect" id="node22" href="$unit__Model_8cpp.html#ab3a10b6e696b6a91d6c33dcbb18aceb4" title="Unit test for the add system function of ModelImpl." alt="" coords="339,1436,519,1463"/>
+<area shape="rect" id="node24" href="$unit__Model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="342,629,517,656"/>
+<area shape="rect" id="node25" href="$unit__Model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Unit test for the beginSystems function of ModelImpl." alt="" coords="333,1284,526,1311"/>
+<area shape="rect" id="node26" href="$unit__Model_8cpp.html#a7760b8956819b3f28c08ca230a7e7aad" title="Unit test for the default constructor of ModelImpl." alt="" coords="356,949,503,990"/>
+<area shape="rect" id="node27" href="$unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="346,1132,513,1159"/>
+<area shape="rect" id="node28" href="$unit__Model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Unit test for the endFlows function of ModelImpl." alt="" coords="348,528,511,555"/>
+<area shape="rect" id="node29" href="$unit__Model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Unit test for the endSystems function of ModelImpl." alt="" coords="339,1183,520,1209"/>
+<area shape="rect" id="node30" href="$unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="328,680,531,707"/>
+<area shape="rect" id="node31" href="$unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="349,1015,509,1041"/>
+<area shape="rect" id="node32" href="$unit__Model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="Unit test for the getName function of ModelImpl." alt="" coords="349,1385,510,1412"/>
+<area shape="rect" id="node33" href="$unit__Model_8cpp.html#ad8771238ee4566fc080eb131d72a16c1" title="Unit test for the getSystems function of ModelImpl." alt="" coords="340,1335,519,1361"/>
+<area shape="rect" id="node34" href="$unit__Model_8cpp.html#a5fc81d7bb4d5cc5937fb70f06b59c58e" title="Verifies the operator= function of ModelImpl." alt="" coords="351,1066,507,1107"/>
+<area shape="rect" id="node35" href="$unit__Model_8cpp.html#a1524ea94351f1b22d8f7b78e29cd35e5" title="Unit test for the parameterized constructor of ModelImpl." alt="" coords="345,883,514,925"/>
+<area shape="rect" id="node36" href="$unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="337,832,522,859"/>
+<area shape="rect" id="node37" href="$unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="326,1233,533,1260"/>
+<area shape="rect" id="node38" href="$unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title="Unit test for the run function of ModelImpl." alt="" coords="368,731,491,757"/>
+<area shape="rect" id="node39" href="$unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="Unit test for the setName function of ModelImpl." alt="" coords="349,781,509,808"/>
+<area shape="rect" id="node19" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="622,1073,717,1100"/>
+<area shape="rect" id="node20" href="$classModel.html#a7e228e43346415de0d7226608ee1be4d" title="get an iterator to the beginning of the Flows vector (pure virtual)" alt="" coords="597,781,741,808"/>
+<area shape="rect" id="node21" href="$classModel.html#ad2a8514c9ba8d4deb0f51ed9e22c694a" title="get an iterator to the end of the Flows vector (pure virtual)" alt="" coords="603,680,735,707"/>
+<area shape="rect" id="node23" href="$classModel.html#a17850a63542dd4c4994ae12ebf788969" title="get an iterator to the beginning of the Systems vector (pure virtual)" alt="" coords="588,1208,751,1235"/>
+<area shape="rect" id="node41" href="$unit__System_8cpp.html#ae5971bd60dcb6cbaaa158aea16987c07" title="Unit test for the copy constructor of the SystemImpl class." alt="" coords="319,1705,540,1732"/>
+<area shape="rect" id="node42" href="$unit__System_8cpp.html#ae87349b7530c0b05a6a4d977645e7e11" title="Unit test for the default constructor of SystemImpl." alt="" coords="351,1757,507,1798"/>
+<area shape="rect" id="node43" href="$unit__System_8cpp.html#a021603784a12638ed34bc8690c832dfc" title="Unit test for the destructor of the SystemImpl class." alt="" coords="341,1823,517,1849"/>
+<area shape="rect" id="node44" href="$unit__System_8cpp.html#a45a95969c0acca92ef4595c4915639b2" title="Unit test for the getName function of the SystemImpl class." alt="" coords="342,1873,517,1900"/>
+<area shape="rect" id="node45" href="$unit__System_8cpp.html#a25b1a20bb246b16be2efa6c504916060" title="Unit test for the getValue function of the SystemImpl class." alt="" coords="342,1924,517,1951"/>
+<area shape="rect" id="node46" href="$unit__System_8cpp.html#a9a9321f47680d67a990706e0fab2fb85" title="Unit test for the assignment operator of the SystemImpl class." alt="" coords="328,1975,531,2001"/>
+<area shape="rect" id="node47" href="$unit__System_8cpp.html#a22010df892ed86d65368a86c31ed63cc" title="Unit test for the equality operator of the SystemImpl class." alt="" coords="329,1487,529,1513"/>
+<area shape="rect" id="node48" href="$unit__System_8cpp.html#a1fe42d12cd9104001eb8882d476085f0" title="Unit test for the parameterized constructor of SystemImpl." alt="" coords="340,1538,519,1579"/>
+<area shape="rect" id="node49" href="$unit__System_8cpp.html#a48ed2f2349e4788fe6a21b53f89dc710" title="Unit test for the setName function of the SystemImpl class." alt="" coords="342,1604,517,1631"/>
+<area shape="rect" id="node50" href="$unit__System_8cpp.html#aef396415336b24be5fe5670f74828d88" title="Unit test for the setValue function of the SystemImpl class." alt="" coords="343,1655,516,1681"/>
 </map>
