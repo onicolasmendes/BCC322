@@ -1,7 +1,10 @@
 <map id="unit_Model_remove_system" name="unit_Model_remove_system">
-<area shape="rect" id="node1" title="Unit test for the remove system function of ModelImpl." alt="" coords="5,81,212,108"/>
-<area shape="rect" id="node2" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="294,5,389,32"/>
-<area shape="rect" id="node3" href="$classModel.html#a17850a63542dd4c4994ae12ebf788969" title="get an iterator to the beginning of the Systems vector (pure virtual)" alt="" coords="260,56,423,83"/>
-<area shape="rect" id="node4" href="$classModel.html#a60d5c46852dff7dffdc185f76eab28b1" title="get an iterator to the end of the Systems vector (pure virtual)" alt="" coords="266,107,417,133"/>
-<area shape="rect" id="node5" href="$classModel.html#afd4f90dfebf43f4470c1fb6fdc5fe847" title="Remove a System from the Model (pure virtual)." alt="" coords="281,157,401,184"/>
+<area shape="rect" id="node1" title="Unit test for the remove system function of ModelImpl." alt="" coords="5,107,212,133"/>
+<area shape="rect" id="node2" href="$classModel.html#a17850a63542dd4c4994ae12ebf788969" title="get an iterator to the beginning of the Systems vector (pure virtual)" alt="" coords="260,5,423,32"/>
+<area shape="rect" id="node3" href="$classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="266,56,417,83"/>
+<area shape="rect" id="node6" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="261,107,421,133"/>
+<area shape="rect" id="node7" href="$classModel.html#a60d5c46852dff7dffdc185f76eab28b1" title="get an iterator to the end of the Systems vector (pure virtual)" alt="" coords="266,157,417,184"/>
+<area shape="rect" id="node8" href="$classModel.html#afd4f90dfebf43f4470c1fb6fdc5fe847" title=" " alt="" coords="281,208,401,235"/>
+<area shape="rect" id="node4" href="$classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="471,56,651,83"/>
+<area shape="rect" id="node5" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="699,56,821,83"/>
 </map>

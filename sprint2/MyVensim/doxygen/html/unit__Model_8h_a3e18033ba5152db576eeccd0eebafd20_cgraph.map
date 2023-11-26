@@ -1,5 +1,8 @@
 <map id="unit_Model_setName" name="unit_Model_setName">
-<area shape="rect" id="node1" title="Unit test for the setName function of ModelImpl." alt="" coords="5,31,165,57"/>
-<area shape="rect" id="node2" href="$classModel.html#aa5365ab557ae47efffdf14ba7a46dac8" title="Retrieve the name of the Model (pure virtual)." alt="" coords="213,5,344,32"/>
-<area shape="rect" id="node3" href="$classModel.html#aafe5591bcbf5dba1efe78367586f3688" title="Set the name of the Model (pure virtual)." alt="" coords="214,56,343,83"/>
+<area shape="rect" id="node1" title="Unit test for the setName function of ModelImpl." alt="" coords="5,56,165,83"/>
+<area shape="rect" id="node2" href="$classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="213,5,364,32"/>
+<area shape="rect" id="node5" href="$classModel.html#aa5365ab557ae47efffdf14ba7a46dac8" title="Retrieve the name of the Model (pure virtual)." alt="" coords="223,56,354,83"/>
+<area shape="rect" id="node6" href="$classModel.html#aafe5591bcbf5dba1efe78367586f3688" title="Set the name of the Model (pure virtual)." alt="" coords="224,107,353,133"/>
+<area shape="rect" id="node3" href="$classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="412,5,592,32"/>
+<area shape="rect" id="node4" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="640,5,763,32"/>
 </map>

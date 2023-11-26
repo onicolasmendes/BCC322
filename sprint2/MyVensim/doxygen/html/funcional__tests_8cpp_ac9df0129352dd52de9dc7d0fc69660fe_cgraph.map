@@ -1,6 +1,13 @@
 <map id="logisticalFuncionalTest" name="logisticalFuncionalTest">
-<area shape="rect" id="node1" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="5,56,175,83"/>
-<area shape="rect" id="node2" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="243,5,338,32"/>
-<area shape="rect" id="node3" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Retrieve the value of the System (pure virtual)." alt="" coords="223,56,359,83"/>
-<area shape="rect" id="node4" href="$classModel.html#a279af13c7eb8e6e1a4783686a8c8e1fa" title="Run the Model simulation from t_initial to t_final (pure virtual)." alt="" coords="245,107,336,133"/>
+<area shape="rect" id="node1" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="5,157,175,184"/>
+<area shape="rect" id="node2" href="$classModel.html#a0a45f6feacd4423de27333c11bb793c0" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="231,5,374,32"/>
+<area shape="rect" id="node4" href="$classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="227,56,378,83"/>
+<area shape="rect" id="node7" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="223,107,383,133"/>
+<area shape="rect" id="node8" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Retrieve the value of the System (pure virtual)." alt="" coords="235,157,371,184"/>
+<area shape="rect" id="node9" href="$classModel.html#a279af13c7eb8e6e1a4783686a8c8e1fa" title="Run the Model simulation from t_initial to t_final (pure virtual)." alt="" coords="257,208,348,235"/>
+<area shape="rect" id="node10" href="$classModel.html#a618ceb471175c7a23e226d3beae7ea26" title="Sets the source System of the given Flow (pure virtual)" alt="" coords="235,259,370,285"/>
+<area shape="rect" id="node11" href="$classModel.html#a486bd1ea4993d5603db3c8bd0a8f1c19" title="Sets the target System of the given Flow (pure virtual)" alt="" coords="237,309,368,336"/>
+<area shape="rect" id="node3" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="473,5,568,32"/>
+<area shape="rect" id="node5" href="$classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="431,56,611,83"/>
+<area shape="rect" id="node6" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="659,56,781,83"/>
 </map>

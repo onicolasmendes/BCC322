@@ -1,0 +1,9 @@
+<map id="unit_Model_destructor" name="unit_Model_destructor">
+<area shape="rect" id="node1" title="Unit test for the destructor of ModelImpl." alt="" coords="5,56,172,83"/>
+<area shape="rect" id="node2" href="$classModel.html#a0a45f6feacd4423de27333c11bb793c0" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="229,5,371,32"/>
+<area shape="rect" id="node4" href="$classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="225,56,375,83"/>
+<area shape="rect" id="node7" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="220,107,380,133"/>
+<area shape="rect" id="node3" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="471,5,565,32"/>
+<area shape="rect" id="node5" href="$classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="428,56,608,83"/>
+<area shape="rect" id="node6" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="656,56,779,83"/>
+</map>

@@ -1,0 +1,36 @@
+<map id="ModelImpl::createModel" name="ModelImpl::createModel">
+<area shape="rect" id="node1" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="776,731,956,757"/>
+<area shape="rect" id="node2" href="$classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="577,731,728,757"/>
+<area shape="rect" id="node3" href="$funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="337,5,503,32"/>
+<area shape="rect" id="node5" href="$funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="327,56,513,83"/>
+<area shape="rect" id="node6" href="$funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="335,107,505,133"/>
+<area shape="rect" id="node7" href="$unit__Model_8cpp.html#aa4f8c7bb8b3cb64a0b1959bb0eb01b9a" title="Unit test for the add flow function of ModelImpl." alt="" coords="341,157,499,184"/>
+<area shape="rect" id="node10" href="$unit__Model_8cpp.html#ab3a10b6e696b6a91d6c33dcbb18aceb4" title="Unit test for the add system function of ModelImpl." alt="" coords="330,208,510,235"/>
+<area shape="rect" id="node11" href="$unit__Model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="333,259,507,285"/>
+<area shape="rect" id="node12" href="$unit__Model_8cpp.html#a2679f573ec19210d2143c5f0275ba0ae" title="Unit test for ModelImpl::beginModels()" alt="" coords="328,309,512,336"/>
+<area shape="rect" id="node13" href="$unit__Model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Unit test for the beginSystems function of ModelImpl." alt="" coords="323,360,517,387"/>
+<area shape="rect" id="node14" href="$unit__Model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="Unit test for Model::createModel()" alt="" coords="329,411,511,437"/>
+<area shape="rect" id="node15" href="$unit__Model_8cpp.html#a723ceb63472e35da820ad556d67a5c7a" title="Unit test for ModelImpl::createModel()" alt="" coords="311,461,529,488"/>
+<area shape="rect" id="node16" href="$unit__Model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Unit test for ModelImpl::createSystem()" alt="" coords="325,512,515,539"/>
+<area shape="rect" id="node17" href="$unit__Model_8cpp.html#a7760b8956819b3f28c08ca230a7e7aad" title="Unit test for the default constructor of ModelImpl." alt="" coords="347,563,493,605"/>
+<area shape="rect" id="node18" href="$unit__Model_8cpp.html#a3b8d495fd565dfa3630c2d1106f99576" title="Unit test for ModelImpl::deleteFlow()" alt="" coords="333,629,507,656"/>
+<area shape="rect" id="node19" href="$unit__Model_8cpp.html#a9c6077bce8798366b4b0681f0ca0820d" title="Unit test for ModelImpl::deleteSystem()" alt="" coords="325,680,515,707"/>
+<area shape="rect" id="node20" href="$unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="337,731,503,757"/>
+<area shape="rect" id="node21" href="$unit__Model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Unit test for the endFlows function of ModelImpl." alt="" coords="339,781,501,808"/>
+<area shape="rect" id="node22" href="$unit__Model_8cpp.html#a198776a1fac9ea701215f46608b9cc0e" title="Unit test for ModelImpl::endModels()" alt="" coords="334,832,506,859"/>
+<area shape="rect" id="node23" href="$unit__Model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Unit test for the endSystems function of ModelImpl." alt="" coords="329,883,511,909"/>
+<area shape="rect" id="node24" href="$unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="319,933,521,960"/>
+<area shape="rect" id="node25" href="$unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="340,984,500,1011"/>
+<area shape="rect" id="node26" href="$unit__Model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="Unit test for the getName function of ModelImpl." alt="" coords="339,1035,501,1061"/>
+<area shape="rect" id="node27" href="$unit__Model_8cpp.html#ad8771238ee4566fc080eb131d72a16c1" title="Unit test for the getSystems function of ModelImpl." alt="" coords="331,1085,509,1112"/>
+<area shape="rect" id="node28" href="$unit__Model_8cpp.html#a1524ea94351f1b22d8f7b78e29cd35e5" title="Unit test for the parameterized constructor of ModelImpl." alt="" coords="335,1137,505,1178"/>
+<area shape="rect" id="node29" href="$unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="327,1203,513,1229"/>
+<area shape="rect" id="node30" href="$unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="317,1253,523,1280"/>
+<area shape="rect" id="node31" href="$unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title="Unit test for the run function of ModelImpl." alt="" coords="359,1304,481,1331"/>
+<area shape="rect" id="node32" href="$unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="Unit test for the setName function of ModelImpl." alt="" coords="340,1355,500,1381"/>
+<area shape="rect" id="node33" href="$unit__Model_8cpp.html#ad7e193f7cf3494b4a68ebf9c62b02c4d" title="Unit test for ModelImpl::setSource()" alt="" coords="337,1405,503,1432"/>
+<area shape="rect" id="node34" href="$unit__Model_8cpp.html#aff46f8c80b89b5f607f27da6642a4303" title="Unit test for ModelImpl::setTarget()" alt="" coords="339,1456,501,1483"/>
+<area shape="rect" id="node4" href="$test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,56,213,83"/>
+<area shape="rect" id="node8" href="$unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,807,263,833"/>
+<area shape="rect" id="node9" href="$test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,807,60,833"/>
+</map>

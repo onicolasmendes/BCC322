@@ -1,0 +1,6 @@
+<map id="Model::beginModels" name="Model::beginModels">
+<area shape="rect" id="node1" title="Gets an iterator pointing to the beginning of the Models vector (pure virtual)" alt="" coords="543,5,696,32"/>
+<area shape="rect" id="node2" href="$unit__Model_8cpp.html#a2679f573ec19210d2143c5f0275ba0ae" title="Unit test for ModelImpl::beginModels()" alt="" coords="311,5,495,32"/>
+<area shape="rect" id="node3" href="$unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,5,263,32"/>
+<area shape="rect" id="node4" href="$test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
+</map>

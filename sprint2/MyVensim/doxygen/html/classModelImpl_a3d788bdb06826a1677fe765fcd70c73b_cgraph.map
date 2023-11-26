@@ -1,0 +1,4 @@
+<map id="ModelImpl::createSystem" name="ModelImpl::createSystem">
+<area shape="rect" id="node1" title="Creates a new System with the given name and initial value, and adds it to the Models container." alt="" coords="5,5,195,32"/>
+<area shape="rect" id="node2" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="243,5,365,32"/>
+</map>

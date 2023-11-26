@@ -1,9 +1,15 @@
 #include "ModelImpl.h"
-
-using namespace std;
+#include "Model.h"
 
 typedef vector<System *>::iterator SystemsIterator;
 typedef vector<Flow *>::iterator FlowsIterator;
+typedef vector<Model *>::iterator ModelsIterator;
+
+vector<Model *> ModelImpl::models;
+
+using namespace std;
+
+
 
 ModelImpl::ModelImpl()
 {
@@ -18,7 +24,24 @@ ModelImpl::ModelImpl(const string &n)
     flows.reserve(20);
 }
 
-ModelImpl::~ModelImpl(){};
+ModelImpl::~ModelImpl() 
+{
+    for(System *s : systems)
+    {
+        delete ((SystemImpl*) s);
+    }
+
+    for(Flow *f : flows)
+    {
+        delete ((FlowImpl*) f);
+    }
+
+    for(Model *m : models)
+    {
+        delete ((ModelImpl*) m);
+    }
+
+}
 
 ModelImpl::ModelImpl(const string &n, const vector<System *> &s, const vector<Flow *> &f)
 {
@@ -182,4 +205,65 @@ FlowsIterator ModelImpl::getFlows()
 SystemsIterator ModelImpl::getSystems()
 {
     return beginSystems();
+}
+
+ModelsIterator ModelImpl::beginModels()
+{
+    return models.begin();
+}
+
+ModelsIterator ModelImpl::endModels()
+{
+    return  models.end();
+}
+
+Model* Model::createModel(const string &n)
+{
+    return ModelImpl::createModel(n);
+}
+
+bool ModelImpl::add(Model *m)
+{
+    ModelImpl::models.push_back(m);
+    return true;
+}
+
+Model *ModelImpl::createModel(const string &n)
+{
+    Model *m = new ModelImpl(n);
+    ModelImpl::add(m);
+    return m;
+}
+
+System *ModelImpl::createSystem(const string &n="", const double &v=0)
+{
+    System *s = new SystemImpl(n, v);
+    ModelImpl::add(s);
+    return s;
+}
+
+bool ModelImpl::deleteFlow(Flow *f)
+{
+    remove(f);
+    delete f;
+    return true;
+}
+
+bool ModelImpl::deleteSystem(System *s)
+{
+    remove(s);
+    delete s;
+    return true;
+}
+
+bool ModelImpl::setSource(Flow *f, System *s)
+{
+    f->setSource(s);
+    return true;
+}
+
+bool ModelImpl::setTarget(Flow *f, System *s)
+{
+    f->setTarget(s);
+    return true;
 }

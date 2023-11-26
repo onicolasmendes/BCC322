@@ -1,6 +1,10 @@
 <map id="unit_Model_beginFlows" name="unit_Model_beginFlows">
-<area shape="rect" id="node1" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="5,56,180,83"/>
-<area shape="rect" id="node2" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="253,5,347,32"/>
-<area shape="rect" id="node3" href="$classModel.html#a7e228e43346415de0d7226608ee1be4d" title="get an iterator to the beginning of the Flows vector (pure virtual)" alt="" coords="228,56,372,83"/>
-<area shape="rect" id="node4" href="$classModel.html#ad2a8514c9ba8d4deb0f51ed9e22c694a" title="get an iterator to the end of the Flows vector (pure virtual)" alt="" coords="234,107,366,133"/>
+<area shape="rect" id="node1" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="5,81,180,108"/>
+<area shape="rect" id="node2" href="$classModel.html#a7e228e43346415de0d7226608ee1be4d" title="get an iterator to the beginning of the Flows vector (pure virtual)" alt="" coords="231,5,375,32"/>
+<area shape="rect" id="node3" href="$classModel.html#a0a45f6feacd4423de27333c11bb793c0" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="232,56,375,83"/>
+<area shape="rect" id="node5" href="$classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="228,107,379,133"/>
+<area shape="rect" id="node8" href="$classModel.html#ad2a8514c9ba8d4deb0f51ed9e22c694a" title="get an iterator to the end of the Flows vector (pure virtual)" alt="" coords="237,157,369,184"/>
+<area shape="rect" id="node4" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="469,56,564,83"/>
+<area shape="rect" id="node6" href="$classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="427,107,607,133"/>
+<area shape="rect" id="node7" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="655,107,777,133"/>
 </map>

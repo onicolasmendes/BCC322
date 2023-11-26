@@ -1,21 +1,8 @@
 var searchData=
 [
-  ['flow_8',['Flow',['../classFlow.html',1,'']]],
-  ['flow_2eh_9',['Flow.h',['../Flow_8h.html',1,'']]],
-  ['flowexponencial_10',['FlowExponencial',['../classFlowExponencial.html',1,'FlowExponencial'],['../classFlowExponencial.html#a3a92594d649106d47ed1d532b56f80a4',1,'FlowExponencial::FlowExponencial(System *s, System *t)'],['../classFlowExponencial.html#adcfa957b23dd248a40e2dbb8d061a975',1,'FlowExponencial::FlowExponencial()']]],
-  ['flowexponencial_2ecpp_11',['FlowExponencial.cpp',['../FlowExponencial_8cpp.html',1,'']]],
-  ['flowexponencial_2eh_12',['FlowExponencial.h',['../FlowExponencial_8h.html',1,'']]],
-  ['flowimpl_13',['FlowImpl',['../classFlowImpl.html',1,'FlowImpl'],['../classFlowImpl.html#aef142b4af715fb4f2f3460c7104804e8',1,'FlowImpl::FlowImpl(const FlowImpl &amp;f)'],['../classFlowImpl.html#a560e164de3acd631c51efce134ea8ba3',1,'FlowImpl::FlowImpl(System *s, System *t)'],['../classFlowImpl.html#aa835ccb3c368c683aa95d660175a298b',1,'FlowImpl::FlowImpl()']]],
-  ['flowimpl_2ecpp_14',['FlowImpl.cpp',['../FlowImpl_8cpp.html',1,'']]],
-  ['flowimpl_2eh_15',['FlowImpl.h',['../FlowImpl_8h.html',1,'']]],
-  ['flowlogistica_16',['FlowLogistica',['../classFlowLogistica.html#a9aa83bb667794e1342fa33153086627a',1,'FlowLogistica::FlowLogistica(System *s, System *t)'],['../classFlowLogistica.html#a6a69ff32a23eef951d8c81f72338a40b',1,'FlowLogistica::FlowLogistica()'],['../classFlowLogistica.html',1,'FlowLogistica']]],
-  ['flowlogistica_2ecpp_17',['FlowLogistica.cpp',['../FlowLogistica_8cpp.html',1,'']]],
-  ['flowlogistica_2eh_18',['FlowLogistica.h',['../FlowLogistica_8h.html',1,'']]],
-  ['flowmaior_19',['FlowMaior',['../classFlowMaior.html#a24107e7718b1516807eedac4574cca88',1,'FlowMaior::FlowMaior()'],['../classFlowMaior.html#a44763e4d08febb6656b576f4908ade0e',1,'FlowMaior::FlowMaior(System *s, System *t)'],['../classFlowMaior.html',1,'FlowMaior']]],
-  ['flowmaior_2ecpp_20',['FlowMaior.cpp',['../FlowMaior_8cpp.html',1,'']]],
-  ['flowmaior_2eh_21',['FlowMaior.h',['../FlowMaior_8h.html',1,'']]],
-  ['flows_22',['flows',['../classModelImpl.html#ab99887dd7ee48aeb4938acc83524ce80',1,'ModelImpl']]],
-  ['flowsiterator_23',['FlowsIterator',['../classModelImpl.html#a497dc47850dcbc63781099753590661f',1,'ModelImpl::FlowsIterator()'],['../ModelImpl_8cpp.html#a8cc500b3ffe36ec37a5c6b20d9eb3d3b',1,'FlowsIterator():&#160;ModelImpl.cpp'],['../classModel.html#aa635fd7f66df482dfea1d6e61207c8a1',1,'Model::FlowsIterator()']]],
-  ['funcional_5ftests_2ecpp_24',['funcional_tests.cpp',['../funcional__tests_8cpp.html',1,'']]],
-  ['funcional_5ftests_2eh_25',['funcional_tests.h',['../funcional__tests_8h.html',1,'']]]
+  ['endflows_10',['endFlows',['../classModel.html#ad2a8514c9ba8d4deb0f51ed9e22c694a',1,'Model::endFlows()'],['../classModelImpl.html#aeeb136a5c06444ffe49c9bacd5e23233',1,'ModelImpl::endFlows()']]],
+  ['endmodels_11',['endModels',['../classModel.html#a9aff7f35b559c4981f536730d89ee13c',1,'Model::endModels()'],['../classModelImpl.html#ad581c72515c326f6e63873eaa8866f8c',1,'ModelImpl::endModels()']]],
+  ['endsystems_12',['endSystems',['../classModel.html#a60d5c46852dff7dffdc185f76eab28b1',1,'Model::endSystems()'],['../classModelImpl.html#a2eac4ca0ec971cf1a1cb6666b3b9aa3b',1,'ModelImpl::endSystems()']]],
+  ['equation_13',['equation',['../classFlow.html#ac36fe4e6faab2cdf7aa150bd936ed245',1,'Flow::equation()'],['../classFlowImpl.html#a295325e4bc5545423c79d9cfcb3f4839',1,'FlowImpl::equation()'],['../classFlowExponencial.html#ab732e5e28813673afb439669cfa644f5',1,'FlowExponencial::equation()'],['../classFlowLogistica.html#a02f08d28916a69b199b6758bb8bcbef8',1,'FlowLogistica::equation()'],['../classFlowMaior.html#ab696f0362508a4b03bdab4acee688d3c',1,'FlowMaior::equation()']]],
+  ['exponentialfuncionaltest_14',['exponentialFuncionalTest',['../funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30',1,'exponentialFuncionalTest():&#160;funcional_tests.cpp'],['../funcional__tests_8h.html#a990a580e1a43e5934dd62de8e0a37f30',1,'exponentialFuncionalTest():&#160;funcional_tests.cpp']]]
 ];

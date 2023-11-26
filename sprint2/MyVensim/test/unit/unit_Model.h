@@ -116,6 +116,57 @@ void unit_Model_getFlows() ;
  */
 void unit_Model_getSystems() ;
 /**
+ * @brief Unit test for ModelImpl::beginModels()
+ * @note This test checks if the iterator obtained from beginModels() is equal to model->beginModels()
+ */
+void unit_Model_beginModels();
+/**
+ * @brief Unit test for ModelImpl::endModels()
+ * @note This test checks if the distance between beginModels() and endModels() is equal to the expected size (2)
+ */
+void unit_Model_endModels();
+/**
+ * @brief Unit test for Model::createModel()
+ * @note This test checks if createModel() correctly creates a new Model and returns a non-null pointer
+ */
+void unit_Model_createModel();
+/**
+ * @brief Unit test for ModelImpl::add()
+ * @note This test checks if add() correctly adds the given Model to the Models container and returns true
+ */
+void unit_Model_add_model();
+/**
+ * @brief Unit test for ModelImpl::createModel()
+ * @note This test checks if createModel() correctly creates a new Model, adds it to the Models container, and returns a non-null pointer
+ */
+void unit_Model_createModel_Impl();
+/**
+ * @brief Unit test for ModelImpl::createSystem()
+ * @note This test checks if createSystem() correctly creates a new System, adds it to the Models container, and returns a non-null pointer
+ */
+void unit_Model_createSystem();
+/**
+ * @brief Unit test for ModelImpl::deleteFlow()
+ * @note This test checks if deleteFlow() correctly removes and deletes the given Flow, and returns true
+ */
+void unit_Model_deleteFlow();
+/**
+ * @brief Unit test for ModelImpl::deleteSystem()
+ * @note This test checks if deleteSystem() correctly removes and deletes the given System, and returns true
+ */
+void unit_Model_deleteSystem();
+/**
+ * @brief Unit test for ModelImpl::setSource()
+ * @note This test checks if setSource() correctly sets the source System of the given Flow and returns true
+ */
+void unit_Model_setSource();
+/**
+ * @brief Unit test for ModelImpl::setTarget()
+ * @note This test checks if setTarget() correctly sets the target System of the given Flow and returns true
+ */
+void unit_Model_setTarget();
+
+/**
  * @brief Run all unit tests
  */
 void run_unit_test_Model();

@@ -64,6 +64,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classModel-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Model Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -79,8 +80,8 @@ Inheritance diagram for Model:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel__inherit__graph.png" border="0" usemap="#aModel_inherit__map" alt="Inheritance graph"/></div>
 <map name="aModel_inherit__map" id="aModel_inherit__map">
-<area shape="rect" title="Interface that represents a Flow in the simulator of systems theory." alt="" coords="5,5,144,273"/>
-<area shape="rect" href="classModelImpl.html" title="Model concrete class that implements the interface Model and represents a Model in systems theory." alt="" coords="11,321,138,575"/>
+<area shape="rect" title="Interface that represents a Flow in the simulator of systems theory." alt="" coords="5,5,133,259"/>
+<area shape="rect" href="classModelImpl.html" title="Model concrete class that implements the interface Model and represents a Model in systems theory." alt="" coords="5,307,133,604"/>
 </map>
 </div>
 <div class="dynheader">
@@ -88,7 +89,7 @@ Collaboration diagram for Model:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel__coll__graph.png" border="0" usemap="#aModel_coll__map" alt="Collaboration graph"/></div>
 <map name="aModel_coll__map" id="aModel_coll__map">
-<area shape="rect" title="Interface that represents a Flow in the simulator of systems theory." alt="" coords="5,5,144,273"/>
+<area shape="rect" title="Interface that represents a Flow in the simulator of systems theory." alt="" coords="5,5,133,259"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -98,6 +99,8 @@ Public Types</h2></td></tr>
 <tr class="separator:a251f91d5bad724044aa7d574064c1aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa635fd7f66df482dfea1d6e61207c8a1"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="classFlow.html">Flow</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#aa635fd7f66df482dfea1d6e61207c8a1">FlowsIterator</a></td></tr>
 <tr class="separator:aa635fd7f66df482dfea1d6e61207c8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae62cf1024b4d3e76cff7548064c6acc8"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="classModel.html">Model</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#ae62cf1024b4d3e76cff7548064c6acc8">ModelsIterator</a></td></tr>
+<tr class="separator:ae62cf1024b4d3e76cff7548064c6acc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -117,7 +120,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac7224e4a5be42bd0d56f6781fc82f084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> to the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> (pure virtual).  <a href="classModel.html#ac7224e4a5be42bd0d56f6781fc82f084">More...</a><br /></td></tr>
 <tr class="separator:ac7224e4a5be42bd0d56f6781fc82f084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd4f90dfebf43f4470c1fb6fdc5fe847"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#afd4f90dfebf43f4470c1fb6fdc5fe847">remove</a> (const <a class="el" href="classSystem.html">System</a> *s)=0</td></tr>
-<tr class="memdesc:afd4f90dfebf43f4470c1fb6fdc5fe847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> from the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> (pure virtual).  <a href="classModel.html#afd4f90dfebf43f4470c1fb6fdc5fe847">More...</a><br /></td></tr>
 <tr class="separator:afd4f90dfebf43f4470c1fb6fdc5fe847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa91f008d00584a0ceaa8b0ac26a1e737"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#aa91f008d00584a0ceaa8b0ac26a1e737">remove</a> (const <a class="el" href="classFlow.html">Flow</a> *f)=0</td></tr>
 <tr class="memdesc:aa91f008d00584a0ceaa8b0ac26a1e737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> from the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> (pure virtual).  <a href="classModel.html#aa91f008d00584a0ceaa8b0ac26a1e737">More...</a><br /></td></tr>
@@ -143,6 +145,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a60d5c46852dff7dffdc185f76eab28b1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModel.html#a251f91d5bad724044aa7d574064c1aba">SystemsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a60d5c46852dff7dffdc185f76eab28b1">endSystems</a> ()=0</td></tr>
 <tr class="memdesc:a60d5c46852dff7dffdc185f76eab28b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">get an iterator to the end of the Systems vector (pure virtual)  <a href="classModel.html#a60d5c46852dff7dffdc185f76eab28b1">More...</a><br /></td></tr>
 <tr class="separator:a60d5c46852dff7dffdc185f76eab28b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b2bbff8b1275411d6a574d1ec98492e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModel.html#ae62cf1024b4d3e76cff7548064c6acc8">ModelsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a8b2bbff8b1275411d6a574d1ec98492e">beginModels</a> ()=0</td></tr>
+<tr class="memdesc:a8b2bbff8b1275411d6a574d1ec98492e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an iterator pointing to the beginning of the Models vector (pure virtual)  <a href="classModel.html#a8b2bbff8b1275411d6a574d1ec98492e">More...</a><br /></td></tr>
+<tr class="separator:a8b2bbff8b1275411d6a574d1ec98492e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aff7f35b559c4981f536730d89ee13c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModel.html#ae62cf1024b4d3e76cff7548064c6acc8">ModelsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a9aff7f35b559c4981f536730d89ee13c">endModels</a> ()=0</td></tr>
+<tr class="memdesc:a9aff7f35b559c4981f536730d89ee13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an iterator pointing to the end of the Models vector (pure virtual)  <a href="classModel.html#a9aff7f35b559c4981f536730d89ee13c">More...</a><br /></td></tr>
+<tr class="separator:a9aff7f35b559c4981f536730d89ee13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa241eb7aeebc7a3dea5fd6a51ad1451f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f">createSystem</a> (const string &amp;n, const double &amp;v)=0</td></tr>
+<tr class="memdesc:aa241eb7aeebc7a3dea5fd6a51ad1451f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> with the given name and initial value (pure virtual)  <a href="classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f">More...</a><br /></td></tr>
+<tr class="separator:aa241eb7aeebc7a3dea5fd6a51ad1451f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6861382c7bc53f745ed3f8fd83ea0bba"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a6861382c7bc53f745ed3f8fd83ea0bba">deleteFlow</a> (<a class="el" href="classFlow.html">Flow</a> *f)=0</td></tr>
+<tr class="memdesc:a6861382c7bc53f745ed3f8fd83ea0bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the given <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> (pure virtual)  <a href="classModel.html#a6861382c7bc53f745ed3f8fd83ea0bba">More...</a><br /></td></tr>
+<tr class="separator:a6861382c7bc53f745ed3f8fd83ea0bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4500fe8eb178caffac2ba97e44d024bc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a4500fe8eb178caffac2ba97e44d024bc">deleteSystem</a> (<a class="el" href="classSystem.html">System</a> *s)=0</td></tr>
+<tr class="memdesc:a4500fe8eb178caffac2ba97e44d024bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the given <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> (pure virtual)  <a href="classModel.html#a4500fe8eb178caffac2ba97e44d024bc">More...</a><br /></td></tr>
+<tr class="separator:a4500fe8eb178caffac2ba97e44d024bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618ceb471175c7a23e226d3beae7ea26"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a618ceb471175c7a23e226d3beae7ea26">setSource</a> (<a class="el" href="classFlow.html">Flow</a> *f, <a class="el" href="classSystem.html">System</a> *s)=0</td></tr>
+<tr class="memdesc:a618ceb471175c7a23e226d3beae7ea26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the source <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> of the given <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> (pure virtual)  <a href="classModel.html#a618ceb471175c7a23e226d3beae7ea26">More...</a><br /></td></tr>
+<tr class="separator:a618ceb471175c7a23e226d3beae7ea26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486bd1ea4993d5603db3c8bd0a8f1c19"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a486bd1ea4993d5603db3c8bd0a8f1c19">setTarget</a> (<a class="el" href="classFlow.html">Flow</a> *f, <a class="el" href="classSystem.html">System</a> *s)=0</td></tr>
+<tr class="memdesc:a486bd1ea4993d5603db3c8bd0a8f1c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the target <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> of the given <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> (pure virtual)  <a href="classModel.html#a486bd1ea4993d5603db3c8bd0a8f1c19">More...</a><br /></td></tr>
+<tr class="separator:a486bd1ea4993d5603db3c8bd0a8f1c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a45f6feacd4423de27333c11bb793c0"><td class="memTemplParams" colspan="2">template&lt;typename T_FLOW_IMPL &gt; </td></tr>
+<tr class="memitem:a0a45f6feacd4423de27333c11bb793c0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classFlow.html">Flow</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classModel.html#a0a45f6feacd4423de27333c11bb793c0">createFlow</a> (<a class="el" href="classSystem.html">System</a> *s=nullptr, <a class="el" href="classSystem.html">System</a> *t=nullptr)</td></tr>
+<tr class="memdesc:a0a45f6feacd4423de27333c11bb793c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> with the given source and target Systems (default: nullptr)  <a href="classModel.html#a0a45f6feacd4423de27333c11bb793c0">More...</a><br /></td></tr>
+<tr class="separator:a0a45f6feacd4423de27333c11bb793c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4c8566635d4c4311239a2ed5a3d75a8a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a4c8566635d4c4311239a2ed5a3d75a8a">add</a> (<a class="el" href="classModel.html">Model</a> *m)</td></tr>
+<tr class="memdesc:a4c8566635d4c4311239a2ed5a3d75a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> from the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> (pure virtual).  <a href="classModel.html#a4c8566635d4c4311239a2ed5a3d75a8a">More...</a><br /></td></tr>
+<tr class="separator:a4c8566635d4c4311239a2ed5a3d75a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8122c9ffb5bbc82450efeccbe5854f18"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classModel.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a8122c9ffb5bbc82450efeccbe5854f18">createModel</a> (const string &amp;n)</td></tr>
+<tr class="memdesc:a8122c9ffb5bbc82450efeccbe5854f18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegates the creation of a new <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> with the given name to the <a class="el" href="classModelImpl.html" title="Model concrete class that implements the interface Model and represents a Model in systems theory.">ModelImpl</a> class.  <a href="classModel.html#a8122c9ffb5bbc82450efeccbe5854f18">More...</a><br /></td></tr>
+<tr class="separator:a8122c9ffb5bbc82450efeccbe5854f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface that represents a <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> in the simulator of systems theory. </p>
@@ -155,6 +191,20 @@ Public Member Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef vector&lt;<a class="el" href="classFlow.html">Flow</a> *&gt;::iterator <a class="el" href="classModel.html#aa635fd7f66df482dfea1d6e61207c8a1">Model::FlowsIterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae62cf1024b4d3e76cff7548064c6acc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae62cf1024b4d3e76cff7548064c6acc8">&#9670;&nbsp;</a></span>ModelsIterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef vector&lt;<a class="el" href="classModel.html">Model</a> *&gt;::iterator <a class="el" href="classModel.html#ae62cf1024b4d3e76cff7548064c6acc8">Model::ModelsIterator</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -205,7 +255,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac7224e4a5be42bd0d56f6781fc82f084"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7224e4a5be42bd0d56f6781fc82f084">&#9670;&nbsp;</a></span>add() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7224e4a5be42bd0d56f6781fc82f084">&#9670;&nbsp;</a></span>add() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,8 +291,43 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4c8566635d4c4311239a2ed5a3d75a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c8566635d4c4311239a2ed5a3d75a8a">&#9670;&nbsp;</a></span>add() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Model::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classModel.html">Model</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove a <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> from the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> (pure virtual). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to the <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> to be removed from the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the operation is successful, indicating the <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> is removed, false otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="abfb2ff6a7566fde6bea104ddd3c556ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfb2ff6a7566fde6bea104ddd3c556ed">&#9670;&nbsp;</a></span>add() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb2ff6a7566fde6bea104ddd3c556ed">&#9670;&nbsp;</a></span>add() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -280,24 +365,24 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel_abfb2ff6a7566fde6bea104ddd3c556ed_icgraph.png" border="0" usemap="#aclassModel_abfb2ff6a7566fde6bea104ddd3c556ed_icgraph" alt=""/></div>
 <map name="aclassModel_abfb2ff6a7566fde6bea104ddd3c556ed_icgraph" id="aclassModel_abfb2ff6a7566fde6bea104ddd3c556ed_icgraph">
-<area shape="rect" title="Add a System to the Model (pure virtual)." alt="" coords="565,335,660,361"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="331,5,497,32"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="321,56,507,83"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="329,107,499,133"/>
-<area shape="rect" href="unit__Model_8cpp.html#aa4f8c7bb8b3cb64a0b1959bb0eb01b9a" title="Unit test for the add flow function of ModelImpl." alt="" coords="335,157,493,184"/>
-<area shape="rect" href="unit__Model_8cpp.html#ab3a10b6e696b6a91d6c33dcbb18aceb4" title="Unit test for the add system function of ModelImpl." alt="" coords="324,208,504,235"/>
-<area shape="rect" href="unit__Model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="327,259,501,285"/>
-<area shape="rect" href="unit__Model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Unit test for the beginSystems function of ModelImpl." alt="" coords="317,309,511,336"/>
-<area shape="rect" href="unit__Model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Unit test for the endFlows function of ModelImpl." alt="" coords="333,360,495,387"/>
-<area shape="rect" href="unit__Model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Unit test for the endSystems function of ModelImpl." alt="" coords="323,411,505,437"/>
-<area shape="rect" href="unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="334,461,494,488"/>
-<area shape="rect" href="unit__Model_8cpp.html#ad8771238ee4566fc080eb131d72a16c1" title="Unit test for the getSystems function of ModelImpl." alt="" coords="325,512,503,539"/>
-<area shape="rect" href="unit__Model_8cpp.html#a5fc81d7bb4d5cc5937fb70f06b59c58e" title="Verifies the operator= function of ModelImpl." alt="" coords="336,563,492,605"/>
-<area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="321,629,507,656"/>
-<area shape="rect" href="unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="311,680,517,707"/>
+<area shape="rect" title="Add a System to the Model (pure virtual)." alt="" coords="752,309,847,336"/>
+<area shape="rect" href="classModel.html#a0a45f6feacd4423de27333c11bb793c0" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="561,309,704,336"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="329,5,495,32"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="319,56,505,83"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="327,107,497,133"/>
+<area shape="rect" href="unit__Model_8cpp.html#aa4f8c7bb8b3cb64a0b1959bb0eb01b9a" title="Unit test for the add flow function of ModelImpl." alt="" coords="333,157,491,184"/>
+<area shape="rect" href="unit__Model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="325,208,499,235"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3b8d495fd565dfa3630c2d1106f99576" title="Unit test for ModelImpl::deleteFlow()" alt="" coords="325,259,499,285"/>
+<area shape="rect" href="unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="329,309,495,336"/>
+<area shape="rect" href="unit__Model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Unit test for the endFlows function of ModelImpl." alt="" coords="331,360,493,387"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="311,411,513,437"/>
+<area shape="rect" href="unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="332,461,492,488"/>
+<area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="319,512,505,539"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad7e193f7cf3494b4a68ebf9c62b02c4d" title="Unit test for ModelImpl::setSource()" alt="" coords="329,563,495,589"/>
+<area shape="rect" href="unit__Model_8cpp.html#aff46f8c80b89b5f607f27da6642a4303" title="Unit test for ModelImpl::setTarget()" alt="" coords="331,613,493,640"/>
 <area shape="rect" href="test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,56,213,83"/>
-<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,411,263,437"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,411,60,437"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,385,263,412"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,385,60,412"/>
 </map>
 </div>
 
@@ -351,6 +436,47 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a8b2bbff8b1275411d6a574d1ec98492e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b2bbff8b1275411d6a574d1ec98492e">&#9670;&nbsp;</a></span>beginModels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classModel.html#ae62cf1024b4d3e76cff7548064c6acc8">ModelsIterator</a> Model::beginModels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets an iterator pointing to the beginning of the Models vector (pure virtual) </p>
+<dl class="section return"><dt>Returns</dt><dd>A ModelsIterator pointing to the beginning of the Models vector </dd></dl>
+
+<p>Implemented in <a class="el" href="classModelImpl.html#adab8fbac5c4ec4e6ec90a71df9a4b4c6">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a8b2bbff8b1275411d6a574d1ec98492e_icgraph.png" border="0" usemap="#aclassModel_a8b2bbff8b1275411d6a574d1ec98492e_icgraph" alt=""/></div>
+<map name="aclassModel_a8b2bbff8b1275411d6a574d1ec98492e_icgraph" id="aclassModel_a8b2bbff8b1275411d6a574d1ec98492e_icgraph">
+<area shape="rect" title="Gets an iterator pointing to the beginning of the Models vector (pure virtual)" alt="" coords="543,5,696,32"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2679f573ec19210d2143c5f0275ba0ae" title="Unit test for ModelImpl::beginModels()" alt="" coords="311,5,495,32"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,5,263,32"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a17850a63542dd4c4994ae12ebf788969"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17850a63542dd4c4994ae12ebf788969">&#9670;&nbsp;</a></span>beginSystems()</h2>
 
@@ -399,6 +525,343 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a0a45f6feacd4423de27333c11bb793c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a45f6feacd4423de27333c11bb793c0">&#9670;&nbsp;</a></span>createFlow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T_FLOW_IMPL &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classFlow.html">Flow</a>* Model::createFlow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *&#160;</td>
+          <td class="paramname"><em>s</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *&#160;</td>
+          <td class="paramname"><em>t</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> with the given source and target Systems (default: nullptr) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>A pointer to the source <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> of the new <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> (default: nullptr) </td></tr>
+    <tr><td class="paramname">t</td><td>A pointer to the target <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> of the new <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> (default: nullptr) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a0a45f6feacd4423de27333c11bb793c0_cgraph.png" border="0" usemap="#aclassModel_a0a45f6feacd4423de27333c11bb793c0_cgraph" alt=""/></div>
+<map name="aclassModel_a0a45f6feacd4423de27333c11bb793c0_cgraph" id="aclassModel_a0a45f6feacd4423de27333c11bb793c0_cgraph">
+<area shape="rect" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="5,5,148,32"/>
+<area shape="rect" href="classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="196,5,291,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a0a45f6feacd4423de27333c11bb793c0_icgraph.png" border="0" usemap="#aclassModel_a0a45f6feacd4423de27333c11bb793c0_icgraph" alt=""/></div>
+<map name="aclassModel_a0a45f6feacd4423de27333c11bb793c0_icgraph" id="aclassModel_a0a45f6feacd4423de27333c11bb793c0_icgraph">
+<area shape="rect" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="561,309,704,336"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="329,5,495,32"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="319,56,505,83"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="327,107,497,133"/>
+<area shape="rect" href="unit__Model_8cpp.html#aa4f8c7bb8b3cb64a0b1959bb0eb01b9a" title="Unit test for the add flow function of ModelImpl." alt="" coords="333,157,491,184"/>
+<area shape="rect" href="unit__Model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="325,208,499,235"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3b8d495fd565dfa3630c2d1106f99576" title="Unit test for ModelImpl::deleteFlow()" alt="" coords="325,259,499,285"/>
+<area shape="rect" href="unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="329,309,495,336"/>
+<area shape="rect" href="unit__Model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Unit test for the endFlows function of ModelImpl." alt="" coords="331,360,493,387"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="311,411,513,437"/>
+<area shape="rect" href="unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="332,461,492,488"/>
+<area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="319,512,505,539"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad7e193f7cf3494b4a68ebf9c62b02c4d" title="Unit test for ModelImpl::setSource()" alt="" coords="329,563,495,589"/>
+<area shape="rect" href="unit__Model_8cpp.html#aff46f8c80b89b5f607f27da6642a4303" title="Unit test for ModelImpl::setTarget()" alt="" coords="331,613,493,640"/>
+<area shape="rect" href="test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,56,213,83"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,385,263,412"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,385,60,412"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8122c9ffb5bbc82450efeccbe5854f18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8122c9ffb5bbc82450efeccbe5854f18">&#9670;&nbsp;</a></span>createModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classModel.html">Model</a> * Model::createModel </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Delegates the creation of a new <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> with the given name to the <a class="el" href="classModelImpl.html" title="Model concrete class that implements the interface Model and represents a Model in systems theory.">ModelImpl</a> class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>A constant reference to a string representing the name of the new <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a8122c9ffb5bbc82450efeccbe5854f18_cgraph.png" border="0" usemap="#aclassModel_a8122c9ffb5bbc82450efeccbe5854f18_cgraph" alt=""/></div>
+<map name="aclassModel_a8122c9ffb5bbc82450efeccbe5854f18_cgraph" id="aclassModel_a8122c9ffb5bbc82450efeccbe5854f18_cgraph">
+<area shape="rect" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="5,5,156,32"/>
+<area shape="rect" href="classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="204,5,384,32"/>
+<area shape="rect" href="classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="432,5,555,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a8122c9ffb5bbc82450efeccbe5854f18_icgraph.png" border="0" usemap="#aclassModel_a8122c9ffb5bbc82450efeccbe5854f18_icgraph" alt=""/></div>
+<map name="aclassModel_a8122c9ffb5bbc82450efeccbe5854f18_icgraph" id="aclassModel_a8122c9ffb5bbc82450efeccbe5854f18_icgraph">
+<area shape="rect" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="577,731,728,757"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="337,5,503,32"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="327,56,513,83"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="335,107,505,133"/>
+<area shape="rect" href="unit__Model_8cpp.html#aa4f8c7bb8b3cb64a0b1959bb0eb01b9a" title="Unit test for the add flow function of ModelImpl." alt="" coords="341,157,499,184"/>
+<area shape="rect" href="unit__Model_8cpp.html#ab3a10b6e696b6a91d6c33dcbb18aceb4" title="Unit test for the add system function of ModelImpl." alt="" coords="330,208,510,235"/>
+<area shape="rect" href="unit__Model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="333,259,507,285"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2679f573ec19210d2143c5f0275ba0ae" title="Unit test for ModelImpl::beginModels()" alt="" coords="328,309,512,336"/>
+<area shape="rect" href="unit__Model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Unit test for the beginSystems function of ModelImpl." alt="" coords="323,360,517,387"/>
+<area shape="rect" href="unit__Model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="Unit test for Model::createModel()" alt="" coords="329,411,511,437"/>
+<area shape="rect" href="unit__Model_8cpp.html#a723ceb63472e35da820ad556d67a5c7a" title="Unit test for ModelImpl::createModel()" alt="" coords="311,461,529,488"/>
+<area shape="rect" href="unit__Model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Unit test for ModelImpl::createSystem()" alt="" coords="325,512,515,539"/>
+<area shape="rect" href="unit__Model_8cpp.html#a7760b8956819b3f28c08ca230a7e7aad" title="Unit test for the default constructor of ModelImpl." alt="" coords="347,563,493,605"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3b8d495fd565dfa3630c2d1106f99576" title="Unit test for ModelImpl::deleteFlow()" alt="" coords="333,629,507,656"/>
+<area shape="rect" href="unit__Model_8cpp.html#a9c6077bce8798366b4b0681f0ca0820d" title="Unit test for ModelImpl::deleteSystem()" alt="" coords="325,680,515,707"/>
+<area shape="rect" href="unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="337,731,503,757"/>
+<area shape="rect" href="unit__Model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Unit test for the endFlows function of ModelImpl." alt="" coords="339,781,501,808"/>
+<area shape="rect" href="unit__Model_8cpp.html#a198776a1fac9ea701215f46608b9cc0e" title="Unit test for ModelImpl::endModels()" alt="" coords="334,832,506,859"/>
+<area shape="rect" href="unit__Model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Unit test for the endSystems function of ModelImpl." alt="" coords="329,883,511,909"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="319,933,521,960"/>
+<area shape="rect" href="unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="340,984,500,1011"/>
+<area shape="rect" href="unit__Model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="Unit test for the getName function of ModelImpl." alt="" coords="339,1035,501,1061"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad8771238ee4566fc080eb131d72a16c1" title="Unit test for the getSystems function of ModelImpl." alt="" coords="331,1085,509,1112"/>
+<area shape="rect" href="unit__Model_8cpp.html#a1524ea94351f1b22d8f7b78e29cd35e5" title="Unit test for the parameterized constructor of ModelImpl." alt="" coords="335,1137,505,1178"/>
+<area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="327,1203,513,1229"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="317,1253,523,1280"/>
+<area shape="rect" href="unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title="Unit test for the run function of ModelImpl." alt="" coords="359,1304,481,1331"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="Unit test for the setName function of ModelImpl." alt="" coords="340,1355,500,1381"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad7e193f7cf3494b4a68ebf9c62b02c4d" title="Unit test for ModelImpl::setSource()" alt="" coords="337,1405,503,1432"/>
+<area shape="rect" href="unit__Model_8cpp.html#aff46f8c80b89b5f607f27da6642a4303" title="Unit test for ModelImpl::setTarget()" alt="" coords="339,1456,501,1483"/>
+<area shape="rect" href="test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,56,213,83"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,807,263,833"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,807,60,833"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa241eb7aeebc7a3dea5fd6a51ad1451f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa241eb7aeebc7a3dea5fd6a51ad1451f">&#9670;&nbsp;</a></span>createSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classSystem.html">System</a>* Model::createSystem </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> with the given name and initial value (pure virtual) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>A constant reference to a string representing the name of the new <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> </td></tr>
+    <tr><td class="paramname">v</td><td>A constant reference to a double representing the initial value of the new <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> </dd></dl>
+
+<p>Implemented in <a class="el" href="classModelImpl.html#a3d788bdb06826a1677fe765fcd70c73b">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_aa241eb7aeebc7a3dea5fd6a51ad1451f_icgraph.png" border="0" usemap="#aclassModel_aa241eb7aeebc7a3dea5fd6a51ad1451f_icgraph" alt=""/></div>
+<map name="aclassModel_aa241eb7aeebc7a3dea5fd6a51ad1451f_icgraph" id="aclassModel_aa241eb7aeebc7a3dea5fd6a51ad1451f_icgraph">
+<area shape="rect" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="565,385,725,412"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="331,5,497,32"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="321,56,507,83"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="329,107,499,133"/>
+<area shape="rect" href="unit__Model_8cpp.html#aa4f8c7bb8b3cb64a0b1959bb0eb01b9a" title="Unit test for the add flow function of ModelImpl." alt="" coords="335,157,493,184"/>
+<area shape="rect" href="unit__Model_8cpp.html#ab3a10b6e696b6a91d6c33dcbb18aceb4" title="Unit test for the add system function of ModelImpl." alt="" coords="324,208,504,235"/>
+<area shape="rect" href="unit__Model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Unit test for the beginSystems function of ModelImpl." alt="" coords="317,259,511,285"/>
+<area shape="rect" href="unit__Model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Unit test for ModelImpl::createSystem()" alt="" coords="319,309,509,336"/>
+<area shape="rect" href="unit__Model_8cpp.html#a9c6077bce8798366b4b0681f0ca0820d" title="Unit test for ModelImpl::deleteSystem()" alt="" coords="319,360,509,387"/>
+<area shape="rect" href="unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="331,411,497,437"/>
+<area shape="rect" href="unit__Model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Unit test for the endSystems function of ModelImpl." alt="" coords="323,461,505,488"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="313,512,515,539"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad8771238ee4566fc080eb131d72a16c1" title="Unit test for the getSystems function of ModelImpl." alt="" coords="325,563,503,589"/>
+<area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="321,613,507,640"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="311,664,517,691"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad7e193f7cf3494b4a68ebf9c62b02c4d" title="Unit test for ModelImpl::setSource()" alt="" coords="331,715,497,741"/>
+<area shape="rect" href="unit__Model_8cpp.html#aff46f8c80b89b5f607f27da6642a4303" title="Unit test for ModelImpl::setTarget()" alt="" coords="333,765,495,792"/>
+<area shape="rect" href="test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,56,213,83"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,461,263,488"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,461,60,488"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6861382c7bc53f745ed3f8fd83ea0bba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6861382c7bc53f745ed3f8fd83ea0bba">&#9670;&nbsp;</a></span>deleteFlow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Model::deleteFlow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFlow.html">Flow</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deletes the given <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> (pure virtual) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>A pointer to the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> to be deleted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> was successfully deleted, false otherwise </dd></dl>
+
+<p>Implemented in <a class="el" href="classModelImpl.html#af27489c74bc4993499d59d786203b0af">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a6861382c7bc53f745ed3f8fd83ea0bba_icgraph.png" border="0" usemap="#aclassModel_a6861382c7bc53f745ed3f8fd83ea0bba_icgraph" alt=""/></div>
+<map name="aclassModel_a6861382c7bc53f745ed3f8fd83ea0bba_icgraph" id="aclassModel_a6861382c7bc53f745ed3f8fd83ea0bba_icgraph">
+<area shape="rect" title="Deletes the given Flow (pure virtual)" alt="" coords="532,5,675,32"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3b8d495fd565dfa3630c2d1106f99576" title="Unit test for ModelImpl::deleteFlow()" alt="" coords="311,5,484,32"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,5,263,32"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4500fe8eb178caffac2ba97e44d024bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4500fe8eb178caffac2ba97e44d024bc">&#9670;&nbsp;</a></span>deleteSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Model::deleteSystem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deletes the given <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> (pure virtual) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>A pointer to the <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> to be deleted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> was successfully deleted, false otherwise </dd></dl>
+
+<p>Implemented in <a class="el" href="classModelImpl.html#a2c37e021fa2a7d699516f96a9bb9eafd">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a4500fe8eb178caffac2ba97e44d024bc_icgraph.png" border="0" usemap="#aclassModel_a4500fe8eb178caffac2ba97e44d024bc_icgraph" alt=""/></div>
+<map name="aclassModel_a4500fe8eb178caffac2ba97e44d024bc_icgraph" id="aclassModel_a4500fe8eb178caffac2ba97e44d024bc_icgraph">
+<area shape="rect" title="Deletes the given System (pure virtual)" alt="" coords="549,5,709,32"/>
+<area shape="rect" href="unit__Model_8cpp.html#a9c6077bce8798366b4b0681f0ca0820d" title="Unit test for ModelImpl::deleteSystem()" alt="" coords="311,5,501,32"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,5,263,32"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ad2a8514c9ba8d4deb0f51ed9e22c694a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad2a8514c9ba8d4deb0f51ed9e22c694a">&#9670;&nbsp;</a></span>endFlows()</h2>
 
@@ -441,6 +904,47 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="319,341,505,368"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,173,263,200"/>
 <area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,173,60,200"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9aff7f35b559c4981f536730d89ee13c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aff7f35b559c4981f536730d89ee13c">&#9670;&nbsp;</a></span>endModels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classModel.html#ae62cf1024b4d3e76cff7548064c6acc8">ModelsIterator</a> Model::endModels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets an iterator pointing to the end of the Models vector (pure virtual) </p>
+<dl class="section return"><dt>Returns</dt><dd>A ModelsIterator pointing to the end of the Models vector </dd></dl>
+
+<p>Implemented in <a class="el" href="classModelImpl.html#ad581c72515c326f6e63873eaa8866f8c">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a9aff7f35b559c4981f536730d89ee13c_icgraph.png" border="0" usemap="#aclassModel_a9aff7f35b559c4981f536730d89ee13c_icgraph" alt=""/></div>
+<map name="aclassModel_a9aff7f35b559c4981f536730d89ee13c_icgraph" id="aclassModel_a9aff7f35b559c4981f536730d89ee13c_icgraph">
+<area shape="rect" title="Gets an iterator pointing to the end of the Models vector (pure virtual)" alt="" coords="531,5,672,32"/>
+<area shape="rect" href="unit__Model_8cpp.html#a198776a1fac9ea701215f46608b9cc0e" title="Unit test for ModelImpl::endModels()" alt="" coords="311,5,483,32"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,5,263,32"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
 </map>
 </div>
 
@@ -566,14 +1070,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel_aa5365ab557ae47efffdf14ba7a46dac8_icgraph.png" border="0" usemap="#aclassModel_aa5365ab557ae47efffdf14ba7a46dac8_icgraph" alt=""/></div>
 <map name="aclassModel_aa5365ab557ae47efffdf14ba7a46dac8_icgraph" id="aclassModel_aa5365ab557ae47efffdf14ba7a46dac8_icgraph">
-<area shape="rect" title="Retrieve the name of the Model (pure virtual)." alt="" coords="561,122,692,149"/>
-<area shape="rect" href="unit__Model_8cpp.html#a7760b8956819b3f28c08ca230a7e7aad" title="Unit test for the default constructor of ModelImpl." alt="" coords="339,5,485,47"/>
-<area shape="rect" href="unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="311,71,513,98"/>
-<area shape="rect" href="unit__Model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="Unit test for the getName function of ModelImpl." alt="" coords="331,122,493,149"/>
-<area shape="rect" href="unit__Model_8cpp.html#a1524ea94351f1b22d8f7b78e29cd35e5" title="Unit test for the parameterized constructor of ModelImpl." alt="" coords="327,173,497,215"/>
-<area shape="rect" href="unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="Unit test for the setName function of ModelImpl." alt="" coords="332,239,492,266"/>
-<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,122,263,149"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,122,60,149"/>
+<area shape="rect" title="Retrieve the name of the Model (pure virtual)." alt="" coords="561,85,692,112"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="311,5,513,32"/>
+<area shape="rect" href="unit__Model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="Unit test for the getName function of ModelImpl." alt="" coords="331,56,493,83"/>
+<area shape="rect" href="unit__Model_8cpp.html#a1524ea94351f1b22d8f7b78e29cd35e5" title="Unit test for the parameterized constructor of ModelImpl." alt="" coords="327,107,497,149"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="Unit test for the setName function of ModelImpl." alt="" coords="332,173,492,200"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,85,263,112"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,85,60,112"/>
 </map>
 </div>
 
@@ -681,22 +1184,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Remove a <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> from the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> (pure virtual). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">s</td><td>Pointer to the <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> to be removed from the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a>. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the operation is successful, indicating the <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> is removed, false otherwise. </dd></dl>
-
 <p>Implemented in <a class="el" href="classModelImpl.html#a7097579f690a9bbe0a2ac486d49734d5">ModelImpl</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel_afd4f90dfebf43f4470c1fb6fdc5fe847_icgraph.png" border="0" usemap="#aclassModel_afd4f90dfebf43f4470c1fb6fdc5fe847_icgraph" alt=""/></div>
 <map name="aclassModel_afd4f90dfebf43f4470c1fb6fdc5fe847_icgraph" id="aclassModel_afd4f90dfebf43f4470c1fb6fdc5fe847_icgraph">
-<area shape="rect" title="Remove a System from the Model (pure virtual)." alt="" coords="565,31,685,57"/>
+<area shape="rect" title=" " alt="" coords="565,31,685,57"/>
 <area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="321,5,507,32"/>
 <area shape="rect" href="unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="311,56,517,83"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,31,263,57"/>
@@ -817,8 +1311,133 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>/mnt/c/Users/Nicolas/Documents/codes/codes/BCC322/sprint2/MyVensim/src/<a class="el" href="Model_8h_source.html">Model.h</a></li>
+<a id="a618ceb471175c7a23e226d3beae7ea26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a618ceb471175c7a23e226d3beae7ea26">&#9670;&nbsp;</a></span>setSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Model::setSource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFlow.html">Flow</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the source <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> of the given <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> (pure virtual) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>A pointer to the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> for which the source <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> is to be set </td></tr>
+    <tr><td class="paramname">s</td><td>A pointer to the <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> that will be set as the source of the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the source <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> of the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> was successfully set, false otherwise </dd></dl>
+
+<p>Implemented in <a class="el" href="classModelImpl.html#ac589417ae1d56f83925b0091d954977b">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a618ceb471175c7a23e226d3beae7ea26_icgraph.png" border="0" usemap="#aclassModel_a618ceb471175c7a23e226d3beae7ea26_icgraph" alt=""/></div>
+<map name="aclassModel_a618ceb471175c7a23e226d3beae7ea26_icgraph" id="aclassModel_a618ceb471175c7a23e226d3beae7ea26_icgraph">
+<area shape="rect" title="Sets the source System of the given Flow (pure virtual)" alt="" coords="528,31,663,57"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="311,5,480,32"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad7e193f7cf3494b4a68ebf9c62b02c4d" title="Unit test for ModelImpl::setSource()" alt="" coords="313,56,478,83"/>
+<area shape="rect" href="test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,5,213,32"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,56,263,83"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,56,60,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a486bd1ea4993d5603db3c8bd0a8f1c19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a486bd1ea4993d5603db3c8bd0a8f1c19">&#9670;&nbsp;</a></span>setTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Model::setTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFlow.html">Flow</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the target <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> of the given <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> (pure virtual) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>A pointer to the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> for which the target <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> is to be set </td></tr>
+    <tr><td class="paramname">s</td><td>A pointer to the <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> that will be set as the target of the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the target <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> of the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> was successfully set, false otherwise </dd></dl>
+
+<p>Implemented in <a class="el" href="classModelImpl.html#a033b2bc2e0e03de2a12c1183bd6ee426">ModelImpl</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModel_a486bd1ea4993d5603db3c8bd0a8f1c19_icgraph.png" border="0" usemap="#aclassModel_a486bd1ea4993d5603db3c8bd0a8f1c19_icgraph" alt=""/></div>
+<map name="aclassModel_a486bd1ea4993d5603db3c8bd0a8f1c19_icgraph" id="aclassModel_a486bd1ea4993d5603db3c8bd0a8f1c19_icgraph">
+<area shape="rect" title="Sets the target System of the given Flow (pure virtual)" alt="" coords="545,81,676,108"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="321,5,487,32"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="311,56,497,83"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="319,107,489,133"/>
+<area shape="rect" href="unit__Model_8cpp.html#aff46f8c80b89b5f607f27da6642a4303" title="Unit test for ModelImpl::setTarget()" alt="" coords="323,157,485,184"/>
+<area shape="rect" href="test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,56,213,83"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,157,263,184"/>
+<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,157,60,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/mnt/c/Users/Nicolas Mendes/Documents/Códigos/BCC322/sprint2/MyVensim/src/<a class="el" href="Model_8h_source.html">Model.h</a></li>
+<li>/mnt/c/Users/Nicolas Mendes/Documents/Códigos/BCC322/sprint2/MyVensim/src/<a class="el" href="ModelImpl_8cpp.html">ModelImpl.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

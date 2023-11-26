@@ -1,4 +1,7 @@
 <map id="unit_Model_run" name="unit_Model_run">
-<area shape="rect" id="node1" title="Unit test for the run function of ModelImpl." alt="" coords="5,5,128,32"/>
-<area shape="rect" id="node2" href="$classModel.html#a279af13c7eb8e6e1a4783686a8c8e1fa" title="Run the Model simulation from t_initial to t_final (pure virtual)." alt="" coords="176,5,267,32"/>
+<area shape="rect" id="node1" title="Unit test for the run function of ModelImpl." alt="" coords="5,31,128,57"/>
+<area shape="rect" id="node2" href="$classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="176,5,327,32"/>
+<area shape="rect" id="node5" href="$classModel.html#a279af13c7eb8e6e1a4783686a8c8e1fa" title="Run the Model simulation from t_initial to t_final (pure virtual)." alt="" coords="206,56,297,83"/>
+<area shape="rect" id="node3" href="$classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="375,5,555,32"/>
+<area shape="rect" id="node4" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="603,5,725,32"/>
 </map>

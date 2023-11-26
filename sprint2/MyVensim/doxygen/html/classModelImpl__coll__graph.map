@@ -1,7 +1,8 @@
 <map id="ModelImpl" name="ModelImpl">
-<area shape="rect" id="node1" title="Model concrete class that implements the interface Model and represents a Model in systems theory." alt="" coords="233,336,359,560"/>
-<area shape="rect" id="node2" href="$classModel.html" title="Interface that represents a Flow in the simulator of systems theory." alt="" coords="5,5,144,273"/>
-<area shape="rect" id="node3" title=" " alt="" coords="169,101,303,178"/>
-<area shape="rect" id="node4" title=" " alt="" coords="328,101,387,178"/>
-<area shape="rect" id="node5" title=" " alt="" coords="411,101,565,178"/>
+<area shape="rect" id="node1" title="Model concrete class that implements the interface Model and represents a Model in systems theory." alt="" coords="283,321,411,575"/>
+<area shape="rect" id="node2" href="$classModel.html" title="Interface that represents a Flow in the simulator of systems theory." alt="" coords="5,5,133,259"/>
+<area shape="rect" id="node3" title=" " alt="" coords="158,93,293,171"/>
+<area shape="rect" id="node4" title=" " alt="" coords="317,93,376,171"/>
+<area shape="rect" id="node5" title=" " alt="" coords="401,93,554,171"/>
+<area shape="rect" id="node6" title=" " alt="" coords="579,93,763,171"/>
 </map>

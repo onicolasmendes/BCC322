@@ -1,0 +1,4 @@
+<map id="Model::createFlow" name="Model::createFlow">
+<area shape="rect" id="node1" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node2" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="196,5,291,32"/>
+</map>

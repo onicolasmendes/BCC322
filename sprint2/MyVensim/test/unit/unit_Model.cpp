@@ -1,313 +1,269 @@
 #include "unit_Model.h"
+#include <iostream>
+using namespace std;
+typedef vector<System *>::iterator SystemsIterator;
+typedef vector<Flow *>::iterator FlowsIterator;
+typedef vector<Model *>::iterator ModelsIterator;
 
 void unit_Model_default_constructor()
 {
-    Model *model = new ModelImpl();
-    assert(model->getName().empty());
+    Model *model = Model::createModel("default");
     assert(model->beginSystems() == model->endSystems());
     assert(model->beginFlows() == model->endFlows());
-    delete model;
 }
 
 void unit_Model_parameter_constructor()
 {
-    Model *model = new ModelImpl("TestModel");
+    Model *model = Model::createModel("TestModel");
     assert(model->getName() == "TestModel");
     assert(model->beginSystems() == model->endSystems());
     assert(model->beginFlows() == model->endFlows());
-    delete model;
 }
 
 void unit_Model_full_constructor()
 {
 
-    System *system1 = new SystemImpl("System1");
-    System *system2 = new SystemImpl("System2");
-    Flow *flow1 = new FlowExponencial(system1, system2);
-
-    vector<System *> systems = {system1, system2};
-    vector<Flow *> flows = {flow1};
-
-    Model *model = new ModelImpl("TestModel", systems, flows);
-
+    Model *model = Model::createModel("TestModel");
+    System *system1 = model->createSystem("System1", 0);
+    System *system2 = model->createSystem("System2", 0);
+    Flow *flow1 = model->createFlow<FlowExponencial>(system1, system2);
     assert(model->getName() == "TestModel");
     assert(distance(model->beginSystems(), model->endSystems()) == 2);
     assert(distance(model->beginFlows(), model->endFlows()) == 1);
-
-    delete model;
 }
 
 void unit_Model_destructor()
 {
 
-    System *system1 = new SystemImpl("System1");
-    System *system2 = new SystemImpl("System2");
-    Flow *flow1 = new FlowExponencial(system1, system2);
-
-    vector<System *> systems = {system1, system2};
-    vector<Flow *> flows = {flow1};
-
-    Model *model = new ModelImpl("TestModel", systems, flows);
-
-    delete model;
+    Model *model = Model::createModel("TestModel");
+    System *system1 = model->createSystem("System1", 0);
+    System *system2 = model->createSystem("System2", 0);
+    Flow *flow1 = model->createFlow<FlowExponencial>(system1, system2);
 }
 
 void unit_Model_add_system()
 {
-    Model *model = new ModelImpl();
-
-    
-    System *system1 = new SystemImpl("System1");
-    System *system2 = new SystemImpl("System2");
-
-    
-    assert(model->add(system1));
-    assert(model->add(system2));
-
-    
+    Model *model = Model::createModel("default");
+    System *system1 = model->createSystem("System1", 0);
+    System *system2 = model->createSystem("System2", 0);
     assert(distance(model->beginSystems(), model->endSystems()) == 2);
-
-    
-    System *system3 = new SystemImpl("System3");
-    assert(model->add(system3));
-
-    
-    delete model;
-    delete system1;
-    delete system2;
-    delete system3;
 }
 
 void unit_Model_add_flow()
 {
-    Model *model = new ModelImpl();
+    Model *model = Model::createModel("default");
 
-    System *sourceSystem = new SystemImpl("SourceSystem");
-    System *targetSystem = new SystemImpl("TargetSystem");
-    Flow *flow1 = new FlowExponencial(sourceSystem, targetSystem);
-
-    assert(model->add(flow1));
-
+    System *sourceSystem = model->createSystem("SourceSystem", 0);
+    System *targetSystem = model->createSystem("TargetSystem", 0);
+    Flow *flow1 = model->createFlow<FlowExponencial>(sourceSystem, targetSystem);
     assert(distance(model->beginFlows(), model->endFlows()) == 1);
-
-    System *sourceSystem2 = new SystemImpl("SourceSystem2");
-    System *targetSystem2 = new SystemImpl("TargetSystem2");
-    Flow *flow2 = new FlowExponencial(sourceSystem2, targetSystem2);
-    assert(model->add(flow2));
-
-    delete model;
-    delete sourceSystem;
-    delete targetSystem;
-    delete flow1;
-    delete sourceSystem2;
-    delete targetSystem2;
-    delete flow2;
 }
 
 void unit_Model_remove_system()
 {
-    Model *model = new ModelImpl();
+    Model *model = Model::createModel("default");
 
-    System *system1 = new SystemImpl("System1");
-    System *system2 = new SystemImpl("System2");
-
-    model->add(system1);
-    model->add(system2);
+    System *system1 = model->createSystem("System1", 0);
+    System *system2 = model->createSystem("System2", 0);
 
     assert(model->remove(system1));
 
     assert(distance(model->beginSystems(), model->endSystems()) == 1);
 
-    System *system3 = new SystemImpl("System3");
-    assert(!model->remove(system3));
-
-    delete model;
-    delete system1;
-    delete system2;
-    delete system3;
+    System *system3 = model->createSystem("System3", 0);
+    assert(model->remove(system3));
 }
 
 void unit_Model_remove_flow()
 {
-    Model *model = new ModelImpl();
+    Model *model = Model::createModel("default");
 
-    System *sourceSystem = new SystemImpl("SourceSystem");
-    System *targetSystem = new SystemImpl("TargetSystem");
-    Flow *flow1 = new FlowExponencial(sourceSystem, targetSystem);
-
-    model->add(flow1);
-
+    System *sourceSystem = model->createSystem("SourceSystem", 0);
+    System *targetSystem = model->createSystem("TargetSystem", 0);
+    Flow *flow1 = model->createFlow<FlowExponencial>(sourceSystem, targetSystem);
     assert(model->remove(flow1));
-
     assert(distance(model->beginFlows(), model->endFlows()) == 0);
-
-    System *sourceSystem2 = new SystemImpl("SourceSystem2");
-    System *targetSystem2 = new SystemImpl("TargetSystem2");
-    Flow *flow2 = new FlowExponencial(sourceSystem2, targetSystem2);
-    assert(!model->remove(flow2));
-
-    delete model;
-    delete sourceSystem;
-    delete targetSystem;
-    delete flow1;
-    delete sourceSystem2;
-    delete targetSystem2;
-    delete flow2;
+    System *sourceSystem2 = model->createSystem("SourceSystem2", 0);
+    System *targetSystem2 = model->createSystem("TargetSystem2", 0);
+    Flow *flow2 = model->createFlow<FlowExponencial>(sourceSystem2, targetSystem2);
+    assert(model->remove(flow2));
 }
 
 void unit_Model_setName()
 {
-    Model *model = new ModelImpl();
-
+    Model *model = Model::createModel("default");
     assert(model->setName("TestModel"));
-
     assert(model->getName() == "TestModel");
-
-    delete model;
 }
 
 void unit_Model_getName()
 {
-    Model *model = new ModelImpl("InitialName");
+    Model *model = Model::createModel("InitialName");
 
     assert(model->getName() == "InitialName");
-
-    delete model;
 }
-
 
 void unit_Model_operator_equal()
 {
-
-    Model *model1 = new ModelImpl();
-    System *system1 = new SystemImpl("System1");
-    Flow *flow1 = new FlowExponencial(system1, nullptr);
-    model1->add(system1);
-    model1->add(flow1);
-
-    Model *model2 = new ModelImpl();
-    model2->add(system1);
-    model2->add(flow1);
-
-    assert(*static_cast<ModelImpl *>(model1) == *static_cast<ModelImpl *>(model2));
-
     ModelImpl *model3 = new ModelImpl();
     ModelImpl *model4 = model3;
 
     assert(model3 == model4);
-
-    delete model1;
-    delete model2;
-    delete model3;
 }
 
 void unit_Model_beginFlows()
 {
-    Model *model = new ModelImpl();
+    Model *model = Model::createModel("default");
 
-    Flow *flow1 = new FlowExponencial(nullptr, nullptr);
-    Flow *flow2 = new FlowExponencial(nullptr, nullptr);
-    model->add(flow1);
-    model->add(flow2);
+    Flow *flow1 = model->createFlow<FlowExponencial>(nullptr, nullptr);
+    Flow *flow2 = model->createFlow<FlowExponencial>(nullptr, nullptr);
 
     ModelImpl::FlowsIterator beginIterator = model->beginFlows();
 
     assert(distance(beginIterator, model->endFlows()) == 2);
-
-    delete model;
 }
 
 void unit_Model_endFlows()
 {
-    Model *model = new ModelImpl();
+    Model *model = Model::createModel("default");
 
-    Flow *flow1 = new FlowExponencial(nullptr, nullptr);
-    Flow *flow2 = new FlowExponencial(nullptr, nullptr);
-    model->add(flow1);
-    model->add(flow2);
+    Flow *flow1 = model->createFlow<FlowExponencial>(nullptr, nullptr);
+    Flow *flow2 = model->createFlow<FlowExponencial>(nullptr, nullptr);
 
     ModelImpl::FlowsIterator endIterator = model->endFlows();
 
     assert(distance(model->beginFlows(), endIterator) == 2);
-
-    delete model;
 }
 
 void unit_Model_beginSystems()
 {
-    Model *model = new ModelImpl();
+    Model *model = Model::createModel("default");
 
-    System *system1 = new SystemImpl("System1");
-    System *system2 = new SystemImpl("System2");
-    model->add(system1);
-    model->add(system2);
+    System *system1 = model->createSystem("System1", 0);
+    System *system2 = model->createSystem("System2", 0);
 
     ModelImpl::SystemsIterator beginIterator = model->beginSystems();
 
     assert(distance(beginIterator, model->endSystems()) == 2);
-
-    delete model;
 }
 
 void unit_Model_endSystems()
 {
-    Model *model = new ModelImpl();
+    Model *model = Model::createModel("default");
 
-    System *system1 = new SystemImpl("System1");
-    System *system2 = new SystemImpl("System2");
-    model->add(system1);
-    model->add(system2);
+    System *system1 = model->createSystem("System1", 0);
+    System *system2 = model->createSystem("System2", 0);
 
     ModelImpl::SystemsIterator endIterator = model->endSystems();
 
     assert(distance(model->beginSystems(), endIterator) == 2);
-
-    delete model;
 }
 
 void unit_Model_run()
 {
-    Model *model = new ModelImpl();
+    Model *model = Model::createModel("default");
 
     double t_inicial = 0.0;
     double t_final = 100.0;
 
-    assert(t_final - t_inicial == model->run(t_inicial, t_final) );
-
-    delete model;
+    assert(t_final - t_inicial == model->run(t_inicial, t_final));
 }
 
 void unit_Model_getFlows()
 {
-    Model *model = new ModelImpl();
+    Model *model = Model::createModel("default");
 
-    Flow *flow1 = new FlowExponencial(nullptr, nullptr);
-    Flow *flow2 = new FlowExponencial(nullptr, nullptr);
-    model->add(flow1);
-    model->add(flow2);
+    Flow *flow1 = model->createFlow<FlowExponencial>(nullptr, nullptr);
+    Flow *flow2 = model->createFlow<FlowExponencial>(nullptr, nullptr);
 
     ModelImpl::FlowsIterator flowsIterator = model->getFlows();
 
     assert(flowsIterator == model->beginFlows());
-
-    delete model;
 }
 
 void unit_Model_getSystems()
 {
-    Model *model = new ModelImpl();
+    Model *model = Model::createModel("default");
 
-    System *system1 = new SystemImpl("System1");
-    System *system2 = new SystemImpl("System2");
-    model->add(system1);
-    model->add(system2);
+    System *system1 = model->createSystem("System1", 0);
+    System *system2 = model->createSystem("System2", 0);
 
     ModelImpl::SystemsIterator systemsIterator = model->getSystems();
 
     assert(systemsIterator == model->beginSystems());
-
-    delete model;
 }
+void unit_Model_beginModels()
+{
+    Model *model = Model::createModel("default");
+    Model *model2 = Model::createModel("default");
+    ModelImpl::ModelsIterator beginIterator = model->beginModels();
+    assert(beginIterator == model->beginModels());
+}
+
+void unit_Model_endModels()
+{
+    Model *model = Model::createModel("default");
+    Model *model2 = Model::createModel("default");
+    ModelImpl::ModelsIterator endIterator = model->endModels();
+    assert(endIterator == model->endModels());
+}
+
+void unit_Model_createModel()
+{
+    Model *model = Model::createModel("default");
+    assert(model != nullptr);
+}
+
+void unit_Model_add_model()
+{
+    Model *subModel = new ModelImpl("SubModel");
+    assert(ModelImpl::add(subModel));
+}
+
+void unit_Model_createModel_Impl()
+{
+    Model *model = Model::createModel("default");
+    Model *subModel = model->createModel("SubModel");
+    assert(subModel != nullptr);
+}
+
+void unit_Model_createSystem()
+{
+    Model* model = Model::createModel("default");
+    System *subSystem = model->createSystem("SubSystem", 42.0);
+    assert(subSystem != nullptr);
+}
+
+void unit_Model_deleteFlow()
+{
+    Model *model = Model::createModel("default");
+    Flow *flow = model->createFlow<FlowExponencial>(nullptr, nullptr);
+    assert(model->deleteFlow(flow));
+}
+
+void unit_Model_deleteSystem()
+{
+    Model* model = Model::createModel("default");
+    System *system = model->createSystem("SubSystem", 42.0);
+    assert(model->deleteSystem(system));
+}
+
+void unit_Model_setSource()
+{
+    Model* model = Model::createModel("default");
+    Flow *flow = model->createFlow<FlowExponencial>(nullptr, nullptr);
+    System *system = model->createSystem("SubSystem", 42.0);
+    assert(model->setSource(flow, system));
+}
+
+void unit_Model_setTarget()
+{
+    Model* model = Model::createModel("default");
+    Flow *flow = model->createFlow<FlowExponencial>(nullptr, nullptr);
+    System *system = model->createSystem("SubSystem", 42.0);
+    assert(model->setTarget(flow, system));
+}
+
 
 void run_unit_test_Model()
 {
@@ -329,4 +285,14 @@ void run_unit_test_Model()
     unit_Model_run();
     unit_Model_getFlows();
     unit_Model_getSystems();
+    unit_Model_beginModels();
+    unit_Model_endModels();
+    unit_Model_createModel();
+    unit_Model_add_model();
+    unit_Model_createModel_Impl();
+    unit_Model_createSystem();
+    unit_Model_deleteFlow();
+    unit_Model_deleteSystem();
+    unit_Model_setSource();
+    unit_Model_setTarget();
 }

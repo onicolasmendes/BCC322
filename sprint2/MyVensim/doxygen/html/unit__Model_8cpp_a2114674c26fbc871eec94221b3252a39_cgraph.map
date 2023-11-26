@@ -1,32 +1,52 @@
 <map id="run_unit_test_Model" name="run_unit_test_Model">
-<area shape="rect" id="node1" title="Run all unit tests." alt="" coords="5,452,160,479"/>
-<area shape="rect" id="node2" href="$unit__Model_8cpp.html#aa4f8c7bb8b3cb64a0b1959bb0eb01b9a" title="Unit test for the add flow function of ModelImpl." alt="" coords="232,477,391,504"/>
-<area shape="rect" id="node6" href="$unit__Model_8cpp.html#ab3a10b6e696b6a91d6c33dcbb18aceb4" title="Unit test for the add system function of ModelImpl." alt="" coords="221,224,401,251"/>
-<area shape="rect" id="node9" href="$unit__Model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="224,528,399,555"/>
-<area shape="rect" id="node10" href="$unit__Model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Unit test for the beginSystems function of ModelImpl." alt="" coords="215,275,408,301"/>
-<area shape="rect" id="node11" href="$unit__Model_8cpp.html#a7760b8956819b3f28c08ca230a7e7aad" title="Unit test for the default constructor of ModelImpl." alt="" coords="238,645,385,686"/>
-<area shape="rect" id="node13" href="$unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="228,863,395,889"/>
-<area shape="rect" id="node14" href="$unit__Model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Unit test for the endFlows function of ModelImpl." alt="" coords="230,427,393,453"/>
-<area shape="rect" id="node15" href="$unit__Model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Unit test for the endSystems function of ModelImpl." alt="" coords="221,173,402,200"/>
-<area shape="rect" id="node16" href="$unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="210,711,413,737"/>
-<area shape="rect" id="node17" href="$unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="231,123,391,149"/>
-<area shape="rect" id="node19" href="$unit__Model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="Unit test for the getName function of ModelImpl." alt="" coords="231,761,392,788"/>
-<area shape="rect" id="node20" href="$unit__Model_8cpp.html#ad8771238ee4566fc080eb131d72a16c1" title="Unit test for the getSystems function of ModelImpl." alt="" coords="222,5,401,32"/>
-<area shape="rect" id="node22" href="$unit__Model_8cpp.html#a5fc81d7bb4d5cc5937fb70f06b59c58e" title="Verifies the operator= function of ModelImpl." alt="" coords="233,57,389,98"/>
-<area shape="rect" id="node23" href="$unit__Model_8cpp.html#a1524ea94351f1b22d8f7b78e29cd35e5" title="Unit test for the parameterized constructor of ModelImpl." alt="" coords="227,579,396,621"/>
-<area shape="rect" id="node24" href="$unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="219,376,404,403"/>
-<area shape="rect" id="node26" href="$unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="208,325,415,352"/>
-<area shape="rect" id="node27" href="$unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title="Unit test for the run function of ModelImpl." alt="" coords="250,913,373,940"/>
-<area shape="rect" id="node29" href="$unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="Unit test for the setName function of ModelImpl." alt="" coords="231,812,391,839"/>
-<area shape="rect" id="node3" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="497,224,591,251"/>
-<area shape="rect" id="node4" href="$classModel.html#a7e228e43346415de0d7226608ee1be4d" title="get an iterator to the beginning of the Flows vector (pure virtual)" alt="" coords="472,477,616,504"/>
-<area shape="rect" id="node5" href="$classModel.html#ad2a8514c9ba8d4deb0f51ed9e22c694a" title="get an iterator to the end of the Flows vector (pure virtual)" alt="" coords="478,528,610,555"/>
-<area shape="rect" id="node7" href="$classModel.html#a17850a63542dd4c4994ae12ebf788969" title="get an iterator to the beginning of the Systems vector (pure virtual)" alt="" coords="463,275,625,301"/>
-<area shape="rect" id="node8" href="$classModel.html#a60d5c46852dff7dffdc185f76eab28b1" title="get an iterator to the end of the Systems vector (pure virtual)" alt="" coords="469,325,619,352"/>
-<area shape="rect" id="node12" href="$classModel.html#aa5365ab557ae47efffdf14ba7a46dac8" title="Retrieve the name of the Model (pure virtual)." alt="" coords="479,711,609,737"/>
-<area shape="rect" id="node18" href="$classModel.html#a5f7412930cc0aa7f8935a2642d90c75d" title="get an iterator to the beginning of the Flows vector (pure virtual)" alt="" coords="479,123,609,149"/>
-<area shape="rect" id="node21" href="$classModel.html#ad52d3a732e9f15454de877acdc8ddb25" title="get an iterator to the beginning of the Systems vector (pure virtual)" alt="" coords="471,5,617,32"/>
-<area shape="rect" id="node25" href="$classModel.html#afd4f90dfebf43f4470c1fb6fdc5fe847" title="Remove a System from the Model (pure virtual)." alt="" coords="484,376,604,403"/>
-<area shape="rect" id="node28" href="$classModel.html#a279af13c7eb8e6e1a4783686a8c8e1fa" title="Run the Model simulation from t_initial to t_final (pure virtual)." alt="" coords="499,913,589,940"/>
-<area shape="rect" id="node30" href="$classModel.html#aafe5591bcbf5dba1efe78367586f3688" title="Set the name of the Model (pure virtual)." alt="" coords="479,812,609,839"/>
+<area shape="rect" id="node1" title="Run all unit tests." alt="" coords="5,701,160,728"/>
+<area shape="rect" id="node2" href="$unit__Model_8cpp.html#aa4f8c7bb8b3cb64a0b1959bb0eb01b9a" title="Unit test for the add flow function of ModelImpl." alt="" coords="238,309,397,336"/>
+<area shape="rect" id="node9" href="$unit__Model_8cpp.html#a8d1e2bcd565bbc0eb7b0690c9781ed75" title="Unit test for ModelImpl::add()" alt="" coords="231,5,404,32"/>
+<area shape="rect" id="node11" href="$unit__Model_8cpp.html#ab3a10b6e696b6a91d6c33dcbb18aceb4" title="Unit test for the add system function of ModelImpl." alt="" coords="227,1168,407,1195"/>
+<area shape="rect" id="node14" href="$unit__Model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="230,259,405,285"/>
+<area shape="rect" id="node15" href="$unit__Model_8cpp.html#a2679f573ec19210d2143c5f0275ba0ae" title="Unit test for ModelImpl::beginModels()" alt="" coords="225,157,409,184"/>
+<area shape="rect" id="node17" href="$unit__Model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Unit test for the beginSystems function of ModelImpl." alt="" coords="221,949,414,976"/>
+<area shape="rect" id="node18" href="$unit__Model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="Unit test for Model::createModel()" alt="" coords="226,512,409,539"/>
+<area shape="rect" id="node19" href="$unit__Model_8cpp.html#a723ceb63472e35da820ad556d67a5c7a" title="Unit test for ModelImpl::createModel()" alt="" coords="208,563,427,589"/>
+<area shape="rect" id="node20" href="$unit__Model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Unit test for ModelImpl::createSystem()" alt="" coords="222,731,413,757"/>
+<area shape="rect" id="node21" href="$unit__Model_8cpp.html#a7760b8956819b3f28c08ca230a7e7aad" title="Unit test for the default constructor of ModelImpl." alt="" coords="244,665,391,706"/>
+<area shape="rect" id="node22" href="$unit__Model_8cpp.html#a3b8d495fd565dfa3630c2d1106f99576" title="Unit test for ModelImpl::deleteFlow()" alt="" coords="231,56,404,83"/>
+<area shape="rect" id="node24" href="$unit__Model_8cpp.html#a9c6077bce8798366b4b0681f0ca0820d" title="Unit test for ModelImpl::deleteSystem()" alt="" coords="222,1000,413,1027"/>
+<area shape="rect" id="node26" href="$unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="234,613,401,640"/>
+<area shape="rect" id="node27" href="$unit__Model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Unit test for the endFlows function of ModelImpl." alt="" coords="236,208,399,235"/>
+<area shape="rect" id="node28" href="$unit__Model_8cpp.html#a198776a1fac9ea701215f46608b9cc0e" title="Unit test for ModelImpl::endModels()" alt="" coords="231,1320,403,1347"/>
+<area shape="rect" id="node30" href="$unit__Model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Unit test for the endSystems function of ModelImpl." alt="" coords="227,1117,408,1144"/>
+<area shape="rect" id="node31" href="$unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="216,781,419,808"/>
+<area shape="rect" id="node33" href="$unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="237,107,397,133"/>
+<area shape="rect" id="node35" href="$unit__Model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="Unit test for the getName function of ModelImpl." alt="" coords="237,1219,398,1245"/>
+<area shape="rect" id="node36" href="$unit__Model_8cpp.html#ad8771238ee4566fc080eb131d72a16c1" title="Unit test for the getSystems function of ModelImpl." alt="" coords="228,1269,407,1296"/>
+<area shape="rect" id="node38" href="$unit__Model_8cpp.html#a5fc81d7bb4d5cc5937fb70f06b59c58e" title="Verifies the operator= function of ModelImpl." alt="" coords="239,1051,395,1093"/>
+<area shape="rect" id="node39" href="$unit__Model_8cpp.html#a1524ea94351f1b22d8f7b78e29cd35e5" title="Unit test for the parameterized constructor of ModelImpl." alt="" coords="233,833,402,874"/>
+<area shape="rect" id="node40" href="$unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="225,360,410,387"/>
+<area shape="rect" id="node42" href="$unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="214,899,421,925"/>
+<area shape="rect" id="node43" href="$unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title="Unit test for the run function of ModelImpl." alt="" coords="256,1371,379,1397"/>
+<area shape="rect" id="node45" href="$unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="Unit test for the setName function of ModelImpl." alt="" coords="237,1421,397,1448"/>
+<area shape="rect" id="node47" href="$unit__Model_8cpp.html#ad7e193f7cf3494b4a68ebf9c62b02c4d" title="Unit test for ModelImpl::setSource()" alt="" coords="235,411,400,437"/>
+<area shape="rect" id="node49" href="$unit__Model_8cpp.html#aff46f8c80b89b5f607f27da6642a4303" title="Unit test for ModelImpl::setTarget()" alt="" coords="237,461,398,488"/>
+<area shape="rect" id="node3" href="$classModel.html#a7e228e43346415de0d7226608ee1be4d" title="get an iterator to the beginning of the Flows vector (pure virtual)" alt="" coords="484,309,628,336"/>
+<area shape="rect" id="node4" href="$classModel.html#a0a45f6feacd4423de27333c11bb793c0" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="485,259,627,285"/>
+<area shape="rect" id="node6" href="$classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="481,701,631,728"/>
+<area shape="rect" id="node7" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="476,781,636,808"/>
+<area shape="rect" id="node8" href="$classModel.html#ad2a8514c9ba8d4deb0f51ed9e22c694a" title="get an iterator to the end of the Flows vector (pure virtual)" alt="" coords="490,360,622,387"/>
+<area shape="rect" id="node5" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="685,259,780,285"/>
+<area shape="rect" id="node10" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="495,5,617,32"/>
+<area shape="rect" id="node12" href="$classModel.html#a17850a63542dd4c4994ae12ebf788969" title="get an iterator to the beginning of the Systems vector (pure virtual)" alt="" coords="475,949,637,976"/>
+<area shape="rect" id="node13" href="$classModel.html#a60d5c46852dff7dffdc185f76eab28b1" title="get an iterator to the end of the Systems vector (pure virtual)" alt="" coords="481,899,631,925"/>
+<area shape="rect" id="node16" href="$classModel.html#a8b2bbff8b1275411d6a574d1ec98492e" title="Gets an iterator pointing to the beginning of the Models vector (pure virtual)" alt="" coords="479,157,633,184"/>
+<area shape="rect" id="node23" href="$classModel.html#a6861382c7bc53f745ed3f8fd83ea0bba" title="Deletes the given Flow (pure virtual)" alt="" coords="485,56,627,83"/>
+<area shape="rect" id="node25" href="$classModel.html#a4500fe8eb178caffac2ba97e44d024bc" title="Deletes the given System (pure virtual)" alt="" coords="476,1000,636,1027"/>
+<area shape="rect" id="node29" href="$classModel.html#a9aff7f35b559c4981f536730d89ee13c" title="Gets an iterator pointing to the end of the Models vector (pure virtual)" alt="" coords="485,1320,627,1347"/>
+<area shape="rect" id="node32" href="$classModel.html#aa5365ab557ae47efffdf14ba7a46dac8" title="Retrieve the name of the Model (pure virtual)." alt="" coords="491,1135,621,1161"/>
+<area shape="rect" id="node34" href="$classModel.html#a5f7412930cc0aa7f8935a2642d90c75d" title="get an iterator to the beginning of the Flows vector (pure virtual)" alt="" coords="491,107,621,133"/>
+<area shape="rect" id="node37" href="$classModel.html#ad52d3a732e9f15454de877acdc8ddb25" title="get an iterator to the beginning of the Systems vector (pure virtual)" alt="" coords="483,1269,629,1296"/>
+<area shape="rect" id="node41" href="$classModel.html#afd4f90dfebf43f4470c1fb6fdc5fe847" title=" " alt="" coords="496,596,616,623"/>
+<area shape="rect" id="node44" href="$classModel.html#a279af13c7eb8e6e1a4783686a8c8e1fa" title="Run the Model simulation from t_initial to t_final (pure virtual)." alt="" coords="511,1371,601,1397"/>
+<area shape="rect" id="node46" href="$classModel.html#aafe5591bcbf5dba1efe78367586f3688" title="Set the name of the Model (pure virtual)." alt="" coords="491,1421,621,1448"/>
+<area shape="rect" id="node48" href="$classModel.html#a618ceb471175c7a23e226d3beae7ea26" title="Sets the source System of the given Flow (pure virtual)" alt="" coords="489,411,623,437"/>
+<area shape="rect" id="node50" href="$classModel.html#a486bd1ea4993d5603db3c8bd0a8f1c19" title="Sets the target System of the given Flow (pure virtual)" alt="" coords="491,461,621,488"/>
 </map>

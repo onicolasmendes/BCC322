@@ -1,0 +1,7 @@
+<map id="unit_Model_beginModels" name="unit_Model_beginModels">
+<area shape="rect" id="node1" title="Unit test for ModelImpl::beginModels()" alt="" coords="5,31,189,57"/>
+<area shape="rect" id="node2" href="$classModel.html#a8b2bbff8b1275411d6a574d1ec98492e" title="Gets an iterator pointing to the beginning of the Models vector (pure virtual)" alt="" coords="237,5,391,32"/>
+<area shape="rect" id="node3" href="$classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="239,56,389,83"/>
+<area shape="rect" id="node4" href="$classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="439,56,619,83"/>
+<area shape="rect" id="node5" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="667,56,789,83"/>
+</map>

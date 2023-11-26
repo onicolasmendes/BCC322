@@ -3,6 +3,7 @@
 #include "vector"
 #include "Model.h"
 
+using namespace std;
 /**
  * @file ModelImpl.h
  * @brief ModelImpl class header file
@@ -16,10 +17,10 @@
 class ModelImpl : public Model
 {
 protected:
-    string name;              ///< Variable to store a name of the Model
-    vector<System *> systems; ///< Vector to store pointers to System objects
-    vector<Flow *> flows;     ///< Vector to store pointers to Flow objects
-
+    string name;                   ///< Variable to store a name of the Model
+    vector<System *> systems;      ///< Vector to store pointers to System objects
+    vector<Flow *> flows;          ///< Vector to store pointers to Flow objects
+    static vector<Model *> models; ///< Vector to store pointers to created models
 public:
     using SystemsIterator = vector<System *>::iterator;
     using FlowsIterator = vector<Flow *>::iterator;
@@ -139,4 +140,59 @@ public:
      * @return a SystemsIterator to the end of the Systems vector
      */
     virtual SystemsIterator endSystems();
+    /**
+     * @brief Obtains an iterator pointing to the beginning of the Models container
+     * @return A ModelsIterator pointing to the first element in the Models container
+     */
+    virtual ModelsIterator beginModels();
+    /**
+     * @brief Obtains an iterator pointing to the end of the Models container
+     * @return A ModelsIterator pointing one past the last element in the Models container
+     */
+    virtual ModelsIterator endModels();
+    /**
+     * @brief Creates a new Model with the given name and adds it to the Models container
+     * @param n A constant reference to a string representing the name of the new Model
+     * @return A pointer to the newly created Model
+     */
+    static Model *createModel(const string &n);
+    /**
+     * @brief Creates a new System with the given name and initial value, and adds it to the Models container
+     * @param n A constant reference to a string representing the name of the new System (default: empty string)
+     * @param v A constant reference to a double representing the initial value of the new System (default: 0)
+     * @return A pointer to the newly created System
+     */
+    virtual System *createSystem(const string &n, const double &v);
+    /**
+     * @brief Deletes the given Flow from the Models container
+     * @param f A pointer to the Flow to be deleted
+     * @return true if the Flow was successfully deleted, false otherwise
+     */
+    virtual bool deleteFlow(Flow *f);
+    /**
+     * @brief Deletes the given System from the Models container
+     * @param s A pointer to the System to be deleted
+     * @return true if the System was successfully deleted, false otherwise
+     */
+    virtual bool deleteSystem(System *s);
+    /**
+     * @brief Sets the source System of the given Flow
+     * @param f A pointer to the Flow for which the source System is to be set
+     * @param s A pointer to the System that will be set as the source of the Flow
+     * @return true if the source System of the Flow was successfully set, false otherwise
+     */
+    virtual bool setSource(Flow *f, System *s);
+    /**
+     * @brief Sets the target System of the given Flow
+     * @param f A pointer to the Flow for which the target System is to be set
+     * @param s A pointer to the System that will be set as the target of the Flow
+     * @return true if the target System of the Flow was successfully set, false otherwise
+     */
+    virtual bool setTarget(Flow *f, System *s);
+    /**
+     * @brief Adds the given Model to the Models container
+     * @param m A pointer to the Model to be added
+     * @return true if the Model was successfully added, false otherwise
+     */
+    static bool add(Model *m);
 };

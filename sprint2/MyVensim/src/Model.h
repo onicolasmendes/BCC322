@@ -1,5 +1,7 @@
 #pragma once
 #include "Flow.h"
+#include "FlowImpl.h"
+#include "SystemImpl.h"
 #include "vector"
 
 /**
@@ -49,6 +51,9 @@ public:
      * @param s Pointer to the System to be removed from the Model.
      * @return True if the operation is successful, indicating the System is removed, false otherwise.
      */
+
+    static bool add(Model *m);
+
     virtual bool remove(const System *s) = 0;
     /**
      * @brief Remove a Flow from the Model (pure virtual).
@@ -67,6 +72,7 @@ public:
     // Typedefs
     typedef vector<System *>::iterator SystemsIterator;
     typedef vector<Flow *>::iterator FlowsIterator;
+    typedef vector<Model *>::iterator ModelsIterator;
 
     /**
      * @brief get an iterator to the beginning of the Systems vector (pure virtual)
@@ -98,4 +104,68 @@ public:
      * @return a SystemsIterator to the end of the Systems vector
      */
     virtual SystemsIterator endSystems() = 0;
+    /**
+     * @brief Gets an iterator pointing to the beginning of the Models vector (pure virtual)
+     * @return A ModelsIterator pointing to the beginning of the Models vector
+     */
+    virtual ModelsIterator beginModels() = 0;
+    /**
+     * @brief Gets an iterator pointing to the end of the Models vector (pure virtual)
+     * @return A ModelsIterator pointing to the end of the Models vector
+     */
+    virtual ModelsIterator endModels() = 0;
+    /**
+     * @brief Delegates the creation of a new Model with the given name to the ModelImpl class
+     * @param n A constant reference to a string representing the name of the new Model
+     * @return A pointer to the newly created Model
+     */
+    static Model *createModel(const string &n);
+    /**
+     * @brief Creates a new System with the given name and initial value (pure virtual)
+     * @param n A constant reference to a string representing the name of the new System
+     * @param v A constant reference to a double representing the initial value of the new System
+     * @return A pointer to the newly created System
+     */
+    virtual System *createSystem(const string &n, const double &v) = 0;
+    /**
+     * @brief Deletes the given Flow (pure virtual)
+     * @param f A pointer to the Flow to be deleted
+     * @return true if the Flow was successfully deleted, false otherwise
+     */
+    virtual bool deleteFlow(Flow *f) = 0;
+    /**
+     * @brief Deletes the given System (pure virtual)
+     * @param s A pointer to the System to be deleted
+     * @return true if the System was successfully deleted, false otherwise
+     */
+    virtual bool deleteSystem(System *s) = 0;
+    /**
+     * @brief Sets the source System of the given Flow (pure virtual)
+     * @param f A pointer to the Flow for which the source System is to be set
+     * @param s A pointer to the System that will be set as the source of the Flow
+     * @return true if the source System of the Flow was successfully set, false otherwise
+     */
+    virtual bool setSource(Flow *f, System *s) = 0;
+    /**
+     * @brief Sets the target System of the given Flow (pure virtual)
+     * @param f A pointer to the Flow for which the target System is to be set
+     * @param s A pointer to the System that will be set as the target of the Flow
+     * @return true if the target System of the Flow was successfully set, false otherwise
+     */
+    virtual bool setTarget(Flow *f, System *s) = 0;
+
+    template <typename T_FLOW_IMPL>
+    /**
+     * @brief Creates a new Flow with the given source and target Systems (default: nullptr)
+     * @param s A pointer to the source System of the new Flow (default: nullptr)
+     * @param t A pointer to the target System of the new Flow (default: nullptr)
+     * @return A pointer to the newly created Flow
+     */
+
+    Flow *createFlow(System *s = nullptr, System *t = nullptr)
+    {
+        Flow *f = new T_FLOW_IMPL(s, t);
+        add(f);
+        return f;
+    }
 };
