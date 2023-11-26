@@ -1,5 +1,5 @@
 all: System.o Flow.o Model.o vensimLib.so FlowLogistica.o FlowExponencial.o FlowMaior.o testFlowsLib.so unitSystem.o unitFlow.o unitModel.o unit_tests.o mainFunc.o    
-	@cd ../../bin && g++ -o exeUnit mainFunc.o unitSystem.o unitFlow.o unitModel.o unit_tests.o vensimLib.so testFlowsLib.so   -Wall && rm *.o
+	@cd ../../bin && g++ -o exeUnit ./mainFunc.o ./unitSystem.o ./unitFlow.o ./unitModel.o ./unit_tests.o ./vensimLib.so ./testFlowsLib.so   -Wall && rm *.o && ./exeUnit
 System.o: ../../src/SystemImpl.cpp 
 	@g++ -c -fPIC ../../src/SystemImpl.cpp  -o ../../bin/System.o -Wall
 vensimLib.so: ../../bin/Flow.o ../../bin/System.o ../../bin/Model.o
