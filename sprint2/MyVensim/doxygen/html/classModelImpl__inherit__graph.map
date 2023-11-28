@@ -1,4 +1,4 @@
 <map id="ModelImpl" name="ModelImpl">
-<area shape="rect" id="node1" title="Model concrete class that implements the interface Model and represents a Model in systems theory." alt="" coords="5,307,133,604"/>
-<area shape="rect" id="node2" href="$classModel.html" title="Interface that represents a Flow in the simulator of systems theory." alt="" coords="5,5,133,259"/>
+<area shape="rect" id="node1" title="Model concrete class that implements the interface Model and represents a Model in systems theory." alt="" coords="5,351,133,692"/>
+<area shape="rect" id="node2" href="$classModel.html" title="Interface that represents a Flow in the simulator of systems theory." alt="" coords="5,5,133,303"/>
 </map>

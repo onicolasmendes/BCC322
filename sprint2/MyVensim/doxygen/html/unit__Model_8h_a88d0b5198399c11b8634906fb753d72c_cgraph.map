@@ -2,11 +2,10 @@
 <area shape="rect" id="node1" title="Unit test for the remove flow function of ModelImpl." alt="" coords="5,132,191,159"/>
 <area shape="rect" id="node2" href="$classModel.html#a7e228e43346415de0d7226608ee1be4d" title="get an iterator to the beginning of the Flows vector (pure virtual)" alt="" coords="247,5,391,32"/>
 <area shape="rect" id="node3" href="$classModel.html#a0a45f6feacd4423de27333c11bb793c0" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="247,56,390,83"/>
-<area shape="rect" id="node5" href="$classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="243,107,394,133"/>
-<area shape="rect" id="node8" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="239,157,399,184"/>
-<area shape="rect" id="node9" href="$classModel.html#ad2a8514c9ba8d4deb0f51ed9e22c694a" title="get an iterator to the end of the Flows vector (pure virtual)" alt="" coords="253,208,385,235"/>
-<area shape="rect" id="node10" href="$classModel.html#afd4f90dfebf43f4470c1fb6fdc5fe847" title=" " alt="" coords="259,259,379,285"/>
+<area shape="rect" id="node5" href="$classModel.html#accd28300871325fce68d551cebf27220" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="243,107,394,133"/>
+<area shape="rect" id="node7" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="239,157,399,184"/>
+<area shape="rect" id="node8" href="$classModel.html#ad2a8514c9ba8d4deb0f51ed9e22c694a" title="get an iterator to the end of the Flows vector (pure virtual)" alt="" coords="253,208,385,235"/>
+<area shape="rect" id="node9" href="$classModel.html#aab07c39ea01c4296097674893858f12f" title=" " alt="" coords="259,259,379,285"/>
 <area shape="rect" id="node4" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="489,56,584,83"/>
-<area shape="rect" id="node6" href="$classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="447,107,627,133"/>
-<area shape="rect" id="node7" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="675,107,797,133"/>
+<area shape="rect" id="node6" href="$classModelImpl.html#a8a9167b35336431e394f0042271620cb" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="447,107,627,133"/>
 </map>

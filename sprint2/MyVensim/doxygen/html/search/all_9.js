@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['name_50',['name',['../classModelImpl.html#aa32e79af7c5dfa46a3ea476796a33fb4',1,'ModelImpl::name()'],['../classSystemImpl.html#acd123bacad8aa2b830d9ca9c8098fa84',1,'SystemImpl::name()']]]
+  ['operator_3d_49',['operator=',['../classFlowImpl.html#add223af4e52fbbdafa772cd7d5b78681',1,'FlowImpl::operator=()'],['../classSystemImpl.html#a7643c13e8360961b46cef3035a2acb7e',1,'SystemImpl::operator=()']]],
+  ['operator_3d_3d_50',['operator==',['../classFlowImpl.html#a0fe57115324517d8105c5ffb0db1182b',1,'FlowImpl::operator==()'],['../classModelImpl.html#a8a43f0424c14ccd3d7afb672b3b2a01b',1,'ModelImpl::operator==()'],['../classSystemImpl.html#a79a43a3c9ec902e3205909edfcbf896c',1,'SystemImpl::operator==()']]]
 ];

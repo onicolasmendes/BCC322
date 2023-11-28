@@ -1,12 +1,11 @@
 <map id="exponentialFuncionalTest" name="exponentialFuncionalTest">
 <area shape="rect" id="node1" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="5,132,192,159"/>
 <area shape="rect" id="node2" href="$classModel.html#a0a45f6feacd4423de27333c11bb793c0" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="249,5,391,32"/>
-<area shape="rect" id="node4" href="$classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="245,56,395,83"/>
-<area shape="rect" id="node7" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="240,107,400,133"/>
-<area shape="rect" id="node8" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Retrieve the value of the System (pure virtual)." alt="" coords="252,157,388,184"/>
-<area shape="rect" id="node9" href="$classModel.html#a279af13c7eb8e6e1a4783686a8c8e1fa" title="Run the Model simulation from t_initial to t_final (pure virtual)." alt="" coords="275,208,365,235"/>
-<area shape="rect" id="node10" href="$classModel.html#a486bd1ea4993d5603db3c8bd0a8f1c19" title="Sets the target System of the given Flow (pure virtual)" alt="" coords="255,259,385,285"/>
+<area shape="rect" id="node4" href="$classModel.html#accd28300871325fce68d551cebf27220" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="245,56,395,83"/>
+<area shape="rect" id="node6" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="240,107,400,133"/>
+<area shape="rect" id="node7" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Retrieve the value of the System (pure virtual)." alt="" coords="252,157,388,184"/>
+<area shape="rect" id="node8" href="$classModel.html#a279af13c7eb8e6e1a4783686a8c8e1fa" title="Run the Model simulation from t_initial to t_final (pure virtual)." alt="" coords="275,208,365,235"/>
+<area shape="rect" id="node9" href="$classModel.html#a486bd1ea4993d5603db3c8bd0a8f1c19" title="Sets the target System of the given Flow (pure virtual)" alt="" coords="255,259,385,285"/>
 <area shape="rect" id="node3" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="491,5,585,32"/>
-<area shape="rect" id="node5" href="$classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="448,56,628,83"/>
-<area shape="rect" id="node6" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="676,56,799,83"/>
+<area shape="rect" id="node5" href="$classModelImpl.html#a8a9167b35336431e394f0042271620cb" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="448,56,628,83"/>
 </map>

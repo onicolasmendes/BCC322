@@ -65,6 +65,7 @@ public:
      * @param s a pointer to the System to be added
      * @return true if the System was successfully added, false otherwise
      */
+protected:
     virtual bool add(System *s);
     /**
      * @brief add a Flow to the Model
@@ -73,17 +74,24 @@ public:
      */
     virtual bool add(Flow *f);
     /**
+     * @brief Adds the given Model to the Models container
+     * @param m A pointer to the Model to be added
+     * @return true if the Model was successfully added, false otherwise
+     */
+    static bool add(Model *m);
+    /**
      * @brief remove a System from the Model
      * @param s a pointer to the System to be removed
      * @return true if the System was successfully removed, false otherwise
      */
-    virtual bool remove(const System *s);
+public:
+    virtual bool remove(System *s);
     /**
      * @brief remove a Flow from the Model
      * @param f a pointer to the Flow to be removed
      * @return true if the Flow was successfully removed, false otherwise
      */
-    virtual bool remove(const Flow *f);
+    virtual bool remove(Flow *f);
     /**
      * @brief run the Model simulation from a specified initial time to a final time
      * @param t_initial double initial time of the simulation
@@ -157,24 +165,18 @@ public:
      */
     static Model *createModel(const string &n);
     /**
+     * @brief Creates a new Model using the ModelImpl class.
+     * This function delegates the creation of a new Model to the ModelImpl class.
+     * @return A pointer to the newly created Model.
+     */
+    static Model *createModel();
+    /**
      * @brief Creates a new System with the given name and initial value, and adds it to the Models container
      * @param n A constant reference to a string representing the name of the new System (default: empty string)
      * @param v A constant reference to a double representing the initial value of the new System (default: 0)
      * @return A pointer to the newly created System
      */
     virtual System *createSystem(const string &n, const double &v);
-    /**
-     * @brief Deletes the given Flow from the Models container
-     * @param f A pointer to the Flow to be deleted
-     * @return true if the Flow was successfully deleted, false otherwise
-     */
-    virtual bool deleteFlow(Flow *f);
-    /**
-     * @brief Deletes the given System from the Models container
-     * @param s A pointer to the System to be deleted
-     * @return true if the System was successfully deleted, false otherwise
-     */
-    virtual bool deleteSystem(System *s);
     /**
      * @brief Sets the source System of the given Flow
      * @param f A pointer to the Flow for which the source System is to be set
@@ -189,10 +191,4 @@ public:
      * @return true if the target System of the Flow was successfully set, false otherwise
      */
     virtual bool setTarget(Flow *f, System *s);
-    /**
-     * @brief Adds the given Model to the Models container
-     * @param m A pointer to the Model to be added
-     * @return true if the Model was successfully added, false otherwise
-     */
-    static bool add(Model *m);
 };

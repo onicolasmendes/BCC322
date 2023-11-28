@@ -1,9 +1,8 @@
 <map id="unit_Model_endSystems" name="unit_Model_endSystems">
 <area shape="rect" id="node1" title="Unit test for the endSystems function of ModelImpl." alt="" coords="5,81,187,108"/>
 <area shape="rect" id="node2" href="$classModel.html#a17850a63542dd4c4994ae12ebf788969" title="get an iterator to the beginning of the Systems vector (pure virtual)" alt="" coords="235,5,397,32"/>
-<area shape="rect" id="node3" href="$classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="241,56,391,83"/>
-<area shape="rect" id="node6" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="236,107,396,133"/>
-<area shape="rect" id="node7" href="$classModel.html#a60d5c46852dff7dffdc185f76eab28b1" title="get an iterator to the end of the Systems vector (pure virtual)" alt="" coords="241,157,391,184"/>
-<area shape="rect" id="node4" href="$classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="445,56,625,83"/>
-<area shape="rect" id="node5" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="673,56,796,83"/>
+<area shape="rect" id="node3" href="$classModel.html#accd28300871325fce68d551cebf27220" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="241,56,391,83"/>
+<area shape="rect" id="node5" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="236,107,396,133"/>
+<area shape="rect" id="node6" href="$classModel.html#a60d5c46852dff7dffdc185f76eab28b1" title="get an iterator to the end of the Systems vector (pure virtual)" alt="" coords="241,157,391,184"/>
+<area shape="rect" id="node4" href="$classModelImpl.html#a8a9167b35336431e394f0042271620cb" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="445,56,625,83"/>
 </map>

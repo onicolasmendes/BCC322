@@ -1,9 +1,9 @@
 <map id="unit_Model_deleteFlow" name="unit_Model_deleteFlow">
 <area shape="rect" id="node1" title="Unit test for ModelImpl::deleteFlow()" alt="" coords="5,56,179,83"/>
 <area shape="rect" id="node2" href="$classModel.html#a0a45f6feacd4423de27333c11bb793c0" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="231,5,373,32"/>
-<area shape="rect" id="node4" href="$classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="227,56,377,83"/>
+<area shape="rect" id="node4" href="$classModel.html#accd28300871325fce68d551cebf27220" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="227,56,377,83"/>
 <area shape="rect" id="node7" href="$classModel.html#a6861382c7bc53f745ed3f8fd83ea0bba" title="Deletes the given Flow (pure virtual)" alt="" coords="231,107,373,133"/>
 <area shape="rect" id="node3" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="468,5,563,32"/>
-<area shape="rect" id="node5" href="$classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="425,56,605,83"/>
+<area shape="rect" id="node5" href="$classModelImpl.html#a8a9167b35336431e394f0042271620cb" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="425,56,605,83"/>
 <area shape="rect" id="node6" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="653,56,776,83"/>
 </map>

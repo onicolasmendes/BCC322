@@ -1,5 +1,6 @@
 #include "unit_Model.h"
 #include <iostream>
+#include <iterator>
 using namespace std;
 typedef vector<System *>::iterator SystemsIterator;
 typedef vector<Flow *>::iterator FlowsIterator;
@@ -7,9 +8,10 @@ typedef vector<Model *>::iterator ModelsIterator;
 
 void unit_Model_default_constructor()
 {
-    Model *model = Model::createModel("default");
+    Model *model = Model::createModel();
     assert(model->beginSystems() == model->endSystems());
     assert(model->beginFlows() == model->endFlows());
+    delete model;
 }
 
 void unit_Model_parameter_constructor()
@@ -18,6 +20,7 @@ void unit_Model_parameter_constructor()
     assert(model->getName() == "TestModel");
     assert(model->beginSystems() == model->endSystems());
     assert(model->beginFlows() == model->endFlows());
+    delete model;
 }
 
 void unit_Model_full_constructor()
@@ -30,6 +33,7 @@ void unit_Model_full_constructor()
     assert(model->getName() == "TestModel");
     assert(distance(model->beginSystems(), model->endSystems()) == 2);
     assert(distance(model->beginFlows(), model->endFlows()) == 1);
+    delete model;
 }
 
 void unit_Model_destructor()
@@ -39,24 +43,7 @@ void unit_Model_destructor()
     System *system1 = model->createSystem("System1", 0);
     System *system2 = model->createSystem("System2", 0);
     Flow *flow1 = model->createFlow<FlowExponencial>(system1, system2);
-}
-
-void unit_Model_add_system()
-{
-    Model *model = Model::createModel("default");
-    System *system1 = model->createSystem("System1", 0);
-    System *system2 = model->createSystem("System2", 0);
-    assert(distance(model->beginSystems(), model->endSystems()) == 2);
-}
-
-void unit_Model_add_flow()
-{
-    Model *model = Model::createModel("default");
-
-    System *sourceSystem = model->createSystem("SourceSystem", 0);
-    System *targetSystem = model->createSystem("TargetSystem", 0);
-    Flow *flow1 = model->createFlow<FlowExponencial>(sourceSystem, targetSystem);
-    assert(distance(model->beginFlows(), model->endFlows()) == 1);
+    delete model;
 }
 
 void unit_Model_remove_system()
@@ -72,6 +59,8 @@ void unit_Model_remove_system()
 
     System *system3 = model->createSystem("System3", 0);
     assert(model->remove(system3));
+
+    delete model;
 }
 
 void unit_Model_remove_flow()
@@ -87,6 +76,7 @@ void unit_Model_remove_flow()
     System *targetSystem2 = model->createSystem("TargetSystem2", 0);
     Flow *flow2 = model->createFlow<FlowExponencial>(sourceSystem2, targetSystem2);
     assert(model->remove(flow2));
+    delete model;
 }
 
 void unit_Model_setName()
@@ -94,6 +84,7 @@ void unit_Model_setName()
     Model *model = Model::createModel("default");
     assert(model->setName("TestModel"));
     assert(model->getName() == "TestModel");
+    delete model;
 }
 
 void unit_Model_getName()
@@ -101,6 +92,8 @@ void unit_Model_getName()
     Model *model = Model::createModel("InitialName");
 
     assert(model->getName() == "InitialName");
+
+    delete model;
 }
 
 void unit_Model_operator_equal()
@@ -109,6 +102,8 @@ void unit_Model_operator_equal()
     ModelImpl *model4 = model3;
 
     assert(model3 == model4);
+
+    delete model3;
 }
 
 void unit_Model_beginFlows()
@@ -121,6 +116,8 @@ void unit_Model_beginFlows()
     ModelImpl::FlowsIterator beginIterator = model->beginFlows();
 
     assert(distance(beginIterator, model->endFlows()) == 2);
+
+    delete model;
 }
 
 void unit_Model_endFlows()
@@ -133,6 +130,8 @@ void unit_Model_endFlows()
     ModelImpl::FlowsIterator endIterator = model->endFlows();
 
     assert(distance(model->beginFlows(), endIterator) == 2);
+
+    delete model;
 }
 
 void unit_Model_beginSystems()
@@ -145,6 +144,8 @@ void unit_Model_beginSystems()
     ModelImpl::SystemsIterator beginIterator = model->beginSystems();
 
     assert(distance(beginIterator, model->endSystems()) == 2);
+
+    delete model;
 }
 
 void unit_Model_endSystems()
@@ -157,6 +158,8 @@ void unit_Model_endSystems()
     ModelImpl::SystemsIterator endIterator = model->endSystems();
 
     assert(distance(model->beginSystems(), endIterator) == 2);
+
+    delete model;
 }
 
 void unit_Model_run()
@@ -167,6 +170,8 @@ void unit_Model_run()
     double t_final = 100.0;
 
     assert(t_final - t_inicial == model->run(t_inicial, t_final));
+
+    delete model;
 }
 
 void unit_Model_getFlows()
@@ -179,6 +184,8 @@ void unit_Model_getFlows()
     ModelImpl::FlowsIterator flowsIterator = model->getFlows();
 
     assert(flowsIterator == model->beginFlows());
+
+    delete model;
 }
 
 void unit_Model_getSystems()
@@ -191,13 +198,19 @@ void unit_Model_getSystems()
     ModelImpl::SystemsIterator systemsIterator = model->getSystems();
 
     assert(systemsIterator == model->beginSystems());
+
+    delete model;
 }
 void unit_Model_beginModels()
 {
     Model *model = Model::createModel("default");
     Model *model2 = Model::createModel("default");
     ModelImpl::ModelsIterator beginIterator = model->beginModels();
-    assert(beginIterator == model->beginModels());
+
+    assert(distance(beginIterator, model->endModels()) == 2);
+
+    delete model;
+    delete model2;
 }
 
 void unit_Model_endModels()
@@ -205,19 +218,17 @@ void unit_Model_endModels()
     Model *model = Model::createModel("default");
     Model *model2 = Model::createModel("default");
     ModelImpl::ModelsIterator endIterator = model->endModels();
-    assert(endIterator == model->endModels());
+    assert((distance(model->beginModels(), endIterator)) == 2);
+
+    delete model;
+    delete model2;
 }
 
 void unit_Model_createModel()
 {
     Model *model = Model::createModel("default");
     assert(model != nullptr);
-}
-
-void unit_Model_add_model()
-{
-    Model *subModel = new ModelImpl("SubModel");
-    assert(ModelImpl::add(subModel));
+    delete model;
 }
 
 void unit_Model_createModel_Impl()
@@ -225,45 +236,35 @@ void unit_Model_createModel_Impl()
     Model *model = Model::createModel("default");
     Model *subModel = model->createModel("SubModel");
     assert(subModel != nullptr);
+    delete model;
+    delete subModel;
 }
 
 void unit_Model_createSystem()
 {
-    Model* model = Model::createModel("default");
+    Model *model = Model::createModel("default");
     System *subSystem = model->createSystem("SubSystem", 42.0);
     assert(subSystem != nullptr);
-}
-
-void unit_Model_deleteFlow()
-{
-    Model *model = Model::createModel("default");
-    Flow *flow = model->createFlow<FlowExponencial>(nullptr, nullptr);
-    assert(model->deleteFlow(flow));
-}
-
-void unit_Model_deleteSystem()
-{
-    Model* model = Model::createModel("default");
-    System *system = model->createSystem("SubSystem", 42.0);
-    assert(model->deleteSystem(system));
+    delete model;
 }
 
 void unit_Model_setSource()
 {
-    Model* model = Model::createModel("default");
+    Model *model = Model::createModel("default");
     Flow *flow = model->createFlow<FlowExponencial>(nullptr, nullptr);
     System *system = model->createSystem("SubSystem", 42.0);
     assert(model->setSource(flow, system));
+    delete model;
 }
 
 void unit_Model_setTarget()
 {
-    Model* model = Model::createModel("default");
+    Model *model = Model::createModel("default");
     Flow *flow = model->createFlow<FlowExponencial>(nullptr, nullptr);
     System *system = model->createSystem("SubSystem", 42.0);
     assert(model->setTarget(flow, system));
+    delete model;
 }
-
 
 void run_unit_test_Model()
 {
@@ -271,8 +272,6 @@ void run_unit_test_Model()
     unit_Model_parameter_constructor();
     unit_Model_full_constructor();
     unit_Model_destructor();
-    unit_Model_add_system();
-    unit_Model_add_flow();
     unit_Model_remove_system();
     unit_Model_remove_flow();
     unit_Model_setName();
@@ -288,11 +287,8 @@ void run_unit_test_Model()
     unit_Model_beginModels();
     unit_Model_endModels();
     unit_Model_createModel();
-    unit_Model_add_model();
     unit_Model_createModel_Impl();
     unit_Model_createSystem();
-    unit_Model_deleteFlow();
-    unit_Model_deleteSystem();
     unit_Model_setSource();
     unit_Model_setTarget();
 }

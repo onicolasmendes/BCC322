@@ -15,6 +15,8 @@ bool exponentialFuncionalTest()
     assert(round(fabs(pop1->getValue() - 36.6032) * 10000) < 0.0001);
     assert(round(fabs(pop2->getValue() - 63.3968) * 10000) < 0.0001);
 
+    delete m;
+
     return true;
 }
 
@@ -33,6 +35,7 @@ bool logisticalFuncionalTest()
     assert(round(fabs(p1->getValue() - 88.2167) * 10000) < 0.0001);
     assert(round(fabs(p2->getValue() - 21.7833) * 10000) < 0.0001);
 
+    delete m;
     return true;
 }
 
@@ -66,6 +69,8 @@ bool complexFuncionalTest()
     assert(round(fabs(q4->getValue() - 56.1728) * 10000) < 0.0001);
     assert(round(fabs(q5->getValue() - 16.4612) * 10000) < 0.0001);
 
+    delete m;
+    
    return true;
 }
 

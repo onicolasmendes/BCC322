@@ -34,6 +34,7 @@ public:
      */
     virtual string getName() const = 0;
 
+protected:
     /**
      * @brief Add a System to the Model (pure virtual).
      * @param s Pointer to the System to be added to the Model.
@@ -51,16 +52,15 @@ public:
      * @param s Pointer to the System to be removed from the Model.
      * @return True if the operation is successful, indicating the System is removed, false otherwise.
      */
-
     static bool add(Model *m);
-
-    virtual bool remove(const System *s) = 0;
+public:
+    virtual bool remove(System *s) = 0;
     /**
      * @brief Remove a Flow from the Model (pure virtual).
      * @param f Pointer to the Flow to be removed from the Model.
      * @return True if the operation is successful, indicating the Flow is removed, false otherwise.
      */
-    virtual bool remove(const Flow *f) = 0;
+    virtual bool remove(Flow *f) = 0;
     /**
      * @brief Run the Model simulation from t_initial to t_final (pure virtual).
      * @param t_initial The initial time of the simulation.
@@ -121,24 +121,18 @@ public:
      */
     static Model *createModel(const string &n);
     /**
+     * @brief Creates a new Model using the ModelImpl class.
+     * This function delegates the creation of a new Model to the ModelImpl class.
+     * @return A pointer to the newly created Model.
+     */
+    static Model *createModel();
+    /**
      * @brief Creates a new System with the given name and initial value (pure virtual)
      * @param n A constant reference to a string representing the name of the new System
      * @param v A constant reference to a double representing the initial value of the new System
      * @return A pointer to the newly created System
      */
     virtual System *createSystem(const string &n, const double &v) = 0;
-    /**
-     * @brief Deletes the given Flow (pure virtual)
-     * @param f A pointer to the Flow to be deleted
-     * @return true if the Flow was successfully deleted, false otherwise
-     */
-    virtual bool deleteFlow(Flow *f) = 0;
-    /**
-     * @brief Deletes the given System (pure virtual)
-     * @param s A pointer to the System to be deleted
-     * @return true if the System was successfully deleted, false otherwise
-     */
-    virtual bool deleteSystem(System *s) = 0;
     /**
      * @brief Sets the source System of the given Flow (pure virtual)
      * @param f A pointer to the Flow for which the source System is to be set

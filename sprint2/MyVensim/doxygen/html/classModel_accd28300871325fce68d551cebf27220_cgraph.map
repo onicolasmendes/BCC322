@@ -1,0 +1,4 @@
+<map id="Model::createModel" name="Model::createModel">
+<area shape="rect" id="node1" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$classModelImpl.html#a8a9167b35336431e394f0042271620cb" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="204,5,384,32"/>
+</map>

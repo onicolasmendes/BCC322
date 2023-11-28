@@ -1,5 +1,4 @@
 <map id="Model::createModel" name="Model::createModel">
 <area shape="rect" id="node1" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="5,5,156,32"/>
-<area shape="rect" id="node2" href="$classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="204,5,384,32"/>
-<area shape="rect" id="node3" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="432,5,555,32"/>
+<area shape="rect" id="node2" href="$classModelImpl.html#a8a9167b35336431e394f0042271620cb" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="204,5,384,32"/>
 </map>

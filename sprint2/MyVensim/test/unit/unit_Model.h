@@ -8,6 +8,11 @@
 #include "vector"
 
 /**
+ * @file unit_Model.h
+ * @brief unit tests for Model class
+ */
+
+/**
  * @brief Unit test for the default constructor of ModelImpl.
  *
  * This test creates a ModelImpl object using the default constructor and verifies that its initial state is as expected.
@@ -31,18 +36,6 @@ void unit_Model_full_constructor() ;
  * This test creates a ModelImpl object, and then deletes it, ensuring proper memory deallocation and cleanup.
  */
 void unit_Model_destructor();
-/**
- * @brief Unit test for the add system function of ModelImpl.
- *
- * This test creates a ModelImpl object, adds systems to it, and checks if the systems are added successfully.
- */
-void unit_Model_add_system();
-/**
- * @brief Unit test for the add flow function of ModelImpl.
- *
- * This test creates a ModelImpl object, adds flows to it, and checks if the flows are added successfully.
- */
-void unit_Model_add_flow() ;
 /**
  * @brief Unit test for the remove system function of ModelImpl.
  *
@@ -131,11 +124,6 @@ void unit_Model_endModels();
  */
 void unit_Model_createModel();
 /**
- * @brief Unit test for ModelImpl::add()
- * @note This test checks if add() correctly adds the given Model to the Models container and returns true
- */
-void unit_Model_add_model();
-/**
  * @brief Unit test for ModelImpl::createModel()
  * @note This test checks if createModel() correctly creates a new Model, adds it to the Models container, and returns a non-null pointer
  */
@@ -145,16 +133,6 @@ void unit_Model_createModel_Impl();
  * @note This test checks if createSystem() correctly creates a new System, adds it to the Models container, and returns a non-null pointer
  */
 void unit_Model_createSystem();
-/**
- * @brief Unit test for ModelImpl::deleteFlow()
- * @note This test checks if deleteFlow() correctly removes and deletes the given Flow, and returns true
- */
-void unit_Model_deleteFlow();
-/**
- * @brief Unit test for ModelImpl::deleteSystem()
- * @note This test checks if deleteSystem() correctly removes and deletes the given System, and returns true
- */
-void unit_Model_deleteSystem();
 /**
  * @brief Unit test for ModelImpl::setSource()
  * @note This test checks if setSource() correctly sets the source System of the given Flow and returns true

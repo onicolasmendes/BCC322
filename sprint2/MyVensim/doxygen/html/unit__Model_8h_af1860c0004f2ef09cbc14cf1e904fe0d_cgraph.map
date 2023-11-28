@@ -1,7 +1,6 @@
 <map id="unit_Model_createSystem" name="unit_Model_createSystem">
 <area shape="rect" id="node1" title="Unit test for ModelImpl::createSystem()" alt="" coords="5,31,196,57"/>
-<area shape="rect" id="node2" href="$classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="249,5,399,32"/>
-<area shape="rect" id="node5" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="244,56,404,83"/>
-<area shape="rect" id="node3" href="$classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="452,5,632,32"/>
-<area shape="rect" id="node4" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="680,5,803,32"/>
+<area shape="rect" id="node2" href="$classModel.html#accd28300871325fce68d551cebf27220" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="249,5,399,32"/>
+<area shape="rect" id="node4" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="244,56,404,83"/>
+<area shape="rect" id="node3" href="$classModelImpl.html#a8a9167b35336431e394f0042271620cb" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="452,5,632,32"/>
 </map>

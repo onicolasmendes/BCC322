@@ -1,10 +1,9 @@
 <map id="unit_Model_setTarget" name="unit_Model_setTarget">
 <area shape="rect" id="node1" title="Unit test for ModelImpl::setTarget()" alt="" coords="5,81,167,108"/>
 <area shape="rect" id="node2" href="$classModel.html#a0a45f6feacd4423de27333c11bb793c0" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="223,5,366,32"/>
-<area shape="rect" id="node4" href="$classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="219,56,370,83"/>
-<area shape="rect" id="node7" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="215,107,375,133"/>
-<area shape="rect" id="node8" href="$classModel.html#a486bd1ea4993d5603db3c8bd0a8f1c19" title="Sets the target System of the given Flow (pure virtual)" alt="" coords="229,157,360,184"/>
+<area shape="rect" id="node4" href="$classModel.html#accd28300871325fce68d551cebf27220" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="219,56,370,83"/>
+<area shape="rect" id="node6" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="215,107,375,133"/>
+<area shape="rect" id="node7" href="$classModel.html#a486bd1ea4993d5603db3c8bd0a8f1c19" title="Sets the target System of the given Flow (pure virtual)" alt="" coords="229,157,360,184"/>
 <area shape="rect" id="node3" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="465,5,560,32"/>
-<area shape="rect" id="node5" href="$classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="423,56,603,83"/>
-<area shape="rect" id="node6" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="651,56,773,83"/>
+<area shape="rect" id="node5" href="$classModelImpl.html#a8a9167b35336431e394f0042271620cb" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="423,56,603,83"/>
 </map>

@@ -9,8 +9,6 @@ vector<Model *> ModelImpl::models;
 
 using namespace std;
 
-
-
 ModelImpl::ModelImpl()
 {
     systems.reserve(10);
@@ -24,21 +22,26 @@ ModelImpl::ModelImpl(const string &n)
     flows.reserve(20);
 }
 
-ModelImpl::~ModelImpl() 
+ModelImpl::~ModelImpl()
 {
-    for(System *s : systems)
+
+    for (SystemsIterator it = beginSystems(); it < endSystems(); it++)
     {
-        delete ((SystemImpl*) s);
+        delete *it;
     }
 
-    for(Flow *f : flows)
+     for (FlowsIterator it = beginFlows(); it < endFlows(); it++)
     {
-        delete ((FlowImpl*) f);
+        delete *it;
     }
 
-    for(Model *m : models)
+    for (ModelsIterator it = beginModels(); it < endModels(); it++)
     {
-        delete ((ModelImpl*) m);
+        if(*it == this)
+        {
+            models.erase(it);
+            break;
+        }
     }
 
 }
@@ -82,29 +85,32 @@ bool ModelImpl::add(Flow *f)
     return true;
 }
 
-bool ModelImpl::remove(const System *s)
+bool ModelImpl::remove(System *s)
 {
     for (SystemsIterator it = beginSystems(); it < endSystems(); it++)
     {
         if (*it == s)
         {
             systems.erase(it);
+            delete s;
             return true;
         }
     }
     return false;
 }
 
-bool ModelImpl::remove(const Flow *f)
+bool ModelImpl::remove(Flow *f)
 {
     for (FlowsIterator it = beginFlows(); it < endFlows(); it++)
     {
         if (*it == f)
         {
             flows.erase(it);
+            delete f;
             return true;
         }
     }
+    
     return false;
 }
 
@@ -214,12 +220,17 @@ ModelsIterator ModelImpl::beginModels()
 
 ModelsIterator ModelImpl::endModels()
 {
-    return  models.end();
+    return models.end();
 }
 
-Model* Model::createModel(const string &n)
+Model *Model::createModel(const string &n)
 {
     return ModelImpl::createModel(n);
+}
+
+Model *Model::createModel()
+{
+    return ModelImpl::createModel();
 }
 
 bool ModelImpl::add(Model *m)
@@ -235,25 +246,18 @@ Model *ModelImpl::createModel(const string &n)
     return m;
 }
 
-System *ModelImpl::createSystem(const string &n="", const double &v=0)
+Model *ModelImpl::createModel()
+{
+    Model *m = new ModelImpl();
+    add(m);
+    return m;
+}
+
+System *ModelImpl::createSystem(const string &n = "", const double &v = 0)
 {
     System *s = new SystemImpl(n, v);
-    ModelImpl::add(s);
+    add(s);
     return s;
-}
-
-bool ModelImpl::deleteFlow(Flow *f)
-{
-    remove(f);
-    delete f;
-    return true;
-}
-
-bool ModelImpl::deleteSystem(System *s)
-{
-    remove(s);
-    delete s;
-    return true;
 }
 
 bool ModelImpl::setSource(Flow *f, System *s)

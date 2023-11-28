@@ -3,12 +3,11 @@
 <area shape="rect" id="node2" href="$classModel.html#a7e228e43346415de0d7226608ee1be4d" title="get an iterator to the beginning of the Flows vector (pure virtual)" alt="" coords="265,5,409,32"/>
 <area shape="rect" id="node3" href="$classModel.html#a17850a63542dd4c4994ae12ebf788969" title="get an iterator to the beginning of the Systems vector (pure virtual)" alt="" coords="256,56,419,83"/>
 <area shape="rect" id="node4" href="$classModel.html#a0a45f6feacd4423de27333c11bb793c0" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="266,107,409,133"/>
-<area shape="rect" id="node6" href="$classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="262,157,413,184"/>
-<area shape="rect" id="node9" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="257,208,417,235"/>
-<area shape="rect" id="node10" href="$classModel.html#ad2a8514c9ba8d4deb0f51ed9e22c694a" title="get an iterator to the end of the Flows vector (pure virtual)" alt="" coords="271,259,403,285"/>
-<area shape="rect" id="node11" href="$classModel.html#a60d5c46852dff7dffdc185f76eab28b1" title="get an iterator to the end of the Systems vector (pure virtual)" alt="" coords="262,309,413,336"/>
-<area shape="rect" id="node12" href="$classModel.html#aa5365ab557ae47efffdf14ba7a46dac8" title="Retrieve the name of the Model (pure virtual)." alt="" coords="272,360,403,387"/>
+<area shape="rect" id="node6" href="$classModel.html#accd28300871325fce68d551cebf27220" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="262,157,413,184"/>
+<area shape="rect" id="node8" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="257,208,417,235"/>
+<area shape="rect" id="node9" href="$classModel.html#ad2a8514c9ba8d4deb0f51ed9e22c694a" title="get an iterator to the end of the Flows vector (pure virtual)" alt="" coords="271,259,403,285"/>
+<area shape="rect" id="node10" href="$classModel.html#a60d5c46852dff7dffdc185f76eab28b1" title="get an iterator to the end of the Systems vector (pure virtual)" alt="" coords="262,309,413,336"/>
+<area shape="rect" id="node11" href="$classModel.html#aa5365ab557ae47efffdf14ba7a46dac8" title="Retrieve the name of the Model (pure virtual)." alt="" coords="272,360,403,387"/>
 <area shape="rect" id="node5" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="509,107,604,133"/>
-<area shape="rect" id="node7" href="$classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="467,157,647,184"/>
-<area shape="rect" id="node8" href="$classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="695,157,817,184"/>
+<area shape="rect" id="node7" href="$classModelImpl.html#a8a9167b35336431e394f0042271620cb" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="467,157,647,184"/>
 </map>

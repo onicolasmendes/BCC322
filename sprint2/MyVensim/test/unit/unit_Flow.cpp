@@ -28,6 +28,8 @@ void unit_Flow_destructor()
     Flow *flow = new FlowExponencial(sourceSystem, targetSystem);
 
     delete flow;
+    delete targetSystem;
+    delete sourceSystem;
 }
 
 void unit_Flow_copy_constructor()
