@@ -1,5 +1,4 @@
 #include "unit_Model.h"
-#include <iostream>
 #include <iterator>
 using namespace std;
 typedef vector<System *>::iterator SystemsIterator;
