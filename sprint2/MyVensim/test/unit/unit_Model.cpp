@@ -98,8 +98,8 @@ void unit_Model_getName()
 
 void unit_Model_operator_equal()
 {
-    ModelImpl *model3 = new ModelImpl();
-    ModelImpl *model4 = model3;
+    Model *model3 = Model :: createModel("default");
+    Model *model4 = model3;
 
     assert(model3 == model4);
 
@@ -113,7 +113,7 @@ void unit_Model_beginFlows()
     Flow *flow1 = model->createFlow<FlowExponencial>(nullptr, nullptr);
     Flow *flow2 = model->createFlow<FlowExponencial>(nullptr, nullptr);
 
-    ModelImpl::FlowsIterator beginIterator = model->beginFlows();
+    FlowsIterator beginIterator = model->beginFlows();
 
     assert(distance(beginIterator, model->endFlows()) == 2);
 
@@ -127,7 +127,7 @@ void unit_Model_endFlows()
     Flow *flow1 = model->createFlow<FlowExponencial>(nullptr, nullptr);
     Flow *flow2 = model->createFlow<FlowExponencial>(nullptr, nullptr);
 
-    ModelImpl::FlowsIterator endIterator = model->endFlows();
+    FlowsIterator endIterator = model->endFlows();
 
     assert(distance(model->beginFlows(), endIterator) == 2);
 
@@ -141,7 +141,7 @@ void unit_Model_beginSystems()
     System *system1 = model->createSystem("System1", 0);
     System *system2 = model->createSystem("System2", 0);
 
-    ModelImpl::SystemsIterator beginIterator = model->beginSystems();
+    SystemsIterator beginIterator = model->beginSystems();
 
     assert(distance(beginIterator, model->endSystems()) == 2);
 
@@ -155,7 +155,7 @@ void unit_Model_endSystems()
     System *system1 = model->createSystem("System1", 0);
     System *system2 = model->createSystem("System2", 0);
 
-    ModelImpl::SystemsIterator endIterator = model->endSystems();
+    SystemsIterator endIterator = model->endSystems();
 
     assert(distance(model->beginSystems(), endIterator) == 2);
 
@@ -181,7 +181,7 @@ void unit_Model_getFlows()
     Flow *flow1 = model->createFlow<FlowExponencial>(nullptr, nullptr);
     Flow *flow2 = model->createFlow<FlowExponencial>(nullptr, nullptr);
 
-    ModelImpl::FlowsIterator flowsIterator = model->getFlows();
+    FlowsIterator flowsIterator = model->getFlows();
 
     assert(flowsIterator == model->beginFlows());
 
@@ -195,7 +195,7 @@ void unit_Model_getSystems()
     System *system1 = model->createSystem("System1", 0);
     System *system2 = model->createSystem("System2", 0);
 
-    ModelImpl::SystemsIterator systemsIterator = model->getSystems();
+    SystemsIterator systemsIterator = model->getSystems();
 
     assert(systemsIterator == model->beginSystems());
 
@@ -205,7 +205,7 @@ void unit_Model_beginModels()
 {
     Model *model = Model::createModel("default");
     Model *model2 = Model::createModel("default");
-    ModelImpl::ModelsIterator beginIterator = model->beginModels();
+    ModelsIterator beginIterator = model->beginModels();
 
     assert(distance(beginIterator, model->endModels()) == 2);
 
@@ -217,7 +217,7 @@ void unit_Model_endModels()
 {
     Model *model = Model::createModel("default");
     Model *model2 = Model::createModel("default");
-    ModelImpl::ModelsIterator endIterator = model->endModels();
+    ModelsIterator endIterator = model->endModels();
     assert((distance(model->beginModels(), endIterator)) == 2);
 
     delete model;

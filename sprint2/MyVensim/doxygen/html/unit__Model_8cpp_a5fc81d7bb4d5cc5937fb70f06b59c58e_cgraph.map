@@ -1,4 +1,5 @@
 <map id="unit_Model_operator_equal" name="unit_Model_operator_equal">
 <area shape="rect" id="node1" title="Verifies the operator= function of ModelImpl." alt="" coords="5,5,161,47"/>
-<area shape="rect" id="node2" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="209,13,304,39"/>
+<area shape="rect" id="node2" href="$classModel.html#accd28300871325fce68d551cebf27220" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="209,13,360,39"/>
+<area shape="rect" id="node3" href="$classModelImpl.html#a8a9167b35336431e394f0042271620cb" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="408,13,588,39"/>
 </map>

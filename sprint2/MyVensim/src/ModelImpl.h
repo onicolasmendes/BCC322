@@ -1,7 +1,7 @@
 #pragma once
-#include "Flow.h"
 #include "vector"
 #include "Model.h"
+#include "SystemImpl.h"
 
 using namespace std;
 /**
@@ -53,19 +53,11 @@ private:
      * @return a reference to the Model that received the copy data
      */
     ModelImpl &operator=(const ModelImpl &m);
-
-public:
-    /**
-     * @brief virtual class destructor
-     */
-    virtual ~ModelImpl();
-
     /**
      * @brief add a System to the Model
      * @param s a pointer to the System to be added
      * @return true if the System was successfully added, false otherwise
      */
-protected:
     virtual bool add(System *s);
     /**
      * @brief add a Flow to the Model
@@ -79,12 +71,18 @@ protected:
      * @return true if the Model was successfully added, false otherwise
      */
     static bool add(Model *m);
+
+public:
+    /**
+     * @brief virtual class destructor
+     */
+    virtual ~ModelImpl();
+
     /**
      * @brief remove a System from the Model
      * @param s a pointer to the System to be removed
      * @return true if the System was successfully removed, false otherwise
      */
-public:
     virtual bool remove(System *s);
     /**
      * @brief remove a Flow from the Model

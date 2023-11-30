@@ -1,5 +1,4 @@
 #include "ModelImpl.h"
-#include "Model.h"
 
 typedef vector<System *>::iterator SystemsIterator;
 typedef vector<Flow *>::iterator FlowsIterator;

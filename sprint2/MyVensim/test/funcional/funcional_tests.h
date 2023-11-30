@@ -1,6 +1,5 @@
 #pragma once
-#include "../../src/ModelImpl.h"
-#include "../../src/SystemImpl.h"
+#include "../../src/Model.h"
 #include "Flows/FlowExponencial.h"
 #include "Flows/FlowLogistica.h"
 #include "Flows/FlowMaior.h"

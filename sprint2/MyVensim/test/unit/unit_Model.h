@@ -1,7 +1,5 @@
 #pragma once
-#include "../../src/ModelImpl.h"
-#include "../../src/FlowImpl.h"
-#include "../../src/SystemImpl.h"
+#include "../../src/Model.h"
 #include "../funcional/Flows/FlowExponencial.h"
 #include <cassert>
 #include <cmath>
