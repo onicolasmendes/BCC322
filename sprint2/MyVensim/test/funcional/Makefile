@@ -22,3 +22,7 @@ funcional_tests.o: funcional_tests.cpp
 	@g++ -c funcional_tests.cpp  -o ../../bin/funcional_tests.o -Wall
 run:
 	@../../bin/exeFun
+
+
+funcional:
+	@cd ../../bin/ && g++ -c -fPIC ../src/*.cpp -Wall && g++ -shared -fPIC  -o ./vensimLib.so ./*.o && rm *.o && g++ -c -fPIC ../test/funcional/Flows/*.cpp ../test/funcional/*.cpp -Wall && g++ -o exeFun ./*.o ./vensimLib.so -Wall && rm *.o 
