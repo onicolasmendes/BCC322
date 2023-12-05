@@ -1,0 +1,11 @@
+<map id="unit_handleBody" name="unit_handleBody">
+<area shape="rect" id="node1" title="Unit test for the handling and manipulation of Model, System, and SystemHandle objects." alt="" coords="5,132,136,159"/>
+<area shape="rect" id="node2" href="$classModel.html#a0a45f6feacd4423de27333c11bb793c0" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="205,5,348,32"/>
+<area shape="rect" id="node4" href="$classModel.html#accd28300871325fce68d551cebf27220" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="201,56,352,83"/>
+<area shape="rect" id="node6" href="$classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="197,107,357,133"/>
+<area shape="rect" id="node7" href="$classSystemHandle.html#afa7ceda17b726f044c76808e8104c039" title="Retrieve the name of the System (pure virtual)." alt="" coords="184,157,369,184"/>
+<area shape="rect" id="node8" href="$classSystem.html#ab4f23c21832d6bbef462a5a20b296912" title="Retrieve the name of the System (pure virtual)." alt="" coords="207,208,346,235"/>
+<area shape="rect" id="node9" href="$classSystem.html#a41b673faa6c199eb8e4f204639fab4f2" title="Retrieve the value of the System (pure virtual)." alt="" coords="209,259,345,285"/>
+<area shape="rect" id="node3" href="$classModel.html#abfb2ff6a7566fde6bea104ddd3c556ed" title="Add a System to the Model (pure virtual)." alt="" coords="460,5,555,32"/>
+<area shape="rect" id="node5" href="$classModelImpl.html#a8a9167b35336431e394f0042271620cb" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="417,56,597,83"/>
+</map>

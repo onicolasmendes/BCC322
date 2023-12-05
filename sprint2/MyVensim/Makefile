@@ -16,5 +16,5 @@ unit:
 	@cd ./bin && g++ -c -fPIC ../test/funcional/Flows/FlowLogistica.cpp  -Wall
 	@cd ./bin && g++ -c -fPIC ../test/funcional/Flows/FlowExponencial.cpp  -Wall
 	@cd ./bin && g++ -c -fPIC ../test/funcional/Flows/FlowMaior.cpp  -Wall
-	@cd ./bin && g++ -o exeUnit ./main.o ./unit_System.o ./unit_Flow.o ./unit_Model.o ./unit_tests.o ./vensimLib.so ./FlowExponencial.o ./FlowLogistica.o ./FlowMaior.o -Wall
+	@cd ./bin && g++ -o exeUnit ./main.o ./unit_System.o ./unit_Flow.o ./unit_Model.o ./unit_handleBody.o ./unit_tests.o ./vensimLib.so ./FlowExponencial.o ./FlowLogistica.o ./FlowMaior.o -Wall
 	@cd ./bin && rm ./*.o && ./exeUnit

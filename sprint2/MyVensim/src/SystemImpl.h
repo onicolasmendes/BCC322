@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include "System.h"
+#include "handleBodySemDebug.h"
 
 using namespace std;
 /**
@@ -14,7 +15,8 @@ using namespace std;
  * @brief System concrete class that implements the interface System and represents a System in systems theory.
  */
 
-class SystemImpl : public System
+
+class SystemImpl : public Body
 {
 protected:
     string name;  ///< a string that represents the name of the System, like a id
@@ -81,4 +83,22 @@ public:
      * @return if the systems are the same (same name and value) returns true, otherwise false
      */
     bool operator==(const SystemImpl &s) const;
+};
+
+class SystemHandle : public System, public Handle<SystemImpl>
+{
+public:
+    SystemHandle(string name = "", double v = 0.0)
+    {
+        pImpl_->setName(name);
+        pImpl_->setValue(v);
+       
+    }
+
+    virtual ~SystemHandle() {};
+
+    virtual bool setName(const string &n){return pImpl_->setName(n);};
+    virtual string getName() const{return pImpl_->getName();};
+    virtual bool setValue(const double &v){return pImpl_->setValue(v);};
+    virtual double getValue() const{return pImpl_->getValue();};
 };

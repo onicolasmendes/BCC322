@@ -1,5 +1,5 @@
 <map id="FlowMaior" name="FlowMaior">
-<area shape="rect" id="node1" title="Class intended for testing that inherits from Flow and implements equation()" alt="" coords="5,491,132,612"/>
-<area shape="rect" id="node2" href="$classFlowImpl.html" title="Flow concrete class that implements the interface Flow and represents a Flow in systems theory." alt="" coords="7,204,131,443"/>
-<area shape="rect" id="node3" href="$classFlow.html" title="Interface that represents a Flow in the simulator of systems theory." alt="" coords="13,5,125,156"/>
+<area shape="rect" id="node1" title="Class intended for testing that inherits from Flow and implements equation()" alt="" coords="5,476,132,597"/>
+<area shape="rect" id="node2" href="$classFlowImpl.html" title="Flow concrete class that implements the interface Flow and represents a Flow in systems theory." alt="" coords="7,189,131,428"/>
+<area shape="rect" id="node3" href="$classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="17,5,120,141"/>
 </map>

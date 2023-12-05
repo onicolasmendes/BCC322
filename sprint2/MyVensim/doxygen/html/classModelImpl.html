@@ -65,6 +65,7 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="classModelImpl-members.html">List of all members</a>  </div>
@@ -82,8 +83,8 @@ Inheritance diagram for ModelImpl:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModelImpl__inherit__graph.png" border="0" usemap="#aModelImpl_inherit__map" alt="Inheritance graph"/></div>
 <map name="aModelImpl_inherit__map" id="aModelImpl_inherit__map">
-<area shape="rect" title="Model concrete class that implements the interface Model and represents a Model in systems theory." alt="" coords="5,351,133,648"/>
-<area shape="rect" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory." alt="" coords="5,5,133,303"/>
+<area shape="rect" title="Model concrete class that implements the interface Model and represents a Model in systems theory." alt="" coords="5,189,133,531"/>
+<area shape="rect" href="classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="18,5,121,141"/>
 </map>
 </div>
 <div class="dynheader">
@@ -91,12 +92,12 @@ Collaboration diagram for ModelImpl:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModelImpl__coll__graph.png" border="0" usemap="#aModelImpl_coll__map" alt="Collaboration graph"/></div>
 <map name="aModelImpl_coll__map" id="aModelImpl_coll__map">
-<area shape="rect" title="Model concrete class that implements the interface Model and represents a Model in systems theory." alt="" coords="283,365,411,619"/>
-<area shape="rect" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory." alt="" coords="5,5,133,303"/>
-<area shape="rect" title=" " alt="" coords="158,115,293,193"/>
-<area shape="rect" title=" " alt="" coords="317,115,376,193"/>
-<area shape="rect" title=" " alt="" coords="401,115,554,193"/>
-<area shape="rect" title=" " alt="" coords="579,115,763,193"/>
+<area shape="rect" title="Model concrete class that implements the interface Model and represents a Model in systems theory." alt="" coords="257,204,385,501"/>
+<area shape="rect" href="classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="5,5,108,141"/>
+<area shape="rect" title=" " alt="" coords="132,35,267,112"/>
+<area shape="rect" title=" " alt="" coords="291,35,350,112"/>
+<area shape="rect" title=" " alt="" coords="375,35,528,112"/>
+<area shape="rect" title=" " alt="" coords="553,35,737,112"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -106,13 +107,6 @@ Public Types</h2></td></tr>
 <tr class="separator:a01e8c800a5a12542bb5f3cc384cefd0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a497dc47850dcbc63781099753590661f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a497dc47850dcbc63781099753590661f">FlowsIterator</a> = vector&lt; <a class="el" href="classFlow.html">Flow</a> * &gt;::iterator</td></tr>
 <tr class="separator:a497dc47850dcbc63781099753590661f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_classModel"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classModel')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classModel.html">Model</a></td></tr>
-<tr class="memitem:a251f91d5bad724044aa7d574064c1aba inherit pub_types_classModel"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="classSystem.html">System</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a251f91d5bad724044aa7d574064c1aba">SystemsIterator</a></td></tr>
-<tr class="separator:a251f91d5bad724044aa7d574064c1aba inherit pub_types_classModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa635fd7f66df482dfea1d6e61207c8a1 inherit pub_types_classModel"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="classFlow.html">Flow</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#aa635fd7f66df482dfea1d6e61207c8a1">FlowsIterator</a></td></tr>
-<tr class="separator:aa635fd7f66df482dfea1d6e61207c8a1 inherit pub_types_classModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae62cf1024b4d3e76cff7548064c6acc8 inherit pub_types_classModel"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="classModel.html">Model</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#ae62cf1024b4d3e76cff7548064c6acc8">ModelsIterator</a></td></tr>
-<tr class="separator:ae62cf1024b4d3e76cff7548064c6acc8 inherit pub_types_classModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -137,37 +131,43 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abf9757a0107636e05d3493acdaaeebe0"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#abf9757a0107636e05d3493acdaaeebe0">run</a> (const double &amp;t_initial, const double &amp;t_final)</td></tr>
 <tr class="memdesc:abf9757a0107636e05d3493acdaaeebe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">run the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> simulation from a specified initial time to a final time  <a href="classModelImpl.html#abf9757a0107636e05d3493acdaaeebe0">More...</a><br /></td></tr>
 <tr class="separator:abf9757a0107636e05d3493acdaaeebe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75824d3eb5f2e250616621b3ca8f081d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d">add</a> (<a class="el" href="classSystem.html">System</a> *s)</td></tr>
+<tr class="memdesc:a75824d3eb5f2e250616621b3ca8f081d"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> to the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a>  <a href="classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d">More...</a><br /></td></tr>
+<tr class="separator:a75824d3eb5f2e250616621b3ca8f081d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb03886a806066515ac40f9ac29155df"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#afb03886a806066515ac40f9ac29155df">add</a> (<a class="el" href="classFlow.html">Flow</a> *f)</td></tr>
+<tr class="memdesc:afb03886a806066515ac40f9ac29155df"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> to the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a>  <a href="classModelImpl.html#afb03886a806066515ac40f9ac29155df">More...</a><br /></td></tr>
+<tr class="separator:afb03886a806066515ac40f9ac29155df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64b1277b63d6b3526dcf13ada1e1bef5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a64b1277b63d6b3526dcf13ada1e1bef5">setName</a> (const string &amp;n)</td></tr>
 <tr class="memdesc:a64b1277b63d6b3526dcf13ada1e1bef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the name of the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a>.  <a href="classModelImpl.html#a64b1277b63d6b3526dcf13ada1e1bef5">More...</a><br /></td></tr>
 <tr class="separator:a64b1277b63d6b3526dcf13ada1e1bef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a027d6617b69c45b92243c3caca352ba5"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a027d6617b69c45b92243c3caca352ba5">getName</a> () const</td></tr>
 <tr class="memdesc:a027d6617b69c45b92243c3caca352ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the name of the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a>  <a href="classModelImpl.html#a027d6617b69c45b92243c3caca352ba5">More...</a><br /></td></tr>
 <tr class="separator:a027d6617b69c45b92243c3caca352ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21551e09b3cd465950d97108d545fa1e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModel.html#a251f91d5bad724044aa7d574064c1aba">SystemsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a21551e09b3cd465950d97108d545fa1e">getSystems</a> ()</td></tr>
+<tr class="memitem:a21551e09b3cd465950d97108d545fa1e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModelImpl.html#a01e8c800a5a12542bb5f3cc384cefd0d">SystemsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a21551e09b3cd465950d97108d545fa1e">getSystems</a> ()</td></tr>
 <tr class="memdesc:a21551e09b3cd465950d97108d545fa1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">get an iterator to the beginning of the Systems vector  <a href="classModelImpl.html#a21551e09b3cd465950d97108d545fa1e">More...</a><br /></td></tr>
 <tr class="separator:a21551e09b3cd465950d97108d545fa1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9598171669241583de2ded787f17e4c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModel.html#aa635fd7f66df482dfea1d6e61207c8a1">FlowsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#ac9598171669241583de2ded787f17e4c">getFlows</a> ()</td></tr>
+<tr class="memitem:ac9598171669241583de2ded787f17e4c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModelImpl.html#a497dc47850dcbc63781099753590661f">FlowsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#ac9598171669241583de2ded787f17e4c">getFlows</a> ()</td></tr>
 <tr class="memdesc:ac9598171669241583de2ded787f17e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get an iterator to the beginning of the Flows vector  <a href="classModelImpl.html#ac9598171669241583de2ded787f17e4c">More...</a><br /></td></tr>
 <tr class="separator:ac9598171669241583de2ded787f17e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a43f0424c14ccd3d7afb672b3b2a01b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a8a43f0424c14ccd3d7afb672b3b2a01b">operator==</a> (const <a class="el" href="classModelImpl.html">ModelImpl</a> &amp;m) const</td></tr>
 <tr class="memdesc:a8a43f0424c14ccd3d7afb672b3b2a01b"><td class="mdescLeft">&#160;</td><td class="mdescRight">overloading the "==" operator which compares the equality between two Models  <a href="classModelImpl.html#a8a43f0424c14ccd3d7afb672b3b2a01b">More...</a><br /></td></tr>
 <tr class="separator:a8a43f0424c14ccd3d7afb672b3b2a01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04845b1a7d621ce11855d2a518ce60c4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModel.html#aa635fd7f66df482dfea1d6e61207c8a1">FlowsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a04845b1a7d621ce11855d2a518ce60c4">beginFlows</a> ()</td></tr>
+<tr class="memitem:a04845b1a7d621ce11855d2a518ce60c4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModelImpl.html#a497dc47850dcbc63781099753590661f">FlowsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a04845b1a7d621ce11855d2a518ce60c4">beginFlows</a> ()</td></tr>
 <tr class="memdesc:a04845b1a7d621ce11855d2a518ce60c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">get an iterator to the beginning of the Flows vector  <a href="classModelImpl.html#a04845b1a7d621ce11855d2a518ce60c4">More...</a><br /></td></tr>
 <tr class="separator:a04845b1a7d621ce11855d2a518ce60c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeb136a5c06444ffe49c9bacd5e23233"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModel.html#aa635fd7f66df482dfea1d6e61207c8a1">FlowsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#aeeb136a5c06444ffe49c9bacd5e23233">endFlows</a> ()</td></tr>
+<tr class="memitem:aeeb136a5c06444ffe49c9bacd5e23233"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModelImpl.html#a497dc47850dcbc63781099753590661f">FlowsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#aeeb136a5c06444ffe49c9bacd5e23233">endFlows</a> ()</td></tr>
 <tr class="memdesc:aeeb136a5c06444ffe49c9bacd5e23233"><td class="mdescLeft">&#160;</td><td class="mdescRight">get an iterator to the end of the Flows vector  <a href="classModelImpl.html#aeeb136a5c06444ffe49c9bacd5e23233">More...</a><br /></td></tr>
 <tr class="separator:aeeb136a5c06444ffe49c9bacd5e23233"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4b69848d6f2c634f38ca15813622eca"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModel.html#a251f91d5bad724044aa7d574064c1aba">SystemsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#aa4b69848d6f2c634f38ca15813622eca">beginSystems</a> ()</td></tr>
+<tr class="memitem:aa4b69848d6f2c634f38ca15813622eca"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModelImpl.html#a01e8c800a5a12542bb5f3cc384cefd0d">SystemsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#aa4b69848d6f2c634f38ca15813622eca">beginSystems</a> ()</td></tr>
 <tr class="memdesc:aa4b69848d6f2c634f38ca15813622eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">get an iterator to the beginning of the Systems vector  <a href="classModelImpl.html#aa4b69848d6f2c634f38ca15813622eca">More...</a><br /></td></tr>
 <tr class="separator:aa4b69848d6f2c634f38ca15813622eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eac4ca0ec971cf1a1cb6666b3b9aa3b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModel.html#a251f91d5bad724044aa7d574064c1aba">SystemsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a2eac4ca0ec971cf1a1cb6666b3b9aa3b">endSystems</a> ()</td></tr>
+<tr class="memitem:a2eac4ca0ec971cf1a1cb6666b3b9aa3b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModelImpl.html#a01e8c800a5a12542bb5f3cc384cefd0d">SystemsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a2eac4ca0ec971cf1a1cb6666b3b9aa3b">endSystems</a> ()</td></tr>
 <tr class="memdesc:a2eac4ca0ec971cf1a1cb6666b3b9aa3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get an iterator to the end of the Systems vector  <a href="classModelImpl.html#a2eac4ca0ec971cf1a1cb6666b3b9aa3b">More...</a><br /></td></tr>
 <tr class="separator:a2eac4ca0ec971cf1a1cb6666b3b9aa3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adab8fbac5c4ec4e6ec90a71df9a4b4c6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModel.html#ae62cf1024b4d3e76cff7548064c6acc8">ModelsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#adab8fbac5c4ec4e6ec90a71df9a4b4c6">beginModels</a> ()</td></tr>
+<tr class="memitem:adab8fbac5c4ec4e6ec90a71df9a4b4c6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="ModelImpl_8cpp.html#a2fe42258f295b6453910ef2420996b29">ModelsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#adab8fbac5c4ec4e6ec90a71df9a4b4c6">beginModels</a> ()</td></tr>
 <tr class="memdesc:adab8fbac5c4ec4e6ec90a71df9a4b4c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains an iterator pointing to the beginning of the Models container.  <a href="classModelImpl.html#adab8fbac5c4ec4e6ec90a71df9a4b4c6">More...</a><br /></td></tr>
 <tr class="separator:adab8fbac5c4ec4e6ec90a71df9a4b4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad581c72515c326f6e63873eaa8866f8c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classModel.html#ae62cf1024b4d3e76cff7548064c6acc8">ModelsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#ad581c72515c326f6e63873eaa8866f8c">endModels</a> ()</td></tr>
+<tr class="memitem:ad581c72515c326f6e63873eaa8866f8c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="ModelImpl_8cpp.html#a2fe42258f295b6453910ef2420996b29">ModelsIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#ad581c72515c326f6e63873eaa8866f8c">endModels</a> ()</td></tr>
 <tr class="memdesc:ad581c72515c326f6e63873eaa8866f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains an iterator pointing to the end of the Models container.  <a href="classModelImpl.html#ad581c72515c326f6e63873eaa8866f8c">More...</a><br /></td></tr>
 <tr class="separator:ad581c72515c326f6e63873eaa8866f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d788bdb06826a1677fe765fcd70c73b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classSystem.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a3d788bdb06826a1677fe765fcd70c73b">createSystem</a> (const string &amp;n, const double &amp;v)</td></tr>
@@ -179,30 +179,42 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a033b2bc2e0e03de2a12c1183bd6ee426"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a033b2bc2e0e03de2a12c1183bd6ee426">setTarget</a> (<a class="el" href="classFlow.html">Flow</a> *f, <a class="el" href="classSystem.html">System</a> *s)</td></tr>
 <tr class="memdesc:a033b2bc2e0e03de2a12c1183bd6ee426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the target <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> of the given <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a>.  <a href="classModelImpl.html#a033b2bc2e0e03de2a12c1183bd6ee426">More...</a><br /></td></tr>
 <tr class="separator:a033b2bc2e0e03de2a12c1183bd6ee426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classModel"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classModel')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classModel.html">Model</a></td></tr>
-<tr class="memitem:af032d8433c87a0a3a431faf6563a1f03 inherit pub_methods_classModel"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#af032d8433c87a0a3a431faf6563a1f03">~Model</a> ()</td></tr>
-<tr class="memdesc:af032d8433c87a0a3a431faf6563a1f03 inherit pub_methods_classModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual class destructor  <a href="classModel.html#af032d8433c87a0a3a431faf6563a1f03">More...</a><br /></td></tr>
-<tr class="separator:af032d8433c87a0a3a431faf6563a1f03 inherit pub_methods_classModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a45f6feacd4423de27333c11bb793c0 inherit pub_methods_classModel"><td class="memTemplParams" colspan="2">template&lt;typename T_FLOW_IMPL &gt; </td></tr>
-<tr class="memitem:a0a45f6feacd4423de27333c11bb793c0 inherit pub_methods_classModel"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classFlow.html">Flow</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classModel.html#a0a45f6feacd4423de27333c11bb793c0">createFlow</a> (<a class="el" href="classSystem.html">System</a> *s=nullptr, <a class="el" href="classSystem.html">System</a> *t=nullptr)</td></tr>
-<tr class="memdesc:a0a45f6feacd4423de27333c11bb793c0 inherit pub_methods_classModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> with the given source and target Systems (default: nullptr)  <a href="classModel.html#a0a45f6feacd4423de27333c11bb793c0">More...</a><br /></td></tr>
-<tr class="separator:a0a45f6feacd4423de27333c11bb793c0 inherit pub_methods_classModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classBody"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classBody')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classBody.html">Body</a></td></tr>
+<tr class="memitem:a7727b0d8c998bbc2942e4c802e31e2eb inherit pub_methods_classBody"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBody.html#a7727b0d8c998bbc2942e4c802e31e2eb">Body</a> ()</td></tr>
+<tr class="memdesc:a7727b0d8c998bbc2942e4c802e31e2eb inherit pub_methods_classBody"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor: zero references when the object is being built.  <a href="classBody.html#a7727b0d8c998bbc2942e4c802e31e2eb">More...</a><br /></td></tr>
+<tr class="separator:a7727b0d8c998bbc2942e4c802e31e2eb inherit pub_methods_classBody"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d53322c76a6952d096cb7564ac86db1 inherit pub_methods_classBody"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBody.html#a5d53322c76a6952d096cb7564ac86db1">attach</a> ()</td></tr>
+<tr class="memdesc:a5d53322c76a6952d096cb7564ac86db1 inherit pub_methods_classBody"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the number of references to this object.  <a href="classBody.html#a5d53322c76a6952d096cb7564ac86db1">More...</a><br /></td></tr>
+<tr class="separator:a5d53322c76a6952d096cb7564ac86db1 inherit pub_methods_classBody"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad481d0c8368db318795c9a0a8fdd3717 inherit pub_methods_classBody"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBody.html#ad481d0c8368db318795c9a0a8fdd3717">detach</a> ()</td></tr>
+<tr class="separator:ad481d0c8368db318795c9a0a8fdd3717 inherit pub_methods_classBody"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ae961812625b8636071ba61b1a75fc inherit pub_methods_classBody"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBody.html#a59ae961812625b8636071ba61b1a75fc">refCount</a> ()</td></tr>
+<tr class="memdesc:a59ae961812625b8636071ba61b1a75fc inherit pub_methods_classBody"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of references to this object.  <a href="classBody.html#a59ae961812625b8636071ba61b1a75fc">More...</a><br /></td></tr>
+<tr class="separator:a59ae961812625b8636071ba61b1a75fc inherit pub_methods_classBody"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b15e54cf881ac0ca64790ca1d50110e inherit pub_methods_classBody"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBody.html#a9b15e54cf881ac0ca64790ca1d50110e">~Body</a> ()</td></tr>
+<tr class="memdesc:a9b15e54cf881ac0ca64790ca1d50110e inherit pub_methods_classBody"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="classBody.html#a9b15e54cf881ac0ca64790ca1d50110e">More...</a><br /></td></tr>
+<tr class="separator:a9b15e54cf881ac0ca64790ca1d50110e inherit pub_methods_classBody"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a2c43a2c55bae36d1141fd00dda0aa057"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a2c43a2c55bae36d1141fd00dda0aa057">add</a> (<a class="el" href="classModel.html">Model</a> *m)</td></tr>
+<tr class="memdesc:a2c43a2c55bae36d1141fd00dda0aa057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the given <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> to the Models container.  <a href="classModelImpl.html#a2c43a2c55bae36d1141fd00dda0aa057">More...</a><br /></td></tr>
+<tr class="separator:a2c43a2c55bae36d1141fd00dda0aa057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa18c614c7389ff3abf3467d9a3d67fb4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classModel.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4">createModel</a> (const string &amp;n)</td></tr>
 <tr class="memdesc:aa18c614c7389ff3abf3467d9a3d67fb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> with the given name and adds it to the Models container.  <a href="classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4">More...</a><br /></td></tr>
 <tr class="separator:aa18c614c7389ff3abf3467d9a3d67fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a9167b35336431e394f0042271620cb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classModel.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a8a9167b35336431e394f0042271620cb">createModel</a> ()</td></tr>
 <tr class="memdesc:a8a9167b35336431e394f0042271620cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> using the <a class="el" href="classModelImpl.html" title="Model concrete class that implements the interface Model and represents a Model in systems theory.">ModelImpl</a> class. This function delegates the creation of a new <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> to the <a class="el" href="classModelImpl.html" title="Model concrete class that implements the interface Model and represents a Model in systems theory.">ModelImpl</a> class.  <a href="classModelImpl.html#a8a9167b35336431e394f0042271620cb">More...</a><br /></td></tr>
 <tr class="separator:a8a9167b35336431e394f0042271620cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_classModel"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classModel')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classModel.html">Model</a></td></tr>
-<tr class="memitem:a8122c9ffb5bbc82450efeccbe5854f18 inherit pub_static_methods_classModel"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classModel.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a8122c9ffb5bbc82450efeccbe5854f18">createModel</a> (const string &amp;n)</td></tr>
-<tr class="memdesc:a8122c9ffb5bbc82450efeccbe5854f18 inherit pub_static_methods_classModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegates the creation of a new <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> with the given name to the <a class="el" href="classModelImpl.html" title="Model concrete class that implements the interface Model and represents a Model in systems theory.">ModelImpl</a> class.  <a href="classModel.html#a8122c9ffb5bbc82450efeccbe5854f18">More...</a><br /></td></tr>
-<tr class="separator:a8122c9ffb5bbc82450efeccbe5854f18 inherit pub_static_methods_classModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accd28300871325fce68d551cebf27220 inherit pub_static_methods_classModel"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classModel.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#accd28300871325fce68d551cebf27220">createModel</a> ()</td></tr>
-<tr class="memdesc:accd28300871325fce68d551cebf27220 inherit pub_static_methods_classModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> using the <a class="el" href="classModelImpl.html" title="Model concrete class that implements the interface Model and represents a Model in systems theory.">ModelImpl</a> class. This function delegates the creation of a new <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> to the <a class="el" href="classModelImpl.html" title="Model concrete class that implements the interface Model and represents a Model in systems theory.">ModelImpl</a> class.  <a href="classModel.html#accd28300871325fce68d551cebf27220">More...</a><br /></td></tr>
-<tr class="separator:accd28300871325fce68d551cebf27220 inherit pub_static_methods_classModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae733251193d98fe7aa3b2f134e06a478"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#ae733251193d98fe7aa3b2f134e06a478">ModelImpl</a> (const <a class="el" href="classModelImpl.html">ModelImpl</a> &amp;m)</td></tr>
+<tr class="memdesc:ae733251193d98fe7aa3b2f134e06a478"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy constructor for the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> class  <a href="classModelImpl.html#ae733251193d98fe7aa3b2f134e06a478">More...</a><br /></td></tr>
+<tr class="separator:ae733251193d98fe7aa3b2f134e06a478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f7b1d0089c7e30208f2c560241ccbcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModelImpl.html">ModelImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a7f7b1d0089c7e30208f2c560241ccbcf">operator=</a> (const <a class="el" href="classModelImpl.html">ModelImpl</a> &amp;m)</td></tr>
+<tr class="memdesc:a7f7b1d0089c7e30208f2c560241ccbcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">overloading the "=" operator that copies the attributes of one <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> to another  <a href="classModelImpl.html#a7f7b1d0089c7e30208f2c560241ccbcf">More...</a><br /></td></tr>
+<tr class="separator:a7f7b1d0089c7e30208f2c560241ccbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -221,13 +233,6 @@ Static Protected Attributes</h2></td></tr>
 <tr class="memitem:a9c39b73552a3d681f5148d40e1746b8e"><td class="memItemLeft" align="right" valign="top">static vector&lt; <a class="el" href="classModel.html">Model</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html#a9c39b73552a3d681f5148d40e1746b8e">models</a></td></tr>
 <tr class="memdesc:a9c39b73552a3d681f5148d40e1746b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector to store pointers to created models.  <a href="classModelImpl.html#a9c39b73552a3d681f5148d40e1746b8e">More...</a><br /></td></tr>
 <tr class="separator:a9c39b73552a3d681f5148d40e1746b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_static_methods_classModel"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classModel')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classModel.html">Model</a></td></tr>
-<tr class="memitem:a4c8566635d4c4311239a2ed5a3d75a8a inherit pro_static_methods_classModel"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a4c8566635d4c4311239a2ed5a3d75a8a">add</a> (<a class="el" href="classModel.html">Model</a> *m)</td></tr>
-<tr class="memdesc:a4c8566635d4c4311239a2ed5a3d75a8a inherit pro_static_methods_classModel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> from the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> (pure virtual).  <a href="classModel.html#a4c8566635d4c4311239a2ed5a3d75a8a">More...</a><br /></td></tr>
-<tr class="separator:a4c8566635d4c4311239a2ed5a3d75a8a inherit pro_static_methods_classModel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> concrete class that implements the interface <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> and represents a <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> in systems theory. </p>
@@ -262,7 +267,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a081505846c37ce9928f2176d77db4bc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a081505846c37ce9928f2176d77db4bc8">&#9670;&nbsp;</a></span>ModelImpl() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a081505846c37ce9928f2176d77db4bc8">&#9670;&nbsp;</a></span>ModelImpl() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,7 +286,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="aa7dfae6de9de089357c916428afde204"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7dfae6de9de089357c916428afde204">&#9670;&nbsp;</a></span>ModelImpl() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7dfae6de9de089357c916428afde204">&#9670;&nbsp;</a></span>ModelImpl() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -307,7 +312,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a158fe9d8f692520b9b9edc511c769a70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a158fe9d8f692520b9b9edc511c769a70">&#9670;&nbsp;</a></span>ModelImpl() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a158fe9d8f692520b9b9edc511c769a70">&#9670;&nbsp;</a></span>ModelImpl() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,6 +355,40 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ae733251193d98fe7aa3b2f134e06a478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae733251193d98fe7aa3b2f134e06a478">&#9670;&nbsp;</a></span>ModelImpl() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelImpl::ModelImpl </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classModelImpl.html">ModelImpl</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>copy constructor for the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> class </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>reference to the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> object will be copied </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a427f422a6d356b94afbe3937d6452a2b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a427f422a6d356b94afbe3937d6452a2b">&#9670;&nbsp;</a></span>~ModelImpl()</h2>
 
@@ -378,6 +417,120 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="afb03886a806066515ac40f9ac29155df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb03886a806066515ac40f9ac29155df">&#9670;&nbsp;</a></span>add() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ModelImpl::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classFlow.html">Flow</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>add a <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> to the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>a pointer to the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> to be added </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> was successfully added, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a2c43a2c55bae36d1141fd00dda0aa057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c43a2c55bae36d1141fd00dda0aa057">&#9670;&nbsp;</a></span>add() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ModelImpl::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classModel.html">Model</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds the given <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> to the Models container. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>A pointer to the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> to be added </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> was successfully added, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a75824d3eb5f2e250616621b3ca8f081d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75824d3eb5f2e250616621b3ca8f081d">&#9670;&nbsp;</a></span>add() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ModelImpl::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSystem.html">System</a> *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>add a <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> to the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>a pointer to the <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> to be added </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> was successfully added, false otherwise </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModelImpl_a75824d3eb5f2e250616621b3ca8f081d_icgraph.png" border="0" usemap="#aclassModelImpl_a75824d3eb5f2e250616621b3ca8f081d_icgraph" alt=""/></div>
+<map name="aclassModelImpl_a75824d3eb5f2e250616621b3ca8f081d_icgraph" id="aclassModelImpl_a75824d3eb5f2e250616621b3ca8f081d_icgraph">
+<area shape="rect" title="add a System to the Model" alt="" coords="233,5,356,32"/>
+<area shape="rect" href="classModelImpl.html#aa18c614c7389ff3abf3467d9a3d67fb4" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="5,5,185,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a04845b1a7d621ce11855d2a518ce60c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04845b1a7d621ce11855d2a518ce60c4">&#9670;&nbsp;</a></span>beginFlows()</h2>
 
@@ -404,8 +557,6 @@ Additional Inherited Members</h2></td></tr>
 <p>get an iterator to the beginning of the Flows vector </p>
 <dl class="section return"><dt>Returns</dt><dd>a FlowsIterator to the beginning of the Flows vector </dd></dl>
 
-<p>Implements <a class="el" href="classModel.html#a7e228e43346415de0d7226608ee1be4d">Model</a>.</p>
-
 </div>
 </div>
 <a id="adab8fbac5c4ec4e6ec90a71df9a4b4c6"></a>
@@ -418,7 +569,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classModel.html#ae62cf1024b4d3e76cff7548064c6acc8">ModelsIterator</a> ModelImpl::beginModels </td>
+          <td class="memname"><a class="el" href="ModelImpl_8cpp.html#a2fe42258f295b6453910ef2420996b29">ModelsIterator</a> ModelImpl::beginModels </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -433,8 +584,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Obtains an iterator pointing to the beginning of the Models container. </p>
 <dl class="section return"><dt>Returns</dt><dd>A ModelsIterator pointing to the first element in the Models container </dd></dl>
-
-<p>Implements <a class="el" href="classModel.html#a8b2bbff8b1275411d6a574d1ec98492e">Model</a>.</p>
 
 </div>
 </div>
@@ -463,8 +612,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p>get an iterator to the beginning of the Systems vector </p>
 <dl class="section return"><dt>Returns</dt><dd>a SystemsIterator to the beginning of the Systems vector </dd></dl>
-
-<p>Implements <a class="el" href="classModel.html#a17850a63542dd4c4994ae12ebf788969">Model</a>.</p>
 
 </div>
 </div>
@@ -502,7 +649,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModel.html#a8122c9ffb5bbc82450efeccbe5854f18" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="577,5,728,32"/>
 <area shape="rect" href="unit__Model_8cpp.html#a723ceb63472e35da820ad556d67a5c7a" title="Unit test for ModelImpl::createModel()" alt="" coords="311,5,529,32"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,5,263,32"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
 </map>
 </div>
 
@@ -540,6 +687,15 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModelImpl_aa18c614c7389ff3abf3467d9a3d67fb4_cgraph.png" border="0" usemap="#aclassModelImpl_aa18c614c7389ff3abf3467d9a3d67fb4_cgraph" alt=""/></div>
+<map name="aclassModelImpl_aa18c614c7389ff3abf3467d9a3d67fb4_cgraph" id="aclassModelImpl_aa18c614c7389ff3abf3467d9a3d67fb4_cgraph">
+<area shape="rect" title="Creates a new Model with the given name and adds it to the Models container." alt="" coords="5,5,185,32"/>
+<area shape="rect" href="classModelImpl.html#a75824d3eb5f2e250616621b3ca8f081d" title="add a System to the Model" alt="" coords="233,5,356,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -587,8 +743,6 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> </dd></dl>
 
-<p>Implements <a class="el" href="classModel.html#aa241eb7aeebc7a3dea5fd6a51ad1451f">Model</a>.</p>
-
 </div>
 </div>
 <a id="aeeb136a5c06444ffe49c9bacd5e23233"></a>
@@ -617,8 +771,6 @@ Here is the caller graph for this function:</div>
 <p>get an iterator to the end of the Flows vector </p>
 <dl class="section return"><dt>Returns</dt><dd>a FlowsIterator to the end of the Flows vector </dd></dl>
 
-<p>Implements <a class="el" href="classModel.html#ad2a8514c9ba8d4deb0f51ed9e22c694a">Model</a>.</p>
-
 </div>
 </div>
 <a id="ad581c72515c326f6e63873eaa8866f8c"></a>
@@ -631,7 +783,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classModel.html#ae62cf1024b4d3e76cff7548064c6acc8">ModelsIterator</a> ModelImpl::endModels </td>
+          <td class="memname"><a class="el" href="ModelImpl_8cpp.html#a2fe42258f295b6453910ef2420996b29">ModelsIterator</a> ModelImpl::endModels </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -646,8 +798,6 @@ Here is the caller graph for this function:</div>
 
 <p>Obtains an iterator pointing to the end of the Models container. </p>
 <dl class="section return"><dt>Returns</dt><dd>A ModelsIterator pointing one past the last element in the Models container </dd></dl>
-
-<p>Implements <a class="el" href="classModel.html#a9aff7f35b559c4981f536730d89ee13c">Model</a>.</p>
 
 </div>
 </div>
@@ -677,8 +827,6 @@ Here is the caller graph for this function:</div>
 <p>get an iterator to the end of the Systems vector </p>
 <dl class="section return"><dt>Returns</dt><dd>a SystemsIterator to the end of the Systems vector </dd></dl>
 
-<p>Implements <a class="el" href="classModel.html#a60d5c46852dff7dffdc185f76eab28b1">Model</a>.</p>
-
 </div>
 </div>
 <a id="ac9598171669241583de2ded787f17e4c"></a>
@@ -691,7 +839,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classModel.html#aa635fd7f66df482dfea1d6e61207c8a1">FlowsIterator</a> ModelImpl::getFlows </td>
+          <td class="memname"><a class="el" href="classModelImpl.html#a497dc47850dcbc63781099753590661f">FlowsIterator</a> ModelImpl::getFlows </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -706,8 +854,6 @@ Here is the caller graph for this function:</div>
 
 <p>get an iterator to the beginning of the Flows vector </p>
 <dl class="section return"><dt>Returns</dt><dd>a FlowsIterator to the beginning of the Flows vector </dd></dl>
-
-<p>Implements <a class="el" href="classModel.html#a5f7412930cc0aa7f8935a2642d90c75d">Model</a>.</p>
 
 </div>
 </div>
@@ -737,8 +883,6 @@ Here is the caller graph for this function:</div>
 <p>get the name of the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> </p>
 <dl class="section return"><dt>Returns</dt><dd>a string with the name of the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> </dd></dl>
 
-<p>Implements <a class="el" href="classModel.html#aa5365ab557ae47efffdf14ba7a46dac8">Model</a>.</p>
-
 </div>
 </div>
 <a id="a21551e09b3cd465950d97108d545fa1e"></a>
@@ -751,7 +895,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classModel.html#a251f91d5bad724044aa7d574064c1aba">SystemsIterator</a> ModelImpl::getSystems </td>
+          <td class="memname"><a class="el" href="classModelImpl.html#a01e8c800a5a12542bb5f3cc384cefd0d">SystemsIterator</a> ModelImpl::getSystems </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -767,7 +911,40 @@ Here is the caller graph for this function:</div>
 <p>get an iterator to the beginning of the Systems vector </p>
 <dl class="section return"><dt>Returns</dt><dd>a SystemsIterator to the beginning of the Systems vector </dd></dl>
 
-<p>Implements <a class="el" href="classModel.html#ad52d3a732e9f15454de877acdc8ddb25">Model</a>.</p>
+</div>
+</div>
+<a id="a7f7b1d0089c7e30208f2c560241ccbcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f7b1d0089c7e30208f2c560241ccbcf">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classModelImpl.html">ModelImpl</a> &amp; ModelImpl::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classModelImpl.html">ModelImpl</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>overloading the "=" operator that copies the attributes of one <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> to another </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>a reference to the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> object to be assigned </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> that received the copy data </dd></dl>
 
 </div>
 </div>
@@ -831,8 +1008,6 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> was successfully removed, false otherwise </dd></dl>
 
-<p>Implements <a class="el" href="classModel.html#a8568b21dec4f8781179a64b44826e029">Model</a>.</p>
-
 </div>
 </div>
 <a id="a5145a5ed6c8cb204137fc161d94bb9e4"></a>
@@ -867,8 +1042,6 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> was successfully removed, false otherwise </dd></dl>
-
-<p>Implements <a class="el" href="classModel.html#aab07c39ea01c4296097674893858f12f">Model</a>.</p>
 
 </div>
 </div>
@@ -915,8 +1088,6 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the simulation was successful, false otherwise </dd></dl>
-
-<p>Implements <a class="el" href="classModel.html#a279af13c7eb8e6e1a4783686a8c8e1fa">Model</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -963,8 +1134,6 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the name was successfully set, false otherwise </dd></dl>
 
-<p>Implements <a class="el" href="classModel.html#aafe5591bcbf5dba1efe78367586f3688">Model</a>.</p>
-
 </div>
 </div>
 <a id="ac589417ae1d56f83925b0091d954977b"></a>
@@ -1010,8 +1179,6 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the source <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> of the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> was successfully set, false otherwise </dd></dl>
-
-<p>Implements <a class="el" href="classModel.html#a618ceb471175c7a23e226d3beae7ea26">Model</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1067,8 +1234,6 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the target <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> of the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> was successfully set, false otherwise </dd></dl>
-
-<p>Implements <a class="el" href="classModel.html#a486bd1ea4993d5603db3c8bd0a8f1c19">Model</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

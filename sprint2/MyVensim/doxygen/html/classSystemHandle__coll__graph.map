@@ -1,0 +1,7 @@
+<map id="SystemHandle" name="SystemHandle">
+<area shape="rect" id="node1" title=" " alt="" coords="31,515,185,665"/>
+<area shape="rect" id="node2" href="$classSystem.html" title="Interface that represents a System in the simulator of systems theory." alt="" coords="5,329,112,465"/>
+<area shape="rect" id="node3" href="$classHandle.html" title=" " alt="" coords="136,337,312,458"/>
+<area shape="rect" id="node4" href="$classHandle.html" title="The classes Handle and Body implements the &quot;bridge&quot; design pattern (also known as &quot;handle/body idiom&quot;..." alt="" coords="167,145,281,267"/>
+<area shape="rect" id="node5" title=" " alt="" coords="203,5,245,83"/>
+</map>

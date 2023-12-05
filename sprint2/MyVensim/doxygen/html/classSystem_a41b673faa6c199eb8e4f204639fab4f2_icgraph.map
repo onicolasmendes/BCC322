@@ -1,11 +1,14 @@
 <map id="System::getValue" name="System::getValue">
-<area shape="rect" id="node1" title="Retrieve the value of the System (pure virtual)." alt="" coords="353,157,489,184"/>
-<area shape="rect" id="node2" href="$funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="123,5,290,32"/>
-<area shape="rect" id="node4" href="$classFlowExponencial.html#ab732e5e28813673afb439669cfa644f5" title="virtual method to compute the equation governing the FlowExponencial (0.01 * source System value)" alt="" coords="108,56,305,83"/>
-<area shape="rect" id="node5" href="$classFlowLogistica.html#a02f08d28916a69b199b6758bb8bcbef8" title="virtual method to compute the equation governing the FlowLogistica (0.01 * target System value * (1 &#45;..." alt="" coords="119,107,295,133"/>
-<area shape="rect" id="node6" href="$classFlowMaior.html#ab696f0362508a4b03bdab4acee688d3c" title="virtual method to compute the equation governing the FlowMaior (0.01 * source System value)" alt="" coords="129,157,284,184"/>
-<area shape="rect" id="node7" href="$funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="113,208,300,235"/>
-<area shape="rect" id="node8" href="$funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="122,259,291,285"/>
-<area shape="rect" id="node9" href="$classModelImpl.html#abf9757a0107636e05d3493acdaaeebe0" title="run the Model simulation from a specified initial time to a final time" alt="" coords="147,309,267,336"/>
-<area shape="rect" id="node3" href="$test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,208,60,235"/>
+<area shape="rect" id="node1" title="Retrieve the value of the System (pure virtual)." alt="" coords="592,183,728,209"/>
+<area shape="rect" id="node2" href="$funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="362,5,529,32"/>
+<area shape="rect" id="node4" href="$classFlowExponencial.html#ab732e5e28813673afb439669cfa644f5" title="virtual method to compute the equation governing the FlowExponencial (0.01 * source System value)" alt="" coords="347,56,544,83"/>
+<area shape="rect" id="node5" href="$classFlowLogistica.html#a02f08d28916a69b199b6758bb8bcbef8" title="virtual method to compute the equation governing the FlowLogistica (0.01 * target System value * (1 &#45;..." alt="" coords="357,107,533,133"/>
+<area shape="rect" id="node6" href="$classFlowMaior.html#ab696f0362508a4b03bdab4acee688d3c" title="virtual method to compute the equation governing the FlowMaior (0.01 * source System value)" alt="" coords="368,157,523,184"/>
+<area shape="rect" id="node7" href="$funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="352,208,539,235"/>
+<area shape="rect" id="node8" href="$funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="361,259,530,285"/>
+<area shape="rect" id="node9" href="$classModelImpl.html#abf9757a0107636e05d3493acdaaeebe0" title="run the Model simulation from a specified initial time to a final time" alt="" coords="385,309,505,336"/>
+<area shape="rect" id="node10" href="$unit__handleBody_8cpp.html#a041c901d13acd21a20f8d724b6a23d06" title="Unit test for the handling and manipulation of Model, System, and SystemHandle objects." alt="" coords="380,360,511,387"/>
+<area shape="rect" id="node3" href="$funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="176,208,231,235"/>
+<area shape="rect" id="node11" href="$unit__handleBody_8cpp.html#a3799d648f8a13e1b9b6cbddcaea1aac8" title="Run all tests for handle body." alt="" coords="108,360,299,387"/>
+<area shape="rect" id="node12" href="$unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,360,60,387"/>
 </map>

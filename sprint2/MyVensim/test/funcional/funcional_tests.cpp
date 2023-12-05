@@ -1,7 +1,13 @@
 #include "funcional_tests.h"
 #include <cassert>
 #include <cmath>
-
+#define DEBUGING
+#ifdef DEBUGING
+int numHandleCreated = 0;
+int numHandleDeleted = 0;
+int numBodyCreated = 0;
+int numBodyDeleted = 0;
+#endif
 bool exponentialFuncionalTest()
 {
     Model *m = Model::createModel("expo");
@@ -9,7 +15,7 @@ bool exponentialFuncionalTest()
     System *pop2 = m->createSystem("pop2", 0);
     Flow *f = m->createFlow<FlowExponencial>(pop1);
     m->setTarget(f, pop2);
-    
+
     m->run(0, 100);
 
     assert(round(fabs(pop1->getValue() - 36.6032) * 10000) < 0.0001);
@@ -41,7 +47,7 @@ bool logisticalFuncionalTest()
 
 bool complexFuncionalTest()
 {
-   
+
     Model *m = Model::createModel("complex");
     System *q1 = m->createSystem("q1", 100);
     System *q2 = m->createSystem("q2", 0);
@@ -70,7 +76,6 @@ bool complexFuncionalTest()
     assert(round(fabs(q5->getValue() - 16.4612) * 10000) < 0.0001);
 
     delete m;
-    
-   return true;
-}
 
+    return true;
+}

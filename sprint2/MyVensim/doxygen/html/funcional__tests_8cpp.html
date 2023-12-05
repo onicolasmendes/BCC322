@@ -66,7 +66,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">funcional_tests.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -89,13 +91,19 @@ Include dependency graph for funcional_tests.cpp:</div>
 <area shape="rect" href="FlowMaior_8h.html" title="FlowMaior class header file." alt="" coords="406,213,549,240"/>
 <area shape="rect" href="FlowImpl_8h.html" title="FlowImpl class header file." alt="" coords="341,288,435,315"/>
 <area shape="rect" title=" " alt="" coords="602,288,665,315"/>
-<area shape="rect" href="Flow_8h.html" title="Flow Interface class header file." alt="" coords="356,363,420,389"/>
-<area shape="rect" href="System_8h.html" title="System interface class header file." alt="" coords="347,437,429,464"/>
-<area shape="rect" title=" " alt="" coords="301,512,381,539"/>
-<area shape="rect" title=" " alt="" coords="405,512,464,539"/>
+<area shape="rect" href="Flow_8h.html" title="Flow Interface class header file." alt="" coords="283,363,347,389"/>
+<area shape="rect" href="handleBodySemDebug_8h.html" title=" " alt="" coords="371,363,554,389"/>
+<area shape="rect" href="System_8h.html" title="System interface class header file." alt="" coords="273,437,356,464"/>
+<area shape="rect" title=" " alt="" coords="228,512,308,539"/>
+<area shape="rect" title=" " alt="" coords="332,512,391,539"/>
 </map>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aeff79046387df0de04e7de11061a704b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funcional__tests_8cpp.html#aeff79046387df0de04e7de11061a704b">DEBUGING</a></td></tr>
+<tr class="separator:aeff79046387df0de04e7de11061a704b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a990a580e1a43e5934dd62de8e0a37f30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30">exponentialFuncionalTest</a> ()</td></tr>
@@ -108,7 +116,33 @@ Functions</h2></td></tr>
 <tr class="memdesc:a4b249a0069fb8bd98260fbe4d47f4e0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5), with 100, 0, 100, 0 and 0 as initial values respectively. q1 is defined as source and q2 is defined as target of a f (a flow log). q1 is defined as source and q3 is defined as target of a g (a flow log). q3 is defined as source and q4 is defined as target of a u (a flow log). q4 is defined as source and q1 is defined as target of a v (a flow log). q2 is defined as source and q3 is defined as target of a t (a flow log). q2 is defined as source and q5 is defined as target of a r (a flow log). <br  />
  The simulation runs 0 to 100, and the expected results are 31.8513 for q1, 18.4003 for q2, 77.1143 for q3, 56.1428 for q4 and 16.4612 for q5.  <a href="funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b">More...</a><br /></td></tr>
 <tr class="separator:a4b249a0069fb8bd98260fbe4d47f4e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aac78cb29dfe4a565da68073b0beebf2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funcional__tests_8cpp.html#aac78cb29dfe4a565da68073b0beebf2f">numHandleCreated</a> = 0</td></tr>
+<tr class="separator:aac78cb29dfe4a565da68073b0beebf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01128a06118f949a0b24a3d080f515fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funcional__tests_8cpp.html#a01128a06118f949a0b24a3d080f515fd">numHandleDeleted</a> = 0</td></tr>
+<tr class="separator:a01128a06118f949a0b24a3d080f515fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1322042429ed9724fbef55908244f3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funcional__tests_8cpp.html#ac1322042429ed9724fbef55908244f3b">numBodyCreated</a> = 0</td></tr>
+<tr class="separator:ac1322042429ed9724fbef55908244f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba38ebae7f83ef57afab8c447dddb6cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funcional__tests_8cpp.html#aba38ebae7f83ef57afab8c447dddb6cf">numBodyDeleted</a> = 0</td></tr>
+<tr class="separator:aba38ebae7f83ef57afab8c447dddb6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aeff79046387df0de04e7de11061a704b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeff79046387df0de04e7de11061a704b">&#9670;&nbsp;</a></span>DEBUGING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUGING</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a4b249a0069fb8bd98260fbe4d47f4e0b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b249a0069fb8bd98260fbe4d47f4e0b">&#9670;&nbsp;</a></span>complexFuncionalTest()</h2>
@@ -150,7 +184,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="funcional__tests_8cpp_a4b249a0069fb8bd98260fbe4d47f4e0b_icgraph.png" border="0" usemap="#afuncional__tests_8cpp_a4b249a0069fb8bd98260fbe4d47f4e0b_icgraph" alt=""/></div>
 <map name="afuncional__tests_8cpp_a4b249a0069fb8bd98260fbe4d47f4e0b_icgraph" id="afuncional__tests_8cpp_a4b249a0069fb8bd98260fbe4d47f4e0b_icgraph">
 <area shape="rect" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="108,5,275,32"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
 </map>
 </div>
 
@@ -195,7 +229,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="funcional__tests_8cpp_a990a580e1a43e5934dd62de8e0a37f30_icgraph.png" border="0" usemap="#afuncional__tests_8cpp_a990a580e1a43e5934dd62de8e0a37f30_icgraph" alt=""/></div>
 <map name="afuncional__tests_8cpp_a990a580e1a43e5934dd62de8e0a37f30_icgraph" id="afuncional__tests_8cpp_a990a580e1a43e5934dd62de8e0a37f30_icgraph">
 <area shape="rect" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="108,5,295,32"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
 </map>
 </div>
 
@@ -241,9 +275,66 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="funcional__tests_8cpp_ac9df0129352dd52de9dc7d0fc69660fe_icgraph.png" border="0" usemap="#afuncional__tests_8cpp_ac9df0129352dd52de9dc7d0fc69660fe_icgraph" alt=""/></div>
 <map name="afuncional__tests_8cpp_ac9df0129352dd52de9dc7d0fc69660fe_icgraph" id="afuncional__tests_8cpp_ac9df0129352dd52de9dc7d0fc69660fe_icgraph">
 <area shape="rect" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="108,5,277,32"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ac1322042429ed9724fbef55908244f3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1322042429ed9724fbef55908244f3b">&#9670;&nbsp;</a></span>numBodyCreated</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int numBodyCreated = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba38ebae7f83ef57afab8c447dddb6cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba38ebae7f83ef57afab8c447dddb6cf">&#9670;&nbsp;</a></span>numBodyDeleted</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int numBodyDeleted = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac78cb29dfe4a565da68073b0beebf2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac78cb29dfe4a565da68073b0beebf2f">&#9670;&nbsp;</a></span>numHandleCreated</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int numHandleCreated = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01128a06118f949a0b24a3d080f515fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01128a06118f949a0b24a3d080f515fd">&#9670;&nbsp;</a></span>numHandleDeleted</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int numHandleDeleted = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

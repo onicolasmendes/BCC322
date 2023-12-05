@@ -1,5 +1,6 @@
 #pragma once
 #include "Flow.h"
+#include "handleBodySemDebug.h"
 
 using namespace std;
 
@@ -14,7 +15,7 @@ using namespace std;
  * @brief Flow concrete class that implements the interface Flow and represents a Flow in systems theory.
  */
 
-class FlowImpl : public Flow
+class FlowImpl : public Body
 {
 protected:
     System *source; ///< a pointer to the source system of the represented flow
@@ -81,4 +82,25 @@ public:
      * @brief abstract method that must be implemented by classes that inherit from flow, defining the equation of the function that governs the associated flow
      */
     virtual double equation() const = 0;
+};
+
+template <typename T>
+class FlowHandle : public Flow, public Handle<T>
+{
+public:
+    FlowHandle(System *s = nullptr, System *t = nullptr)
+    {
+        Handle<T>::pImpl_->setSource(s);
+        Handle<T>::pImpl_->setTarget(t);
+    }
+
+    virtual ~FlowHandle()
+    {
+    }
+
+    virtual bool setSource(System *s) { return Handle<T>::pImpl_->setSource(s); };
+    virtual System *getSource() const { return Handle<T>::pImpl_->getSource(); };
+    virtual bool setTarget(System *s) { return Handle<T>::pImpl_->setTarget(s); };
+    virtual System *getTarget() const { return Handle<T>::pImpl_->getTarget(); };
+    virtual double equation() const { return Handle<T>::pImpl_->equation(); };
 };

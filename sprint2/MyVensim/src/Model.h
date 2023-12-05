@@ -156,7 +156,7 @@ public:
 
     Flow *createFlow(System *s = nullptr, System *t = nullptr)
     {
-        Flow *f = new T_FLOW_IMPL(s, t);
+        Flow *f = new FlowHandle<T_FLOW_IMPL>(s, t);
         add(f);
         return f;
     }

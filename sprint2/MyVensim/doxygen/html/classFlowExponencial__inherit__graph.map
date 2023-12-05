@@ -1,5 +1,5 @@
 <map id="FlowExponencial" name="FlowExponencial">
-<area shape="rect" id="node1" title="Class intended for testing that inherits from Flow and implements equation()" alt="" coords="5,491,173,612"/>
-<area shape="rect" id="node2" href="$classFlowImpl.html" title="Flow concrete class that implements the interface Flow and represents a Flow in systems theory." alt="" coords="27,204,151,443"/>
-<area shape="rect" id="node3" href="$classFlow.html" title="Interface that represents a Flow in the simulator of systems theory." alt="" coords="33,5,145,156"/>
+<area shape="rect" id="node1" title="Class intended for testing that inherits from Flow and implements equation()" alt="" coords="5,476,173,597"/>
+<area shape="rect" id="node2" href="$classFlowImpl.html" title="Flow concrete class that implements the interface Flow and represents a Flow in systems theory." alt="" coords="27,189,151,428"/>
+<area shape="rect" id="node3" href="$classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="38,5,141,141"/>
 </map>

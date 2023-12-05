@@ -1,0 +1,6 @@
+<map id="SystemHandle::getName" name="SystemHandle::getName">
+<area shape="rect" id="node1" title="Retrieve the name of the System (pure virtual)." alt="" coords="525,5,711,32"/>
+<area shape="rect" id="node2" href="$unit__handleBody_8cpp.html#a041c901d13acd21a20f8d724b6a23d06" title="Unit test for the handling and manipulation of Model, System, and SystemHandle objects." alt="" coords="347,5,477,32"/>
+<area shape="rect" id="node3" href="$unit__handleBody_8cpp.html#a3799d648f8a13e1b9b6cbddcaea1aac8" title="Run all tests for handle body." alt="" coords="108,5,299,32"/>
+<area shape="rect" id="node4" href="$unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
+</map>

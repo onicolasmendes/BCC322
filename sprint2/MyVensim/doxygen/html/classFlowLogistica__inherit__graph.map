@@ -1,5 +1,5 @@
 <map id="FlowLogistica" name="FlowLogistica">
-<area shape="rect" id="node1" title="Class intended for testing that inherits from Flow and implements equation()" alt="" coords="5,491,152,612"/>
-<area shape="rect" id="node2" href="$classFlowImpl.html" title="Flow concrete class that implements the interface Flow and represents a Flow in systems theory." alt="" coords="17,204,141,443"/>
-<area shape="rect" id="node3" href="$classFlow.html" title="Interface that represents a Flow in the simulator of systems theory." alt="" coords="23,5,135,156"/>
+<area shape="rect" id="node1" title="Class intended for testing that inherits from Flow and implements equation()" alt="" coords="5,476,152,597"/>
+<area shape="rect" id="node2" href="$classFlowImpl.html" title="Flow concrete class that implements the interface Flow and represents a Flow in systems theory." alt="" coords="17,189,141,428"/>
+<area shape="rect" id="node3" href="$classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="27,5,130,141"/>
 </map>

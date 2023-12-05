@@ -66,7 +66,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">ModelImpl.h File Reference</div>  </div>
 </div><!--header-->
@@ -77,20 +78,22 @@ $(function() {
 <div class="textblock"><code>#include &quot;vector&quot;</code><br />
 <code>#include &quot;<a class="el" href="Model_8h_source.html">Model.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SystemImpl_8h_source.html">SystemImpl.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="handleBodySemDebug_8h_source.html">handleBodySemDebug.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ModelImpl.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="ModelImpl_8h__incl.png" border="0" usemap="#a_2mnt_2c_2Users_2Nicolas_01Mendes_2Documents_2C_xC3_xB3digos_2BCC322_2sprint2_2MyVensim_2src_2ModelImpl_8h" alt=""/></div>
 <map name="a_2mnt_2c_2Users_2Nicolas_01Mendes_2Documents_2C_xC3_xB3digos_2BCC322_2sprint2_2MyVensim_2src_2ModelImpl_8h" id="a_2mnt_2c_2Users_2Nicolas_01Mendes_2Documents_2C_xC3_xB3digos_2BCC322_2sprint2_2MyVensim_2src_2ModelImpl_8h">
-<area shape="rect" title="ModelImpl class header file." alt="" coords="21,5,231,76"/>
+<area shape="rect" title="ModelImpl class header file." alt="" coords="77,5,287,76"/>
 <area shape="rect" title=" " alt="" coords="5,199,68,225"/>
-<area shape="rect" href="Model_8h.html" title="Model Interface class header file." alt="" coords="89,124,163,151"/>
-<area shape="rect" href="SystemImpl_8h.html" title="SystemImpl class header file." alt="" coords="189,273,301,300"/>
+<area shape="rect" href="Model_8h.html" title="Model Interface class header file." alt="" coords="102,124,177,151"/>
+<area shape="rect" href="handleBodySemDebug_8h.html" title=" " alt="" coords="116,273,299,300"/>
+<area shape="rect" href="SystemImpl_8h.html" title="SystemImpl class header file." alt="" coords="281,199,393,225"/>
 <area shape="rect" href="FlowImpl_8h.html" title="FlowImpl class header file." alt="" coords="92,199,187,225"/>
-<area shape="rect" href="Flow_8h.html" title="Flow Interface class header file." alt="" coords="101,273,165,300"/>
-<area shape="rect" href="System_8h.html" title="System interface class header file." alt="" coords="107,348,190,375"/>
-<area shape="rect" title=" " alt="" coords="229,423,309,449"/>
-<area shape="rect" title=" " alt="" coords="137,423,195,449"/>
+<area shape="rect" href="Flow_8h.html" title="Flow Interface class header file." alt="" coords="27,273,91,300"/>
+<area shape="rect" href="System_8h.html" title="System interface class header file." alt="" coords="374,348,457,375"/>
+<area shape="rect" title=" " alt="" coords="438,423,518,449"/>
+<area shape="rect" title=" " alt="" coords="339,423,398,449"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -110,10 +113,64 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelImpl.html">ModelImpl</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> concrete class that implements the interface <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> and represents a <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> in systems theory.  <a href="classModelImpl.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModelHandle.html">ModelHandle</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a7714eb2723fe14f2efa9ebbad6ba43ba"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="classSystem.html">System</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ModelImpl_8h.html#a7714eb2723fe14f2efa9ebbad6ba43ba">SystemsIterator</a></td></tr>
+<tr class="separator:a7714eb2723fe14f2efa9ebbad6ba43ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc500b3ffe36ec37a5c6b20d9eb3d3b"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="classFlow.html">Flow</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ModelImpl_8h.html#a8cc500b3ffe36ec37a5c6b20d9eb3d3b">FlowsIterator</a></td></tr>
+<tr class="separator:a8cc500b3ffe36ec37a5c6b20d9eb3d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe42258f295b6453910ef2420996b29"><td class="memItemLeft" align="right" valign="top">typedef vector&lt; <a class="el" href="classModel.html">Model</a> * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ModelImpl_8h.html#a2fe42258f295b6453910ef2420996b29">ModelsIterator</a></td></tr>
+<tr class="separator:a2fe42258f295b6453910ef2420996b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classModelImpl.html" title="Model concrete class that implements the interface Model and represents a Model in systems theory.">ModelImpl</a> class header file. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a8cc500b3ffe36ec37a5c6b20d9eb3d3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cc500b3ffe36ec37a5c6b20d9eb3d3b">&#9670;&nbsp;</a></span>FlowsIterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef vector&lt;<a class="el" href="classFlow.html">Flow</a> *&gt;::iterator <a class="el" href="ModelImpl_8cpp.html#a8cc500b3ffe36ec37a5c6b20d9eb3d3b">FlowsIterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2fe42258f295b6453910ef2420996b29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fe42258f295b6453910ef2420996b29">&#9670;&nbsp;</a></span>ModelsIterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef vector&lt;<a class="el" href="classModel.html">Model</a> *&gt;::iterator <a class="el" href="ModelImpl_8cpp.html#a2fe42258f295b6453910ef2420996b29">ModelsIterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7714eb2723fe14f2efa9ebbad6ba43ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7714eb2723fe14f2efa9ebbad6ba43ba">&#9670;&nbsp;</a></span>SystemsIterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef vector&lt;<a class="el" href="classSystem.html">System</a> *&gt;::iterator <a class="el" href="ModelImpl_8cpp.html#a7714eb2723fe14f2efa9ebbad6ba43ba">SystemsIterator</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

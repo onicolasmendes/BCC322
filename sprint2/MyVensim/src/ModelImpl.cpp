@@ -34,14 +34,7 @@ ModelImpl::~ModelImpl()
         delete *it;
     }
 
-    for (ModelsIterator it = beginModels(); it < endModels(); it++)
-    {
-        if(*it == this)
-        {
-            models.erase(it);
-            break;
-        }
-    }
+    models.clear();
 
 }
 
@@ -234,27 +227,27 @@ Model *Model::createModel()
 
 bool ModelImpl::add(Model *m)
 {
-    ModelImpl::models.push_back(m);
+    models.push_back(m);
     return true;
 }
 
 Model *ModelImpl::createModel(const string &n)
 {
-    Model *m = new ModelImpl(n);
+    Model *m = new ModelHandle(n);
     ModelImpl::add(m);
     return m;
 }
 
 Model *ModelImpl::createModel()
 {
-    Model *m = new ModelImpl();
+    Model *m = new ModelHandle();
     add(m);
     return m;
 }
 
 System *ModelImpl::createSystem(const string &n = "", const double &v = 0)
 {
-    System *s = new SystemImpl(n, v);
+    System *s = new SystemHandle(n, v);
     add(s);
     return s;
 }

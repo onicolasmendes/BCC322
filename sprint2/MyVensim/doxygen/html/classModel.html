@@ -82,8 +82,8 @@ Inheritance diagram for Model:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel__inherit__graph.png" border="0" usemap="#aModel_inherit__map" alt="Inheritance graph"/></div>
 <map name="aModel_inherit__map" id="aModel_inherit__map">
-<area shape="rect" title="Interface that represents a Flow in the simulator of systems theory." alt="" coords="5,5,133,303"/>
-<area shape="rect" href="classModelImpl.html" title="Model concrete class that implements the interface Model and represents a Model in systems theory." alt="" coords="5,351,133,648"/>
+<area shape="rect" title="Interface that represents a Flow in the simulator of systems theory." alt="" coords="13,5,141,303"/>
+<area shape="rect" href="classModelHandle.html" title=" " alt="" coords="5,351,149,575"/>
 </map>
 </div>
 <div class="dynheader">
@@ -292,6 +292,8 @@ Static Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the operation is successful, indicating the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> is added, false otherwise. </dd></dl>
 
+<p>Implemented in <a class="el" href="classModelHandle.html#a8dc11c8e97112fc182623b8926b47e41">ModelHandle</a>.</p>
+
 </div>
 </div>
 <a id="a4c8566635d4c4311239a2ed5a3d75a8a"></a>
@@ -361,27 +363,31 @@ Static Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the operation is successful, indicating the <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> is added, false otherwise. </dd></dl>
+
+<p>Implemented in <a class="el" href="classModelHandle.html#a510dbaeac7e2237a7a8b429662008fd4">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel_abfb2ff6a7566fde6bea104ddd3c556ed_icgraph.png" border="0" usemap="#aclassModel_abfb2ff6a7566fde6bea104ddd3c556ed_icgraph" alt=""/></div>
 <map name="aclassModel_abfb2ff6a7566fde6bea104ddd3c556ed_icgraph" id="aclassModel_abfb2ff6a7566fde6bea104ddd3c556ed_icgraph">
-<area shape="rect" title="Add a System to the Model (pure virtual)." alt="" coords="752,259,847,285"/>
-<area shape="rect" href="classModel.html#a0a45f6feacd4423de27333c11bb793c0" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="561,259,704,285"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="329,5,495,32"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="319,56,505,83"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="327,107,497,133"/>
-<area shape="rect" href="unit__Model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="325,157,499,184"/>
-<area shape="rect" href="unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="329,208,495,235"/>
-<area shape="rect" href="unit__Model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Unit test for the endFlows function of ModelImpl." alt="" coords="331,259,493,285"/>
-<area shape="rect" href="unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="311,309,513,336"/>
-<area shape="rect" href="unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="332,360,492,387"/>
-<area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="319,411,505,437"/>
-<area shape="rect" href="unit__Model_8cpp.html#ad7e193f7cf3494b4a68ebf9c62b02c4d" title="Unit test for ModelImpl::setSource()" alt="" coords="329,461,495,488"/>
-<area shape="rect" href="unit__Model_8cpp.html#aff46f8c80b89b5f607f27da6642a4303" title="Unit test for ModelImpl::setTarget()" alt="" coords="331,512,493,539"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,56,213,83"/>
-<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,335,263,361"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,335,60,361"/>
+<area shape="rect" title="Add a System to the Model (pure virtual)." alt="" coords="788,284,883,311"/>
+<area shape="rect" href="classModel.html#a0a45f6feacd4423de27333c11bb793c0" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="597,284,740,311"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="365,5,531,32"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="355,56,541,83"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="363,107,533,133"/>
+<area shape="rect" href="unit__handleBody_8cpp.html#a041c901d13acd21a20f8d724b6a23d06" title="Unit test for the handling and manipulation of Model, System, and SystemHandle objects." alt="" coords="383,157,513,184"/>
+<area shape="rect" href="unit__Model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="361,208,535,235"/>
+<area shape="rect" href="unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="365,259,531,285"/>
+<area shape="rect" href="unit__Model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Unit test for the endFlows function of ModelImpl." alt="" coords="367,309,529,336"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="347,360,549,387"/>
+<area shape="rect" href="unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="368,411,528,437"/>
+<area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="355,461,541,488"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad7e193f7cf3494b4a68ebf9c62b02c4d" title="Unit test for ModelImpl::setSource()" alt="" coords="365,512,531,539"/>
+<area shape="rect" href="unit__Model_8cpp.html#aff46f8c80b89b5f607f27da6642a4303" title="Unit test for ModelImpl::setTarget()" alt="" coords="367,563,529,589"/>
+<area shape="rect" href="funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="176,56,231,83"/>
+<area shape="rect" href="unit__handleBody_8cpp.html#a3799d648f8a13e1b9b6cbddcaea1aac8" title="Run all tests for handle body." alt="" coords="108,208,299,235"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,259,60,285"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="126,360,281,387"/>
 </map>
 </div>
 
@@ -413,7 +419,7 @@ Here is the caller graph for this function:</div>
 <p>get an iterator to the beginning of the Flows vector (pure virtual) </p>
 <dl class="section return"><dt>Returns</dt><dd>a FlowsIterator to the beginning of the Flows vector </dd></dl>
 
-<p>Implemented in <a class="el" href="classModelImpl.html#a04845b1a7d621ce11855d2a518ce60c4">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="classModelHandle.html#ae871292d908f61bbb1290335a6229cf5">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -428,7 +434,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="unit__Model_8cpp.html#a1524ea94351f1b22d8f7b78e29cd35e5" title="Unit test for the parameterized constructor of ModelImpl." alt="" coords="327,275,497,317"/>
 <area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="319,341,505,368"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,173,263,200"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,173,60,200"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,173,60,200"/>
 </map>
 </div>
 
@@ -460,7 +466,7 @@ Here is the caller graph for this function:</div>
 <p>Gets an iterator pointing to the beginning of the Models vector (pure virtual) </p>
 <dl class="section return"><dt>Returns</dt><dd>A ModelsIterator pointing to the beginning of the Models vector </dd></dl>
 
-<p>Implemented in <a class="el" href="classModelImpl.html#adab8fbac5c4ec4e6ec90a71df9a4b4c6">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="classModelHandle.html#aee7a6b2ccbea5d5f3a6bdff0f8ce5bb4">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -470,7 +476,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="unit__Model_8cpp.html#a2679f573ec19210d2143c5f0275ba0ae" title="Unit test for ModelImpl::beginModels()" alt="" coords="311,5,495,32"/>
 <area shape="rect" href="unit__Model_8cpp.html#a198776a1fac9ea701215f46608b9cc0e" title="Unit test for ModelImpl::endModels()" alt="" coords="317,56,489,83"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,31,263,57"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,31,60,57"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,31,60,57"/>
 </map>
 </div>
 
@@ -502,7 +508,7 @@ Here is the caller graph for this function:</div>
 <p>get an iterator to the beginning of the Systems vector (pure virtual) </p>
 <dl class="section return"><dt>Returns</dt><dd>a SystemsIterator to the beginning of the Systems vector </dd></dl>
 
-<p>Implemented in <a class="el" href="classModelImpl.html#aa4b69848d6f2c634f38ca15813622eca">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="classModelHandle.html#a833e4c1d12297c5c1259aa97250ab9da">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -517,7 +523,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="unit__Model_8cpp.html#a1524ea94351f1b22d8f7b78e29cd35e5" title="Unit test for the parameterized constructor of ModelImpl." alt="" coords="329,275,499,317"/>
 <area shape="rect" href="unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="311,341,517,368"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,173,263,200"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,173,60,200"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,173,60,200"/>
 </map>
 </div>
 
@@ -582,21 +588,23 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel_a0a45f6feacd4423de27333c11bb793c0_icgraph.png" border="0" usemap="#aclassModel_a0a45f6feacd4423de27333c11bb793c0_icgraph" alt=""/></div>
 <map name="aclassModel_a0a45f6feacd4423de27333c11bb793c0_icgraph" id="aclassModel_a0a45f6feacd4423de27333c11bb793c0_icgraph">
-<area shape="rect" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="561,259,704,285"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="329,5,495,32"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="319,56,505,83"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="327,107,497,133"/>
-<area shape="rect" href="unit__Model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="325,157,499,184"/>
-<area shape="rect" href="unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="329,208,495,235"/>
-<area shape="rect" href="unit__Model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Unit test for the endFlows function of ModelImpl." alt="" coords="331,259,493,285"/>
-<area shape="rect" href="unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="311,309,513,336"/>
-<area shape="rect" href="unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="332,360,492,387"/>
-<area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="319,411,505,437"/>
-<area shape="rect" href="unit__Model_8cpp.html#ad7e193f7cf3494b4a68ebf9c62b02c4d" title="Unit test for ModelImpl::setSource()" alt="" coords="329,461,495,488"/>
-<area shape="rect" href="unit__Model_8cpp.html#aff46f8c80b89b5f607f27da6642a4303" title="Unit test for ModelImpl::setTarget()" alt="" coords="331,512,493,539"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,56,213,83"/>
-<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,335,263,361"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,335,60,361"/>
+<area shape="rect" title="Creates a new Flow with the given source and target Systems (default: nullptr)" alt="" coords="597,284,740,311"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="365,5,531,32"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="355,56,541,83"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="363,107,533,133"/>
+<area shape="rect" href="unit__handleBody_8cpp.html#a041c901d13acd21a20f8d724b6a23d06" title="Unit test for the handling and manipulation of Model, System, and SystemHandle objects." alt="" coords="383,157,513,184"/>
+<area shape="rect" href="unit__Model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="361,208,535,235"/>
+<area shape="rect" href="unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="365,259,531,285"/>
+<area shape="rect" href="unit__Model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Unit test for the endFlows function of ModelImpl." alt="" coords="367,309,529,336"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="347,360,549,387"/>
+<area shape="rect" href="unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="368,411,528,437"/>
+<area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="355,461,541,488"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad7e193f7cf3494b4a68ebf9c62b02c4d" title="Unit test for ModelImpl::setSource()" alt="" coords="365,512,531,539"/>
+<area shape="rect" href="unit__Model_8cpp.html#aff46f8c80b89b5f607f27da6642a4303" title="Unit test for ModelImpl::setTarget()" alt="" coords="367,563,529,589"/>
+<area shape="rect" href="funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="176,56,231,83"/>
+<area shape="rect" href="unit__handleBody_8cpp.html#a3799d648f8a13e1b9b6cbddcaea1aac8" title="Run all tests for handle body." alt="" coords="108,208,299,235"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,259,60,285"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="126,360,281,387"/>
 </map>
 </div>
 
@@ -641,36 +649,38 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel_accd28300871325fce68d551cebf27220_icgraph.png" border="0" usemap="#aclassModel_accd28300871325fce68d551cebf27220_icgraph" alt=""/></div>
 <map name="aclassModel_accd28300871325fce68d551cebf27220_icgraph" id="aclassModel_accd28300871325fce68d551cebf27220_icgraph">
-<area shape="rect" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="577,655,728,681"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="337,5,503,32"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="327,56,513,83"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="335,107,505,133"/>
-<area shape="rect" href="unit__Model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="333,157,507,184"/>
-<area shape="rect" href="unit__Model_8cpp.html#a2679f573ec19210d2143c5f0275ba0ae" title="Unit test for ModelImpl::beginModels()" alt="" coords="328,208,512,235"/>
-<area shape="rect" href="unit__Model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Unit test for the beginSystems function of ModelImpl." alt="" coords="323,259,517,285"/>
-<area shape="rect" href="unit__Model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="Unit test for Model::createModel()" alt="" coords="329,309,511,336"/>
-<area shape="rect" href="unit__Model_8cpp.html#a723ceb63472e35da820ad556d67a5c7a" title="Unit test for ModelImpl::createModel()" alt="" coords="311,360,529,387"/>
-<area shape="rect" href="unit__Model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Unit test for ModelImpl::createSystem()" alt="" coords="325,411,515,437"/>
-<area shape="rect" href="unit__Model_8cpp.html#a7760b8956819b3f28c08ca230a7e7aad" title="Unit test for the default constructor of ModelImpl." alt="" coords="347,462,493,503"/>
-<area shape="rect" href="unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="337,528,503,555"/>
-<area shape="rect" href="unit__Model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Unit test for the endFlows function of ModelImpl." alt="" coords="339,579,501,605"/>
-<area shape="rect" href="unit__Model_8cpp.html#a198776a1fac9ea701215f46608b9cc0e" title="Unit test for ModelImpl::endModels()" alt="" coords="334,629,506,656"/>
-<area shape="rect" href="unit__Model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Unit test for the endSystems function of ModelImpl." alt="" coords="329,680,511,707"/>
-<area shape="rect" href="unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="319,731,521,757"/>
-<area shape="rect" href="unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="340,781,500,808"/>
-<area shape="rect" href="unit__Model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="Unit test for the getName function of ModelImpl." alt="" coords="339,832,501,859"/>
-<area shape="rect" href="unit__Model_8cpp.html#ad8771238ee4566fc080eb131d72a16c1" title="Unit test for the getSystems function of ModelImpl." alt="" coords="331,883,509,909"/>
-<area shape="rect" href="unit__Model_8cpp.html#a5fc81d7bb4d5cc5937fb70f06b59c58e" title="Verifies the operator= function of ModelImpl." alt="" coords="342,934,498,975"/>
-<area shape="rect" href="unit__Model_8cpp.html#a1524ea94351f1b22d8f7b78e29cd35e5" title="Unit test for the parameterized constructor of ModelImpl." alt="" coords="335,999,505,1041"/>
-<area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="327,1065,513,1092"/>
-<area shape="rect" href="unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="317,1116,523,1143"/>
-<area shape="rect" href="unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title="Unit test for the run function of ModelImpl." alt="" coords="359,1167,481,1193"/>
-<area shape="rect" href="unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="Unit test for the setName function of ModelImpl." alt="" coords="340,1217,500,1244"/>
-<area shape="rect" href="unit__Model_8cpp.html#ad7e193f7cf3494b4a68ebf9c62b02c4d" title="Unit test for ModelImpl::setSource()" alt="" coords="337,1268,503,1295"/>
-<area shape="rect" href="unit__Model_8cpp.html#aff46f8c80b89b5f607f27da6642a4303" title="Unit test for ModelImpl::setTarget()" alt="" coords="339,1319,501,1345"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,56,213,83"/>
-<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,731,263,757"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,731,60,757"/>
+<area shape="rect" title="Creates a new Model using the ModelImpl class. This function delegates the creation of a new Model to..." alt="" coords="613,680,764,707"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="373,5,539,32"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="363,56,549,83"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="371,107,541,133"/>
+<area shape="rect" href="unit__handleBody_8cpp.html#a041c901d13acd21a20f8d724b6a23d06" title="Unit test for the handling and manipulation of Model, System, and SystemHandle objects." alt="" coords="391,157,521,184"/>
+<area shape="rect" href="unit__Model_8cpp.html#a313719ad23caf6695516a1cdcce2369a" title="Unit test for the beginFlows function of ModelImpl." alt="" coords="369,208,543,235"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2679f573ec19210d2143c5f0275ba0ae" title="Unit test for ModelImpl::beginModels()" alt="" coords="364,259,548,285"/>
+<area shape="rect" href="unit__Model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Unit test for the beginSystems function of ModelImpl." alt="" coords="359,309,553,336"/>
+<area shape="rect" href="unit__Model_8cpp.html#abb49fbd77462625039c6d5ec4a8c7667" title="Unit test for Model::createModel()" alt="" coords="365,360,547,387"/>
+<area shape="rect" href="unit__Model_8cpp.html#a723ceb63472e35da820ad556d67a5c7a" title="Unit test for ModelImpl::createModel()" alt="" coords="347,411,565,437"/>
+<area shape="rect" href="unit__Model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Unit test for ModelImpl::createSystem()" alt="" coords="361,461,551,488"/>
+<area shape="rect" href="unit__Model_8cpp.html#a7760b8956819b3f28c08ca230a7e7aad" title="Unit test for the default constructor of ModelImpl." alt="" coords="383,513,529,554"/>
+<area shape="rect" href="unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="373,579,539,605"/>
+<area shape="rect" href="unit__Model_8cpp.html#a4538fa3ccde8f5b3e1006f9a1b6db177" title="Unit test for the endFlows function of ModelImpl." alt="" coords="375,629,537,656"/>
+<area shape="rect" href="unit__Model_8cpp.html#a198776a1fac9ea701215f46608b9cc0e" title="Unit test for ModelImpl::endModels()" alt="" coords="370,680,542,707"/>
+<area shape="rect" href="unit__Model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Unit test for the endSystems function of ModelImpl." alt="" coords="365,731,547,757"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="355,781,557,808"/>
+<area shape="rect" href="unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="376,832,536,859"/>
+<area shape="rect" href="unit__Model_8cpp.html#ae4af6259f0c230666091589c7e5692a0" title="Unit test for the getName function of ModelImpl." alt="" coords="375,883,537,909"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad8771238ee4566fc080eb131d72a16c1" title="Unit test for the getSystems function of ModelImpl." alt="" coords="367,933,545,960"/>
+<area shape="rect" href="unit__Model_8cpp.html#a5fc81d7bb4d5cc5937fb70f06b59c58e" title="Verifies the operator= function of ModelImpl." alt="" coords="378,985,534,1026"/>
+<area shape="rect" href="unit__Model_8cpp.html#a1524ea94351f1b22d8f7b78e29cd35e5" title="Unit test for the parameterized constructor of ModelImpl." alt="" coords="371,1050,541,1091"/>
+<area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="363,1116,549,1143"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="353,1167,559,1193"/>
+<area shape="rect" href="unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title="Unit test for the run function of ModelImpl." alt="" coords="395,1217,517,1244"/>
+<area shape="rect" href="unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="Unit test for the setName function of ModelImpl." alt="" coords="376,1268,536,1295"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad7e193f7cf3494b4a68ebf9c62b02c4d" title="Unit test for ModelImpl::setSource()" alt="" coords="373,1319,539,1345"/>
+<area shape="rect" href="unit__Model_8cpp.html#aff46f8c80b89b5f607f27da6642a4303" title="Unit test for ModelImpl::setTarget()" alt="" coords="375,1369,537,1396"/>
+<area shape="rect" href="funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="176,56,231,83"/>
+<area shape="rect" href="unit__handleBody_8cpp.html#a3799d648f8a13e1b9b6cbddcaea1aac8" title="Run all tests for handle body." alt="" coords="108,313,299,340"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,469,60,496"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="126,756,281,783"/>
 </map>
 </div>
 
@@ -725,7 +735,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Delegates the creation of a new Model with the given name to the ModelImpl class." alt="" coords="577,5,728,32"/>
 <area shape="rect" href="unit__Model_8cpp.html#a723ceb63472e35da820ad556d67a5c7a" title="Unit test for ModelImpl::createModel()" alt="" coords="311,5,529,32"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,5,263,32"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
 </map>
 </div>
 
@@ -775,29 +785,31 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> </dd></dl>
 
-<p>Implemented in <a class="el" href="classModelImpl.html#a3d788bdb06826a1677fe765fcd70c73b">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="classModelHandle.html#a5e6f544428887c9b4f4d9c03ec5e8ec0">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModel_aa241eb7aeebc7a3dea5fd6a51ad1451f_icgraph.png" border="0" usemap="#aclassModel_aa241eb7aeebc7a3dea5fd6a51ad1451f_icgraph" alt=""/></div>
 <map name="aclassModel_aa241eb7aeebc7a3dea5fd6a51ad1451f_icgraph" id="aclassModel_aa241eb7aeebc7a3dea5fd6a51ad1451f_icgraph">
-<area shape="rect" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="565,309,725,336"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="331,5,497,32"/>
-<area shape="rect" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="321,56,507,83"/>
-<area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="329,107,499,133"/>
-<area shape="rect" href="unit__Model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Unit test for the beginSystems function of ModelImpl." alt="" coords="317,157,511,184"/>
-<area shape="rect" href="unit__Model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Unit test for ModelImpl::createSystem()" alt="" coords="319,208,509,235"/>
-<area shape="rect" href="unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="331,259,497,285"/>
-<area shape="rect" href="unit__Model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Unit test for the endSystems function of ModelImpl." alt="" coords="323,309,505,336"/>
-<area shape="rect" href="unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="313,360,515,387"/>
-<area shape="rect" href="unit__Model_8cpp.html#ad8771238ee4566fc080eb131d72a16c1" title="Unit test for the getSystems function of ModelImpl." alt="" coords="325,411,503,437"/>
-<area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="321,461,507,488"/>
-<area shape="rect" href="unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="311,512,517,539"/>
-<area shape="rect" href="unit__Model_8cpp.html#ad7e193f7cf3494b4a68ebf9c62b02c4d" title="Unit test for ModelImpl::setSource()" alt="" coords="331,563,497,589"/>
-<area shape="rect" href="unit__Model_8cpp.html#aff46f8c80b89b5f607f27da6642a4303" title="Unit test for ModelImpl::setTarget()" alt="" coords="333,613,495,640"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,56,213,83"/>
-<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,385,263,412"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,385,60,412"/>
+<area shape="rect" title="Creates a new System with the given name and initial value (pure virtual)" alt="" coords="601,335,761,361"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a4b249a0069fb8bd98260fbe4d47f4e0b" title="validate a case with flowMaior, where five systems are created (q1, q2, q3, q4 and q5),..." alt="" coords="367,5,533,32"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="357,56,543,83"/>
+<area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="365,107,535,133"/>
+<area shape="rect" href="unit__handleBody_8cpp.html#a041c901d13acd21a20f8d724b6a23d06" title="Unit test for the handling and manipulation of Model, System, and SystemHandle objects." alt="" coords="385,157,515,184"/>
+<area shape="rect" href="unit__Model_8cpp.html#a0e9ac246464949279864e6af420214c8" title="Unit test for the beginSystems function of ModelImpl." alt="" coords="353,208,547,235"/>
+<area shape="rect" href="unit__Model_8cpp.html#af1860c0004f2ef09cbc14cf1e904fe0d" title="Unit test for ModelImpl::createSystem()" alt="" coords="355,259,545,285"/>
+<area shape="rect" href="unit__Model_8cpp.html#adc00b5a0ad5085f85564b39319ae6662" title="Unit test for the destructor of ModelImpl." alt="" coords="367,309,533,336"/>
+<area shape="rect" href="unit__Model_8cpp.html#a91ccff8e2ec46bc1fa4d1fe9ed79cd0d" title="Unit test for the endSystems function of ModelImpl." alt="" coords="359,360,541,387"/>
+<area shape="rect" href="unit__Model_8cpp.html#a8f2fbe208d27d82cca5bbd8f5e972132" title="Unit test for the full constructor of ModelImpl." alt="" coords="349,411,551,437"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad8771238ee4566fc080eb131d72a16c1" title="Unit test for the getSystems function of ModelImpl." alt="" coords="361,461,539,488"/>
+<area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="357,512,543,539"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="347,563,553,589"/>
+<area shape="rect" href="unit__Model_8cpp.html#ad7e193f7cf3494b4a68ebf9c62b02c4d" title="Unit test for ModelImpl::setSource()" alt="" coords="367,613,533,640"/>
+<area shape="rect" href="unit__Model_8cpp.html#aff46f8c80b89b5f607f27da6642a4303" title="Unit test for ModelImpl::setTarget()" alt="" coords="369,664,531,691"/>
+<area shape="rect" href="funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="176,56,231,83"/>
+<area shape="rect" href="unit__handleBody_8cpp.html#a3799d648f8a13e1b9b6cbddcaea1aac8" title="Run all tests for handle body." alt="" coords="108,220,299,247"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,284,60,311"/>
+<area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="126,411,281,437"/>
 </map>
 </div>
 
@@ -829,7 +841,7 @@ Here is the caller graph for this function:</div>
 <p>get an iterator to the end of the Flows vector (pure virtual) </p>
 <dl class="section return"><dt>Returns</dt><dd>a FlowsIterator to the end of the Flows vector </dd></dl>
 
-<p>Implemented in <a class="el" href="classModelImpl.html#aeeb136a5c06444ffe49c9bacd5e23233">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="classModelHandle.html#afc519a7a4855d3859895f18e99d84fee">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -843,7 +855,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="unit__Model_8cpp.html#a1524ea94351f1b22d8f7b78e29cd35e5" title="Unit test for the parameterized constructor of ModelImpl." alt="" coords="327,225,497,266"/>
 <area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="319,291,505,317"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,148,263,175"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,148,60,175"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,148,60,175"/>
 </map>
 </div>
 
@@ -875,7 +887,7 @@ Here is the caller graph for this function:</div>
 <p>Gets an iterator pointing to the end of the Models vector (pure virtual) </p>
 <dl class="section return"><dt>Returns</dt><dd>A ModelsIterator pointing to the end of the Models vector </dd></dl>
 
-<p>Implemented in <a class="el" href="classModelImpl.html#ad581c72515c326f6e63873eaa8866f8c">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="classModelHandle.html#af789d84af5667a0a58084f705ed544b5">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -885,7 +897,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="unit__Model_8cpp.html#a2679f573ec19210d2143c5f0275ba0ae" title="Unit test for ModelImpl::beginModels()" alt="" coords="311,5,495,32"/>
 <area shape="rect" href="unit__Model_8cpp.html#a198776a1fac9ea701215f46608b9cc0e" title="Unit test for ModelImpl::endModels()" alt="" coords="317,56,489,83"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,31,263,57"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,31,60,57"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,31,60,57"/>
 </map>
 </div>
 
@@ -917,7 +929,7 @@ Here is the caller graph for this function:</div>
 <p>get an iterator to the end of the Systems vector (pure virtual) </p>
 <dl class="section return"><dt>Returns</dt><dd>a SystemsIterator to the end of the Systems vector </dd></dl>
 
-<p>Implemented in <a class="el" href="classModelImpl.html#a2eac4ca0ec971cf1a1cb6666b3b9aa3b">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="classModelHandle.html#ac7da480a90113d658193fb2ea412bf91">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -931,7 +943,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="unit__Model_8cpp.html#a1524ea94351f1b22d8f7b78e29cd35e5" title="Unit test for the parameterized constructor of ModelImpl." alt="" coords="329,225,499,266"/>
 <area shape="rect" href="unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="311,291,517,317"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,148,263,175"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,148,60,175"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,148,60,175"/>
 </map>
 </div>
 
@@ -963,7 +975,7 @@ Here is the caller graph for this function:</div>
 <p>get an iterator to the beginning of the Flows vector (pure virtual) </p>
 <dl class="section return"><dt>Returns</dt><dd>a FlowsIterator to the beginning of the Flows vector </dd></dl>
 
-<p>Implemented in <a class="el" href="classModelImpl.html#ac9598171669241583de2ded787f17e4c">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="classModelHandle.html#a96256ea0f60c58519e2c929bd447fba7">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -972,7 +984,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="get an iterator to the beginning of the Flows vector (pure virtual)" alt="" coords="519,5,648,32"/>
 <area shape="rect" href="unit__Model_8cpp.html#a785d25c1ff90eb91fef77944d01e3db3" title="Unit test for the getFlows function of ModelImpl." alt="" coords="311,5,471,32"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,5,263,32"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
 </map>
 </div>
 
@@ -1004,7 +1016,7 @@ Here is the caller graph for this function:</div>
 <p>Retrieve the name of the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a> (pure virtual). </p>
 <dl class="section return"><dt>Returns</dt><dd>A string representing the name of the <a class="el" href="classModel.html" title="Interface that represents a Flow in the simulator of systems theory.">Model</a>. </dd></dl>
 
-<p>Implemented in <a class="el" href="classModelImpl.html#a027d6617b69c45b92243c3caca352ba5">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="classModelHandle.html#aac03dcbc5ac70a56f913c5ab6fe8862a">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1016,7 +1028,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="unit__Model_8cpp.html#a1524ea94351f1b22d8f7b78e29cd35e5" title="Unit test for the parameterized constructor of ModelImpl." alt="" coords="327,107,497,149"/>
 <area shape="rect" href="unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="Unit test for the setName function of ModelImpl." alt="" coords="332,173,492,200"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,85,263,112"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,85,60,112"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,85,60,112"/>
 </map>
 </div>
 
@@ -1048,7 +1060,7 @@ Here is the caller graph for this function:</div>
 <p>get an iterator to the beginning of the Systems vector (pure virtual) </p>
 <dl class="section return"><dt>Returns</dt><dd>a SystemsIterator to the beginning of the Systems vector </dd></dl>
 
-<p>Implemented in <a class="el" href="classModelImpl.html#a21551e09b3cd465950d97108d545fa1e">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="classModelHandle.html#a293a30524dfecb0028e2afd499dd0f09">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1057,7 +1069,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="get an iterator to the beginning of the Systems vector (pure virtual)" alt="" coords="537,5,684,32"/>
 <area shape="rect" href="unit__Model_8cpp.html#ad8771238ee4566fc080eb131d72a16c1" title="Unit test for the getSystems function of ModelImpl." alt="" coords="311,5,489,32"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,5,263,32"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
 </map>
 </div>
 
@@ -1096,7 +1108,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the operation is successful, indicating the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> is removed, false otherwise. </dd></dl>
 
-<p>Implemented in <a class="el" href="classModelImpl.html#a91ecf96ee8a524711c34a5291e799470">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="classModelHandle.html#ab30240dc658631f394be5ee2b1f99734">ModelHandle</a>.</p>
 
 </div>
 </div>
@@ -1124,7 +1136,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classModelImpl.html#a5145a5ed6c8cb204137fc161d94bb9e4">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="classModelHandle.html#a3fc5cd384316ba4cdfc49c57c27d17ee">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1134,7 +1146,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="unit__Model_8cpp.html#a88d0b5198399c11b8634906fb753d72c" title="Unit test for the remove flow function of ModelImpl." alt="" coords="321,5,507,32"/>
 <area shape="rect" href="unit__Model_8cpp.html#ad658cd033e2e5f340c2cea57614b5566" title="Unit test for the remove system function of ModelImpl." alt="" coords="311,56,517,83"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,31,263,57"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,31,60,57"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,31,60,57"/>
 </map>
 </div>
 
@@ -1184,7 +1196,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the simulation runs successfully, false otherwise. </dd></dl>
 
-<p>Implemented in <a class="el" href="classModelImpl.html#abf9757a0107636e05d3493acdaaeebe0">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="classModelHandle.html#ae06f119e40a6112166858790e02ad1f1">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1195,9 +1207,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="311,56,497,83"/>
 <area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="319,107,489,133"/>
 <area shape="rect" href="unit__Model_8cpp.html#a37286918320acd70d56642498fa32c18" title="Unit test for the run function of ModelImpl." alt="" coords="343,157,465,184"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,56,213,83"/>
+<area shape="rect" href="funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,56,213,83"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,157,263,184"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,157,60,184"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,157,60,184"/>
 </map>
 </div>
 
@@ -1236,7 +1248,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the operation is successful, indicating the name is set, false otherwise. </dd></dl>
 
-<p>Implemented in <a class="el" href="classModelImpl.html#a64b1277b63d6b3526dcf13ada1e1bef5">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="classModelHandle.html#ac87cfa95b0111eeccab5dab17bb673b4">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1245,7 +1257,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Set the name of the Model (pure virtual)." alt="" coords="519,5,648,32"/>
 <area shape="rect" href="unit__Model_8cpp.html#a3e18033ba5152db576eeccd0eebafd20" title="Unit test for the setName function of ModelImpl." alt="" coords="311,5,471,32"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,5,263,32"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,5,60,32"/>
 </map>
 </div>
 
@@ -1295,7 +1307,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the source <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> of the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> was successfully set, false otherwise </dd></dl>
 
-<p>Implemented in <a class="el" href="classModelImpl.html#ac589417ae1d56f83925b0091d954977b">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="classModelHandle.html#a4e8f303eae548913dab9823903f20466">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1304,9 +1316,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Sets the source System of the given Flow (pure virtual)" alt="" coords="528,31,663,57"/>
 <area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="311,5,480,32"/>
 <area shape="rect" href="unit__Model_8cpp.html#ad7e193f7cf3494b4a68ebf9c62b02c4d" title="Unit test for ModelImpl::setSource()" alt="" coords="313,56,478,83"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,5,213,32"/>
+<area shape="rect" href="funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,5,213,32"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,56,263,83"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,56,60,83"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,56,60,83"/>
 </map>
 </div>
 
@@ -1356,7 +1368,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the target <a class="el" href="classSystem.html" title="Interface that represents a System in the simulator of systems theory.">System</a> of the <a class="el" href="classFlow.html" title="Interface that represents a Flow in the simulator of systems theory.">Flow</a> was successfully set, false otherwise </dd></dl>
 
-<p>Implemented in <a class="el" href="classModelImpl.html#a033b2bc2e0e03de2a12c1183bd6ee426">ModelImpl</a>.</p>
+<p>Implemented in <a class="el" href="classModelHandle.html#a9d840d47929d63c3bc7f8d6da4ca7fbd">ModelHandle</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1367,9 +1379,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="funcional__tests_8cpp.html#a990a580e1a43e5934dd62de8e0a37f30" title="validate a case with exponentialFlow, where two systems are created (pop1 and pop2),..." alt="" coords="311,56,497,83"/>
 <area shape="rect" href="funcional__tests_8cpp.html#ac9df0129352dd52de9dc7d0fc69660fe" title="validate a case with logisticFlow, where two systems are created (p1 and p2), with 100 and 10 as init..." alt="" coords="319,107,489,133"/>
 <area shape="rect" href="unit__Model_8cpp.html#aff46f8c80b89b5f607f27da6642a4303" title="Unit test for ModelImpl::setTarget()" alt="" coords="323,157,485,184"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,56,213,83"/>
+<area shape="rect" href="funcional_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="158,56,213,83"/>
 <area shape="rect" href="unit__Model_8cpp.html#a2114674c26fbc871eec94221b3252a39" title="Run all unit tests." alt="" coords="108,157,263,184"/>
-<area shape="rect" href="test_2unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,157,60,184"/>
+<area shape="rect" href="unit_2main_8cpp.html#abf9e6b7e6f15df4b525a2e7705ba3089" title=" " alt="" coords="5,157,60,184"/>
 </map>
 </div>
 

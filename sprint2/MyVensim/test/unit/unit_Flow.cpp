@@ -9,8 +9,8 @@ void unit_Flow_default_constructor()
 
 void unit_Flow_parameter_constructor()
 {
-    System *sourceSystem = new SystemImpl("SourceSystem");
-    System *targetSystem = new SystemImpl("TargetSystem");
+    System *sourceSystem = new SystemHandle("SourceSystem");
+    System *targetSystem = new SystemHandle("TargetSystem");
 
     FlowExponencial flow(sourceSystem, targetSystem);
 
@@ -23,9 +23,9 @@ void unit_Flow_parameter_constructor()
 
 void unit_Flow_destructor()
 {
-    System *sourceSystem = new SystemImpl("SourceSystem");
-    System *targetSystem = new SystemImpl("TargetSystem");
-    Flow *flow = new FlowExponencial(sourceSystem, targetSystem);
+    System *sourceSystem = new SystemHandle("SourceSystem");
+    System *targetSystem = new SystemHandle("TargetSystem");
+    Flow *flow = new FlowHandle<FlowExponencial>(sourceSystem, targetSystem);
 
     delete flow;
     delete targetSystem;
@@ -34,8 +34,8 @@ void unit_Flow_destructor()
 
 void unit_Flow_copy_constructor()
 {
-    System *sourceSystem = new SystemImpl("SourceSystem");
-    System *targetSystem = new SystemImpl("TargetSystem");
+    System *sourceSystem = new SystemHandle("SourceSystem");
+    System *targetSystem = new SystemHandle("TargetSystem");
     FlowExponencial originalFlow(sourceSystem, targetSystem);
 
     FlowExponencial copiedFlow(originalFlow);
@@ -52,7 +52,7 @@ void unit_Flow_setSource()
 
     FlowExponencial flow;
 
-    System *sourceSystem = new SystemImpl("SourceSystem");
+    System *sourceSystem = new SystemHandle("SourceSystem");
 
     assert(flow.setSource(sourceSystem));
 
@@ -66,7 +66,7 @@ void unit_Flow_getSource()
 
     FlowExponencial flow;
 
-    System *sourceSystem = new SystemImpl("SourceSystem");
+    System *sourceSystem = new SystemHandle("SourceSystem");
 
     flow.setSource(sourceSystem);
 
@@ -80,7 +80,7 @@ void unit_Flow_setTarget()
 
     FlowExponencial flow;
 
-    System *targetSystem = new SystemImpl("TargetSystem");
+    System *targetSystem = new SystemHandle("TargetSystem");
 
     assert(flow.setTarget(targetSystem));
 
@@ -94,7 +94,7 @@ void unit_Flow_getTarget()
 
     FlowExponencial flow;
 
-    System *targetSystem = new SystemImpl("TargetSystem");
+    System *targetSystem = new SystemHandle("TargetSystem");
 
     flow.setTarget(targetSystem);
 
@@ -106,8 +106,8 @@ void unit_Flow_getTarget()
 void unit_Flow_operator_equ()
 {
 
-    System *sourceSystem1 = new SystemImpl("SourceSystem1");
-    System *targetSystem1 = new SystemImpl("TargetSystem1");
+    System *sourceSystem1 = new SystemHandle("SourceSystem1");
+    System *targetSystem1 = new SystemHandle("TargetSystem1");
     FlowExponencial originalFlow(sourceSystem1, targetSystem1);
 
     FlowExponencial emptyFlow;
@@ -129,8 +129,8 @@ void unit_Flow_operator_equ()
 void unit_Flow_operator_copy()
 {
 
-    System *sourceSystem1 = new SystemImpl("SourceSystem1");
-    System *targetSystem1 = new SystemImpl("TargetSystem1");
+    System *sourceSystem1 = new SystemHandle("SourceSystem1");
+    System *targetSystem1 = new SystemHandle("TargetSystem1");
     FlowExponencial flow1(sourceSystem1, targetSystem1);
 
     FlowExponencial flow2(sourceSystem1, targetSystem1);

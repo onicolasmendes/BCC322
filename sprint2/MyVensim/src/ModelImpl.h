@@ -2,6 +2,12 @@
 #include "vector"
 #include "Model.h"
 #include "SystemImpl.h"
+#include "handleBodySemDebug.h"
+
+typedef vector<System *>::iterator SystemsIterator;
+typedef vector<Flow *>::iterator FlowsIterator;
+typedef vector<Model *>::iterator ModelsIterator;
+
 
 using namespace std;
 /**
@@ -14,7 +20,7 @@ using namespace std;
  * @brief Model concrete class that implements the interface Model and represents a Model in systems theory.
  */
 
-class ModelImpl : public Model
+class ModelImpl : public Body
 {
 protected:
     string name;                   ///< Variable to store a name of the Model
@@ -41,7 +47,7 @@ public:
      */
     ModelImpl(const string &n, const vector<System *> &s, const vector<Flow *> &f);
 
-private:
+protected:
     /**
      * @brief copy constructor for the Model class
      * @param m reference to the Model object will be copied
@@ -53,24 +59,6 @@ private:
      * @return a reference to the Model that received the copy data
      */
     ModelImpl &operator=(const ModelImpl &m);
-    /**
-     * @brief add a System to the Model
-     * @param s a pointer to the System to be added
-     * @return true if the System was successfully added, false otherwise
-     */
-    virtual bool add(System *s);
-    /**
-     * @brief add a Flow to the Model
-     * @param f a pointer to the Flow to be added
-     * @return true if the Flow was successfully added, false otherwise
-     */
-    virtual bool add(Flow *f);
-    /**
-     * @brief Adds the given Model to the Models container
-     * @param m A pointer to the Model to be added
-     * @return true if the Model was successfully added, false otherwise
-     */
-    static bool add(Model *m);
 
 public:
     /**
@@ -97,7 +85,24 @@ public:
      * @return true if the simulation was successful, false otherwise
      */
     virtual double run(const double &t_initial, const double &t_final);
-
+    /**
+     * @brief add a System to the Model
+     * @param s a pointer to the System to be added
+     * @return true if the System was successfully added, false otherwise
+     */
+    virtual bool add(System *s);
+    /**
+     * @brief add a Flow to the Model
+     * @param f a pointer to the Flow to be added
+     * @return true if the Flow was successfully added, false otherwise
+     */
+    virtual bool add(Flow *f);
+    /**
+     * @brief Adds the given Model to the Models container
+     * @param m A pointer to the Model to be added
+     * @return true if the Model was successfully added, false otherwise
+     */
+    static bool add(Model *m);
     /**
      * @brief set the name of the Model.
      * @param n a reference for a string with the new name for the Model
@@ -189,4 +194,34 @@ public:
      * @return true if the target System of the Flow was successfully set, false otherwise
      */
     virtual bool setTarget(Flow *f, System *s);
+};
+
+class ModelHandle : public Model, public Handle<ModelImpl>
+{
+public:
+    ModelHandle(string name = "")
+    {
+        pImpl_->setName(name);
+    }
+
+    virtual ~ModelHandle() {}
+
+    virtual bool remove(System *s) { return pImpl_->remove(s); };
+    virtual bool remove(Flow *f) { return pImpl_->remove(f); };
+    virtual double run(const double &t_initial, const double &t_final) { return pImpl_->run(t_initial, t_final); };
+    virtual bool setName(const string &n) { return pImpl_->setName(n); };
+    virtual string getName() const { return pImpl_->getName(); };
+    virtual SystemsIterator getSystems() { return pImpl_->getSystems(); };
+    virtual FlowsIterator getFlows() { return pImpl_->getFlows(); };
+    virtual FlowsIterator beginFlows() { return pImpl_->beginFlows(); };
+    virtual FlowsIterator endFlows() { return pImpl_->endFlows(); };
+    virtual SystemsIterator beginSystems() { return pImpl_->beginSystems(); };
+    virtual SystemsIterator endSystems() { return pImpl_->endSystems(); };
+    virtual ModelsIterator beginModels() { return pImpl_->beginModels(); };
+    virtual ModelsIterator endModels() { return pImpl_->endModels(); };
+    virtual System *createSystem(const string &n, const double &v) { return pImpl_->createSystem(n, v); };
+    virtual bool setSource(Flow *f, System *s) { return pImpl_->setSource(f, s); };
+    virtual bool setTarget(Flow *f, System *s) { return pImpl_->setTarget(f, s); };
+    virtual bool add(Flow *f){return pImpl_->add(f);};
+    virtual bool add(System *s){return pImpl_->add(s);};
 };

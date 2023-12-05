@@ -1,4 +1,4 @@
 <map id="SystemImpl" name="SystemImpl">
 <area shape="rect" id="node1" title="System concrete class that implements the interface System and represents a System in systems theory." alt="" coords="5,189,141,428"/>
-<area shape="rect" id="node2" href="$classSystem.html" title="Interface that represents a System in the simulator of systems theory." alt="" coords="20,5,127,141"/>
+<area shape="rect" id="node2" href="$classBody.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="22,5,125,141"/>
 </map>
