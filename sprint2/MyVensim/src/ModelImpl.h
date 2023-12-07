@@ -8,7 +8,6 @@ typedef vector<System *>::iterator SystemsIterator;
 typedef vector<Flow *>::iterator FlowsIterator;
 typedef vector<Model *>::iterator ModelsIterator;
 
-
 using namespace std;
 /**
  * @file ModelImpl.h
@@ -194,6 +193,8 @@ public:
      * @return true if the target System of the Flow was successfully set, false otherwise
      */
     virtual bool setTarget(Flow *f, System *s);
+
+    bool eraseModel(ModelsIterator it);
 };
 
 class ModelHandle : public Model, public Handle<ModelImpl>
@@ -204,8 +205,22 @@ public:
         pImpl_->setName(name);
     }
 
-    virtual ~ModelHandle() {}
+    ~ModelHandle()
+    {
+        for (Model::ModelsIterator it = pImpl_->beginModels(); it < pImpl_->endModels(); it++)
+        {
+            if (*it == this)
+            {
+                pImpl_->eraseModel(it);
+                break;
+            }
+        }
+    }
 
+private:
+    virtual bool add(Flow *f) { return pImpl_->add(f); };
+    virtual bool add(System *s) { return pImpl_->add(s); };
+public:
     virtual bool remove(System *s) { return pImpl_->remove(s); };
     virtual bool remove(Flow *f) { return pImpl_->remove(f); };
     virtual double run(const double &t_initial, const double &t_final) { return pImpl_->run(t_initial, t_final); };
@@ -222,6 +237,5 @@ public:
     virtual System *createSystem(const string &n, const double &v) { return pImpl_->createSystem(n, v); };
     virtual bool setSource(Flow *f, System *s) { return pImpl_->setSource(f, s); };
     virtual bool setTarget(Flow *f, System *s) { return pImpl_->setTarget(f, s); };
-    virtual bool add(Flow *f){return pImpl_->add(f);};
-    virtual bool add(System *s){return pImpl_->add(s);};
+    bool eraseModel(ModelsIterator it){return pImpl_->eraseModel(it);};
 };

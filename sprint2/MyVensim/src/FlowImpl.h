@@ -94,10 +94,6 @@ public:
         Handle<T>::pImpl_->setTarget(t);
     }
 
-    virtual ~FlowHandle()
-    {
-    }
-
     virtual bool setSource(System *s) { return Handle<T>::pImpl_->setSource(s); };
     virtual System *getSource() const { return Handle<T>::pImpl_->getSource(); };
     virtual bool setTarget(System *s) { return Handle<T>::pImpl_->setTarget(s); };

@@ -95,7 +95,6 @@ public:
        
     }
 
-    virtual ~SystemHandle() {};
 
     virtual bool setName(const string &n){return pImpl_->setName(n);};
     virtual string getName() const{return pImpl_->getName();};

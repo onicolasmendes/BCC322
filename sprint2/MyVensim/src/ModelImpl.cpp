@@ -29,13 +29,12 @@ ModelImpl::~ModelImpl()
         delete *it;
     }
 
-     for (FlowsIterator it = beginFlows(); it < endFlows(); it++)
+    for (FlowsIterator it = beginFlows(); it < endFlows(); it++)
     {
         delete *it;
     }
 
     models.clear();
-
 }
 
 ModelImpl::ModelImpl(const string &n, const vector<System *> &s, const vector<Flow *> &f)
@@ -102,7 +101,7 @@ bool ModelImpl::remove(Flow *f)
             return true;
         }
     }
-    
+
     return false;
 }
 
@@ -261,5 +260,11 @@ bool ModelImpl::setSource(Flow *f, System *s)
 bool ModelImpl::setTarget(Flow *f, System *s)
 {
     f->setTarget(s);
+    return true;
+}
+
+bool ModelImpl::eraseModel(ModelsIterator it)
+{
+    models.erase(it);
     return true;
 }

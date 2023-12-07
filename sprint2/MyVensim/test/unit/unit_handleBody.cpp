@@ -49,6 +49,8 @@ void unit_handleBody()
         s3 = s3;
         cout << "s3: " << s4.getName() << ", s2: " << s4.getName() << endl;
     }
+    assert(numHandleDeleted == 2);
+    assert(numBodyDeleted == 2);
 
     assert(numHandleCreated == 6);
     assert(numBodyCreated == 6);
